@@ -145,3 +145,22 @@ The machine-readable report is written to
 `1` means data-quality errors were found, and `2` means validation could not
 run. Duplicate review text is reported as a warning because it must be grouped
 before the train/validation/test split.
+
+## Profile Label Distribution
+
+Generate deterministic label and aspect-mention summaries:
+
+```powershell
+.\.venv\Scripts\vfi-profile-labels.exe
+```
+
+The profiler writes:
+
+- `reports/metrics/label_distribution.json`
+- `reports/metrics/label_distribution.csv`
+- `reports/metrics/mentioned_aspect_distribution.csv`
+
+Reports include counts and proportions for labels `0-3`, missing-label counts,
+the comparison between mentioned and not-mentioned aspects, and the number of
+mentioned aspects per review. Missing labels remain separate and are never
+silently converted to label `0`.
