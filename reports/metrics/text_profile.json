@@ -1,0 +1,216 @@
+{
+  "source": {
+    "metadata_path": "data/raw/metadata.json",
+    "dataset_name": "vinhplaykennen/FashionReviews",
+    "config_name": null,
+    "resolved_revision": "60abb1cef934cb248b88a2ce4c99bb1ea3129c92",
+    "cache_dir": "data/raw/huggingface",
+    "downloaded_at_utc": "2026-06-14T14:35:16.059266+00:00"
+  },
+  "definitions": {
+    "whitespace_token": "A maximal sequence matching \\S+.",
+    "emoji_like": "Characters in selected Unicode emoji/symbol ranges; this is an analysis heuristic, not full emoji grapheme parsing.",
+    "outlier": "A value outside the 1.5 * IQR fences."
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_rows": 89145,
+      "fingerprint": "069278ac005d656e",
+      "null_review_count": 0,
+      "empty_review_count": 0,
+      "profiled_review_count": 89145,
+      "lengths": {
+        "characters": {
+          "minimum": 3,
+          "maximum": 706,
+          "mean": 192.06621795950417,
+          "standard_deviation": 104.44035891588743,
+          "percentiles": {
+            "p00": 3.0,
+            "p01": 43.0,
+            "p05": 65.0,
+            "p25": 121.0,
+            "p50": 175.0,
+            "p75": 235.0,
+            "p90": 316.0,
+            "p95": 441.0,
+            "p99": 526.0,
+            "p100": 706.0
+          },
+          "iqr": 114.0,
+          "lower_fence": 0.0,
+          "upper_fence": 406.0,
+          "lower_outlier_count": 0,
+          "upper_outlier_count": 5523
+        },
+        "whitespace_tokens": {
+          "minimum": 1,
+          "maximum": 161,
+          "mean": 43.10114981210388,
+          "standard_deviation": 23.67910742072271,
+          "percentiles": {
+            "p00": 1.0,
+            "p01": 10.0,
+            "p05": 15.0,
+            "p25": 27.0,
+            "p50": 39.0,
+            "p75": 52.0,
+            "p90": 71.0,
+            "p95": 100.0,
+            "p99": 120.0,
+            "p100": 161.0
+          },
+          "iqr": 25.0,
+          "lower_fence": 0.0,
+          "upper_fence": 89.5,
+          "lower_outlier_count": 0,
+          "upper_outlier_count": 5936
+        },
+        "lines": {
+          "minimum": 1,
+          "maximum": 13,
+          "mean": 1.0340456559537832,
+          "standard_deviation": 0.34007438213630026,
+          "percentiles": {
+            "p00": 1.0,
+            "p01": 1.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "p50": 1.0,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0,
+            "p99": 3.0,
+            "p100": 13.0
+          },
+          "iqr": 0.0,
+          "lower_fence": 1.0,
+          "upper_fence": 1.0,
+          "lower_outlier_count": 0,
+          "upper_outlier_count": 1249
+        }
+      },
+      "threshold_counts": {
+        "characters_lte_10": 2,
+        "tokens_lte_3": 3,
+        "characters_gte_p99": 894,
+        "tokens_gte_p99": 896
+      },
+      "patterns": {
+        "url": {
+          "review_count": 0,
+          "review_proportion": 0.0,
+          "occurrence_count": 0
+        },
+        "emoji_like": {
+          "review_count": 0,
+          "review_proportion": 0.0,
+          "occurrence_count": 0
+        },
+        "tab": {
+          "review_count": 0,
+          "review_proportion": 0.0,
+          "occurrence_count": 0
+        },
+        "line_break": {
+          "review_count": 1249,
+          "review_proportion": 0.014010881148690335,
+          "occurrence_count": 3035
+        },
+        "repeated_whitespace": {
+          "review_count": 4,
+          "review_proportion": 4.487071624880812e-05,
+          "occurrence_count": 4
+        },
+        "non_breaking_space": {
+          "review_count": 0,
+          "review_proportion": 0.0,
+          "occurrence_count": 0
+        },
+        "zero_width_character": {
+          "review_count": 2,
+          "review_proportion": 2.243535812440406e-05,
+          "occurrence_count": 4
+        },
+        "punctuation_character": {
+          "review_count": 88450,
+          "review_proportion": 0.9922037130517696,
+          "occurrence_count": 516672
+        },
+        "repeated_punctuation": {
+          "review_count": 3180,
+          "review_proportion": 0.03567221941780246,
+          "occurrence_count": 4126
+        },
+        "digit_character": {
+          "review_count": 17249,
+          "review_proportion": 0.1934937461439228,
+          "occurrence_count": 61328
+        }
+      },
+      "longest_reviews": [
+        {
+          "row_index": 7981,
+          "review_id": 7982,
+          "character_count": 706,
+          "token_count": 161
+        },
+        {
+          "row_index": 21009,
+          "review_id": 21010,
+          "character_count": 626,
+          "token_count": 147
+        },
+        {
+          "row_index": 75103,
+          "review_id": 75104,
+          "character_count": 617,
+          "token_count": 138
+        },
+        {
+          "row_index": 4833,
+          "review_id": 4834,
+          "character_count": 616,
+          "token_count": 136
+        },
+        {
+          "row_index": 29261,
+          "review_id": 29262,
+          "character_count": 610,
+          "token_count": 135
+        },
+        {
+          "row_index": 46083,
+          "review_id": 46084,
+          "character_count": 609,
+          "token_count": 137
+        },
+        {
+          "row_index": 29258,
+          "review_id": 29259,
+          "character_count": 609,
+          "token_count": 133
+        },
+        {
+          "row_index": 83977,
+          "review_id": 83978,
+          "character_count": 608,
+          "token_count": 137
+        },
+        {
+          "row_index": 66656,
+          "review_id": 66657,
+          "character_count": 608,
+          "token_count": 136
+        },
+        {
+          "row_index": 71397,
+          "review_id": 71398,
+          "character_count": 604,
+          "token_count": 134
+        }
+      ]
+    }
+  }
+}

@@ -164,3 +164,23 @@ Reports include counts and proportions for labels `0-3`, missing-label counts,
 the comparison between mentioned and not-mentioned aspects, and the number of
 mentioned aspects per review. Missing labels remain separate and are never
 silently converted to label `0`.
+
+## Profile Review Text
+
+Measure review length and text patterns without changing the source text:
+
+```powershell
+.\.venv\Scripts\vfi-profile-text.exe
+```
+
+The profiler writes:
+
+- `reports/metrics/text_profile.json`
+- `reports/metrics/text_length_percentiles.csv`
+- `reports/metrics/text_pattern_counts.csv`
+
+The report contains character, whitespace-token, and line-length percentiles;
+IQR outlier counts; short and long review counts; and observed URLs,
+emoji-like symbols, unusual whitespace, punctuation, and digits. Only review
+IDs and lengths are stored for the longest samples, not duplicated review
+text.

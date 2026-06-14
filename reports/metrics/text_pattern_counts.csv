@@ -1,0 +1,11 @@
+split,pattern,review_count,review_proportion,occurrence_count
+train,url,0,0.0,0
+train,emoji_like,0,0.0,0
+train,tab,0,0.0,0
+train,line_break,1249,0.014010881148690335,3035
+train,repeated_whitespace,4,4.487071624880812e-05,4
+train,non_breaking_space,0,0.0,0
+train,zero_width_character,2,2.243535812440406e-05,4
+train,punctuation_character,88450,0.9922037130517696,516672
+train,repeated_punctuation,3180,0.03567221941780246,4126
+train,digit_character,17249,0.1934937461439228,61328
