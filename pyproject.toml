@@ -20,6 +20,7 @@ dependencies = [
 
 [project.scripts]
 vfi-download-data = "v_fashion_insight.data.download:main"
+vfi-profile-labels = "v_fashion_insight.data.profile_labels:main"
 vfi-validate-data = "v_fashion_insight.data.validate:main"
 
 [project.optional-dependencies]

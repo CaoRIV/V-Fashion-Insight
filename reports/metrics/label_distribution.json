@@ -1,0 +1,283 @@
+{
+  "source": {
+    "metadata_path": "data/raw/metadata.json",
+    "dataset_name": "vinhplaykennen/FashionReviews",
+    "config_name": null,
+    "resolved_revision": "60abb1cef934cb248b88a2ce4c99bb1ea3129c92",
+    "cache_dir": "data/raw/huggingface",
+    "downloaded_at_utc": "2026-06-14T14:35:16.059266+00:00"
+  },
+  "label_mapping": {
+    "0": "not_mentioned",
+    "1": "negative",
+    "2": "neutral",
+    "3": "positive"
+  },
+  "aspect_source_columns": {
+    "material": "Chất liệu",
+    "design": "Kiểu dáng",
+    "size": "Kích cỡ",
+    "price": "Giá cả",
+    "service": "Dịch vụ"
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_rows": 89145,
+      "fingerprint": "069278ac005d656e",
+      "aspects": [
+        {
+          "aspect": "material",
+          "source_column": "Chất liệu",
+          "total_rows": 89145,
+          "valid_label_count": 89139,
+          "missing_count": 6,
+          "missing_proportion": 6.730607437321219e-05,
+          "not_mentioned_count": 33598,
+          "not_mentioned_proportion": 0.37689158113186383,
+          "mentioned_count": 55541,
+          "mentioned_proportion": 0.623041112793763,
+          "mentioned_proportion_among_valid": 0.6230830500678716,
+          "labels": [
+            {
+              "label": 0,
+              "name": "not_mentioned",
+              "count": 33598,
+              "proportion": 0.37689158113186383,
+              "proportion_among_valid": 0.3769169499321285
+            },
+            {
+              "label": 1,
+              "name": "negative",
+              "count": 17545,
+              "proportion": 0.19681417914633462,
+              "proportion_among_valid": 0.19682742682776339
+            },
+            {
+              "label": 2,
+              "name": "neutral",
+              "count": 14133,
+              "proportion": 0.1585394581861013,
+              "proportion_among_valid": 0.1585501295729142
+            },
+            {
+              "label": 3,
+              "name": "positive",
+              "count": 23863,
+              "proportion": 0.26768747546132704,
+              "proportion_among_valid": 0.26770549366719393
+            }
+          ]
+        },
+        {
+          "aspect": "design",
+          "source_column": "Kiểu dáng",
+          "total_rows": 89145,
+          "valid_label_count": 89127,
+          "missing_count": 18,
+          "missing_proportion": 0.00020191822311963655,
+          "not_mentioned_count": 29996,
+          "not_mentioned_proportion": 0.3364855011498121,
+          "mentioned_count": 59131,
+          "mentioned_proportion": 0.6633125806270682,
+          "mentioned_proportion_among_valid": 0.6634465425740796,
+          "labels": [
+            {
+              "label": 0,
+              "name": "not_mentioned",
+              "count": 29996,
+              "proportion": 0.3364855011498121,
+              "proportion_among_valid": 0.3365534574259203
+            },
+            {
+              "label": 1,
+              "name": "negative",
+              "count": 17711,
+              "proportion": 0.19867631387066015,
+              "proportion_among_valid": 0.1987164383407946
+            },
+            {
+              "label": 2,
+              "name": "neutral",
+              "count": 15827,
+              "proportion": 0.17754220651747155,
+              "proportion_among_valid": 0.17757806276436994
+            },
+            {
+              "label": 3,
+              "name": "positive",
+              "count": 25593,
+              "proportion": 0.2870940602389366,
+              "proportion_among_valid": 0.28715204146891515
+            }
+          ]
+        },
+        {
+          "aspect": "size",
+          "source_column": "Kích cỡ",
+          "total_rows": 89145,
+          "valid_label_count": 89133,
+          "missing_count": 12,
+          "missing_proportion": 0.00013461214874642438,
+          "not_mentioned_count": 28262,
+          "not_mentioned_proportion": 0.3170340456559538,
+          "mentioned_count": 60871,
+          "mentioned_proportion": 0.6828313421952998,
+          "mentioned_proportion_among_valid": 0.6829232719643679,
+          "labels": [
+            {
+              "label": 0,
+              "name": "not_mentioned",
+              "count": 28262,
+              "proportion": 0.3170340456559538,
+              "proportion_among_valid": 0.31707672803563214
+            },
+            {
+              "label": 1,
+              "name": "negative",
+              "count": 22058,
+              "proportion": 0.24743956475405238,
+              "proportion_among_valid": 0.24747287760986392
+            },
+            {
+              "label": 2,
+              "name": "neutral",
+              "count": 11931,
+              "proportion": 0.13383812889113242,
+              "proportion_among_valid": 0.1338561475547777
+            },
+            {
+              "label": 3,
+              "name": "positive",
+              "count": 26882,
+              "proportion": 0.30155364855011496,
+              "proportion_among_valid": 0.30159424679972624
+            }
+          ]
+        },
+        {
+          "aspect": "price",
+          "source_column": "Giá cả",
+          "total_rows": 89145,
+          "valid_label_count": 89132,
+          "missing_count": 13,
+          "missing_proportion": 0.0001458298278086264,
+          "not_mentioned_count": 40904,
+          "not_mentioned_proportion": 0.45884794436031184,
+          "mentioned_count": 48228,
+          "mentioned_proportion": 0.5410062258118795,
+          "mentioned_proportion_among_valid": 0.5410851321635327,
+          "labels": [
+            {
+              "label": 0,
+              "name": "not_mentioned",
+              "count": 40904,
+              "proportion": 0.45884794436031184,
+              "proportion_among_valid": 0.4589148678364673
+            },
+            {
+              "label": 1,
+              "name": "negative",
+              "count": 12383,
+              "proportion": 0.13890851982724775,
+              "proportion_among_valid": 0.1389287797872818
+            },
+            {
+              "label": 2,
+              "name": "neutral",
+              "count": 16126,
+              "proportion": 0.18089629255706993,
+              "proportion_among_valid": 0.18092267647982768
+            },
+            {
+              "label": 3,
+              "name": "positive",
+              "count": 19719,
+              "proportion": 0.22120141342756183,
+              "proportion_among_valid": 0.2212336758964233
+            }
+          ]
+        },
+        {
+          "aspect": "service",
+          "source_column": "Dịch vụ",
+          "total_rows": 89145,
+          "valid_label_count": 89124,
+          "missing_count": 21,
+          "missing_proportion": 0.00023557126030624264,
+          "not_mentioned_count": 33227,
+          "not_mentioned_proportion": 0.37272982219978684,
+          "mentioned_count": 55897,
+          "mentioned_proportion": 0.627034606539907,
+          "mentioned_proportion_among_valid": 0.6271823526771689,
+          "labels": [
+            {
+              "label": 0,
+              "name": "not_mentioned",
+              "count": 33227,
+              "proportion": 0.37272982219978684,
+              "proportion_among_valid": 0.3728176473228311
+            },
+            {
+              "label": 1,
+              "name": "negative",
+              "count": 17332,
+              "proportion": 0.1944248135060856,
+              "proportion_among_valid": 0.19447062519635563
+            },
+            {
+              "label": 2,
+              "name": "neutral",
+              "count": 11524,
+              "proportion": 0.1292725335128162,
+              "proportion_among_valid": 0.12930299358197567
+            },
+            {
+              "label": 3,
+              "name": "positive",
+              "count": 27041,
+              "proportion": 0.3033372595210051,
+              "proportion_among_valid": 0.3034087338988376
+            }
+          ]
+        }
+      ],
+      "mentioned_aspects_per_review": {
+        "mean": 3.1372258679679175,
+        "rows_with_missing_labels": 70,
+        "distribution": [
+          {
+            "mentioned_aspect_count": 0,
+            "review_count": 112,
+            "proportion": 0.0012563800549666275
+          },
+          {
+            "mentioned_aspect_count": 1,
+            "review_count": 9763,
+            "proportion": 0.10951820068427842
+          },
+          {
+            "mentioned_aspect_count": 2,
+            "review_count": 18840,
+            "proportion": 0.21134107353188625
+          },
+          {
+            "mentioned_aspect_count": 3,
+            "review_count": 28167,
+            "proportion": 0.3159683661450446
+          },
+          {
+            "mentioned_aspect_count": 4,
+            "review_count": 13591,
+            "proportion": 0.1524594761343878
+          },
+          {
+            "mentioned_aspect_count": 5,
+            "review_count": 18672,
+            "proportion": 0.2094565034494363
+          }
+        ]
+      }
+    }
+  }
+}
