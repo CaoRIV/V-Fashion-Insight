@@ -124,3 +124,24 @@ and split fingerprints.
 
 Use `--help` to override the dataset, revision, cache directory, or metadata
 path. Add `--force-redownload` only when cached content must be refreshed.
+
+## Validate the Raw Dataset
+
+Validate the exact revision recorded by the download metadata:
+
+```powershell
+.\.venv\Scripts\vfi-validate-data.exe
+```
+
+The validator reads from the local Hugging Face cache by default and checks:
+
+- Required source columns and data types.
+- Null or empty review text.
+- Null, non-integer, and out-of-range aspect labels.
+- Fully duplicated rows and repeated review text.
+
+The machine-readable report is written to
+`reports/metrics/data_validation.json`. Exit code `0` means the dataset passed,
+`1` means data-quality errors were found, and `2` means validation could not
+run. Duplicate review text is reported as a warning because it must be grouped
+before the train/validation/test split.

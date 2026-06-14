@@ -1,0 +1,189 @@
+{
+  "status": "failed",
+  "valid": false,
+  "validated_at_utc": "2026-06-14T14:58:58.594567+00:00",
+  "source": {
+    "metadata_path": "data/raw/metadata.json",
+    "dataset_name": "vinhplaykennen/FashionReviews",
+    "config_name": null,
+    "resolved_revision": "60abb1cef934cb248b88a2ce4c99bb1ea3129c92",
+    "cache_dir": "data/raw/huggingface",
+    "downloaded_at_utc": "2026-06-14T14:35:16.059266+00:00"
+  },
+  "contract": {
+    "required_columns": [
+      "STT",
+      "Nội dung review",
+      "Chất liệu",
+      "Kiểu dáng",
+      "Kích cỡ",
+      "Giá cả",
+      "Dịch vụ"
+    ],
+    "id_column": "STT",
+    "text_column": "Nội dung review",
+    "label_columns": [
+      "Chất liệu",
+      "Kiểu dáng",
+      "Kích cỡ",
+      "Giá cả",
+      "Dịch vụ"
+    ],
+    "valid_labels": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "summary": {
+    "split_count": 1,
+    "total_rows": 89145,
+    "error_count": 5,
+    "warning_count": 1
+  },
+  "splits": {
+    "train": {
+      "num_rows": 89145,
+      "column_names": [
+        "STT",
+        "Nội dung review",
+        "Chất liệu",
+        "Kiểu dáng",
+        "Kích cỡ",
+        "Giá cả",
+        "Dịch vụ"
+      ],
+      "dtypes": {
+        "STT": "int64",
+        "Nội dung review": "str",
+        "Chất liệu": "float64",
+        "Kiểu dáng": "float64",
+        "Kích cỡ": "float64",
+        "Giá cả": "float64",
+        "Dịch vụ": "float64"
+      },
+      "fingerprint": "069278ac005d656e",
+      "error_count": 5,
+      "warning_count": 1
+    }
+  },
+  "issues": [
+    {
+      "code": "null_label",
+      "severity": "error",
+      "split": "train",
+      "message": "Aspect labels must not be null.",
+      "column": "Chất liệu",
+      "count": 6,
+      "sample_rows": [
+        2376,
+        12166,
+        40204,
+        40450,
+        64783,
+        84269
+      ]
+    },
+    {
+      "code": "null_label",
+      "severity": "error",
+      "split": "train",
+      "message": "Aspect labels must not be null.",
+      "column": "Kiểu dáng",
+      "count": 18,
+      "sample_rows": [
+        2293,
+        4994,
+        8355,
+        9175,
+        23087,
+        24746,
+        28939,
+        42856,
+        43473,
+        49892
+      ]
+    },
+    {
+      "code": "null_label",
+      "severity": "error",
+      "split": "train",
+      "message": "Aspect labels must not be null.",
+      "column": "Kích cỡ",
+      "count": 12,
+      "sample_rows": [
+        4915,
+        10748,
+        30880,
+        42253,
+        46171,
+        52001,
+        55618,
+        65691,
+        70740,
+        75946
+      ]
+    },
+    {
+      "code": "null_label",
+      "severity": "error",
+      "split": "train",
+      "message": "Aspect labels must not be null.",
+      "column": "Giá cả",
+      "count": 13,
+      "sample_rows": [
+        12420,
+        16784,
+        33004,
+        35253,
+        35536,
+        45256,
+        59562,
+        62768,
+        63557,
+        71276
+      ]
+    },
+    {
+      "code": "null_label",
+      "severity": "error",
+      "split": "train",
+      "message": "Aspect labels must not be null.",
+      "column": "Dịch vụ",
+      "count": 21,
+      "sample_rows": [
+        796,
+        6028,
+        6093,
+        7306,
+        11210,
+        13105,
+        17165,
+        22107,
+        23592,
+        31000
+      ]
+    },
+    {
+      "code": "duplicate_review_text",
+      "severity": "warning",
+      "split": "train",
+      "message": "Repeated review text was detected and must be grouped before splitting.",
+      "column": "Nội dung review",
+      "count": 195,
+      "sample_rows": [
+        65,
+        391,
+        770,
+        842,
+        960,
+        1039,
+        1171,
+        1410,
+        1485,
+        1899
+      ]
+    }
+  ]
+}
