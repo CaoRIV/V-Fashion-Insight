@@ -42,7 +42,7 @@ workflow.md
 # Logs and temporary files
 *.log
 logs/
-tmp/
+tmp/5
 temp/
 
 # Downloaded and processed data

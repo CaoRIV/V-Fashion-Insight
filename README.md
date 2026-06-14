@@ -102,3 +102,25 @@ Phase 0 establishes:
 - A pytest test suite.
 
 Dataset download and validation begin in Phase 1.
+
+## Download the Dataset
+
+Download the default FashionReviews dataset and write reproducibility metadata:
+
+```powershell
+.\.venv\Scripts\vfi-download-data.exe
+```
+
+Equivalent module command:
+
+```powershell
+.\.venv\Scripts\python.exe -m v_fashion_insight.data.download
+```
+
+The command resolves `main` to an immutable Hugging Face commit SHA before
+loading the dataset. Cached data is stored under `data/raw/huggingface/`, and
+`data/raw/metadata.json` records the resolved revision, split sizes, schema,
+and split fingerprints.
+
+Use `--help` to override the dataset, revision, cache directory, or metadata
+path. Add `--force-redownload` only when cached content must be refreshed.

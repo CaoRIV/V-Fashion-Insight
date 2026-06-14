@@ -1,0 +1,55 @@
+{
+  "dataset_name": "vinhplaykennen/FashionReviews",
+  "config_name": null,
+  "requested_revision": "main",
+  "resolved_revision": "60abb1cef934cb248b88a2ce4c99bb1ea3129c92",
+  "downloaded_at_utc": "2026-06-14T14:35:16.059266+00:00",
+  "cache_dir": "data/raw/huggingface",
+  "datasets_version": "4.8.5",
+  "total_rows": 89145,
+  "splits": {
+    "train": {
+      "num_rows": 89145,
+      "column_names": [
+        "STT",
+        "Nội dung review",
+        "Chất liệu",
+        "Kiểu dáng",
+        "Kích cỡ",
+        "Giá cả",
+        "Dịch vụ"
+      ],
+      "features": {
+        "STT": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "Nội dung review": {
+          "dtype": "large_string",
+          "_type": "Value"
+        },
+        "Chất liệu": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "Kiểu dáng": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "Kích cỡ": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "Giá cả": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "Dịch vụ": {
+          "dtype": "float64",
+          "_type": "Value"
+        }
+      },
+      "fingerprint": "069278ac005d656e"
+    }
+  }
+}

@@ -18,6 +18,9 @@ dependencies = [
     "seaborn>=0.13,<1",
 ]
 
+[project.scripts]
+vfi-download-data = "v_fashion_insight.data.download:main"
+
 [project.optional-dependencies]
 dev = [
     "pytest>=8,<10",
