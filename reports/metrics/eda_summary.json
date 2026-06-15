@@ -1,0 +1,759 @@
+{
+  "dataset": {
+    "name": "vinhplaykennen/FashionReviews",
+    "revision": "60abb1cef934cb248b88a2ce4c99bb1ea3129c92",
+    "split": "train",
+    "row_count": 89145,
+    "fingerprint": "069278ac005d656e"
+  },
+  "schema": [
+    {
+      "column": "STT",
+      "dtype": "int64",
+      "definition": "Source review identifier."
+    },
+    {
+      "column": "Nội dung review",
+      "dtype": "str",
+      "definition": "Vietnamese fashion-review text."
+    },
+    {
+      "column": "Chất liệu",
+      "dtype": "float64",
+      "definition": "Material aspect label: 0=not mentioned, 1=negative, 2=neutral, 3=positive."
+    },
+    {
+      "column": "Kiểu dáng",
+      "dtype": "float64",
+      "definition": "Design aspect label: 0=not mentioned, 1=negative, 2=neutral, 3=positive."
+    },
+    {
+      "column": "Kích cỡ",
+      "dtype": "float64",
+      "definition": "Size aspect label: 0=not mentioned, 1=negative, 2=neutral, 3=positive."
+    },
+    {
+      "column": "Giá cả",
+      "dtype": "float64",
+      "definition": "Price aspect label: 0=not mentioned, 1=negative, 2=neutral, 3=positive."
+    },
+    {
+      "column": "Dịch vụ",
+      "dtype": "float64",
+      "definition": "Service aspect label: 0=not mentioned, 1=negative, 2=neutral, 3=positive."
+    }
+  ],
+  "label_mapping": {
+    "0": "not_mentioned",
+    "1": "negative",
+    "2": "neutral",
+    "3": "positive"
+  },
+  "quality": {
+    "validation_status": "failed",
+    "null_review_count": 0,
+    "empty_review_count": 0,
+    "null_label_cell_count": 70,
+    "null_labels_by_column": {
+      "Chất liệu": 6,
+      "Kiểu dáng": 18,
+      "Kích cỡ": 12,
+      "Giá cả": 13,
+      "Dịch vụ": 21
+    },
+    "invalid_label_count": 0,
+    "source_records_modified": false
+  },
+  "labels": {
+    "aspects": [
+      {
+        "aspect": "material",
+        "source_column": "Chất liệu",
+        "missing_count": 6,
+        "mentioned_count": 55541,
+        "mentioned_proportion": 0.623041112793763,
+        "dominant_label": 0,
+        "dominant_label_name": "not_mentioned",
+        "dominant_label_count": 33598,
+        "largest_to_smallest_class_ratio": 2.3772730488926626,
+        "labels": [
+          {
+            "label": 0,
+            "name": "not_mentioned",
+            "count": 33598,
+            "proportion": 0.37689158113186383,
+            "proportion_among_valid": 0.3769169499321285
+          },
+          {
+            "label": 1,
+            "name": "negative",
+            "count": 17545,
+            "proportion": 0.19681417914633462,
+            "proportion_among_valid": 0.19682742682776339
+          },
+          {
+            "label": 2,
+            "name": "neutral",
+            "count": 14133,
+            "proportion": 0.1585394581861013,
+            "proportion_among_valid": 0.1585501295729142
+          },
+          {
+            "label": 3,
+            "name": "positive",
+            "count": 23863,
+            "proportion": 0.26768747546132704,
+            "proportion_among_valid": 0.26770549366719393
+          }
+        ]
+      },
+      {
+        "aspect": "design",
+        "source_column": "Kiểu dáng",
+        "missing_count": 18,
+        "mentioned_count": 59131,
+        "mentioned_proportion": 0.6633125806270682,
+        "dominant_label": 0,
+        "dominant_label_name": "not_mentioned",
+        "dominant_label_count": 29996,
+        "largest_to_smallest_class_ratio": 1.8952423074492954,
+        "labels": [
+          {
+            "label": 0,
+            "name": "not_mentioned",
+            "count": 29996,
+            "proportion": 0.3364855011498121,
+            "proportion_among_valid": 0.3365534574259203
+          },
+          {
+            "label": 1,
+            "name": "negative",
+            "count": 17711,
+            "proportion": 0.19867631387066015,
+            "proportion_among_valid": 0.1987164383407946
+          },
+          {
+            "label": 2,
+            "name": "neutral",
+            "count": 15827,
+            "proportion": 0.17754220651747155,
+            "proportion_among_valid": 0.17757806276436994
+          },
+          {
+            "label": 3,
+            "name": "positive",
+            "count": 25593,
+            "proportion": 0.2870940602389366,
+            "proportion_among_valid": 0.28715204146891515
+          }
+        ]
+      },
+      {
+        "aspect": "size",
+        "source_column": "Kích cỡ",
+        "missing_count": 12,
+        "mentioned_count": 60871,
+        "mentioned_proportion": 0.6828313421952998,
+        "dominant_label": 0,
+        "dominant_label_name": "not_mentioned",
+        "dominant_label_count": 28262,
+        "largest_to_smallest_class_ratio": 2.3687871930265696,
+        "labels": [
+          {
+            "label": 0,
+            "name": "not_mentioned",
+            "count": 28262,
+            "proportion": 0.3170340456559538,
+            "proportion_among_valid": 0.31707672803563214
+          },
+          {
+            "label": 1,
+            "name": "negative",
+            "count": 22058,
+            "proportion": 0.24743956475405238,
+            "proportion_among_valid": 0.24747287760986392
+          },
+          {
+            "label": 2,
+            "name": "neutral",
+            "count": 11931,
+            "proportion": 0.13383812889113242,
+            "proportion_among_valid": 0.1338561475547777
+          },
+          {
+            "label": 3,
+            "name": "positive",
+            "count": 26882,
+            "proportion": 0.30155364855011496,
+            "proportion_among_valid": 0.30159424679972624
+          }
+        ]
+      },
+      {
+        "aspect": "price",
+        "source_column": "Giá cả",
+        "missing_count": 13,
+        "mentioned_count": 48228,
+        "mentioned_proportion": 0.5410062258118795,
+        "dominant_label": 0,
+        "dominant_label_name": "not_mentioned",
+        "dominant_label_count": 40904,
+        "largest_to_smallest_class_ratio": 3.303238310587095,
+        "labels": [
+          {
+            "label": 0,
+            "name": "not_mentioned",
+            "count": 40904,
+            "proportion": 0.45884794436031184,
+            "proportion_among_valid": 0.4589148678364673
+          },
+          {
+            "label": 1,
+            "name": "negative",
+            "count": 12383,
+            "proportion": 0.13890851982724775,
+            "proportion_among_valid": 0.1389287797872818
+          },
+          {
+            "label": 2,
+            "name": "neutral",
+            "count": 16126,
+            "proportion": 0.18089629255706993,
+            "proportion_among_valid": 0.18092267647982768
+          },
+          {
+            "label": 3,
+            "name": "positive",
+            "count": 19719,
+            "proportion": 0.22120141342756183,
+            "proportion_among_valid": 0.2212336758964233
+          }
+        ]
+      },
+      {
+        "aspect": "service",
+        "source_column": "Dịch vụ",
+        "missing_count": 21,
+        "mentioned_count": 55897,
+        "mentioned_proportion": 0.627034606539907,
+        "dominant_label": 0,
+        "dominant_label_name": "not_mentioned",
+        "dominant_label_count": 33227,
+        "largest_to_smallest_class_ratio": 2.88328705310656,
+        "labels": [
+          {
+            "label": 0,
+            "name": "not_mentioned",
+            "count": 33227,
+            "proportion": 0.37272982219978684,
+            "proportion_among_valid": 0.3728176473228311
+          },
+          {
+            "label": 1,
+            "name": "negative",
+            "count": 17332,
+            "proportion": 0.1944248135060856,
+            "proportion_among_valid": 0.19447062519635563
+          },
+          {
+            "label": 2,
+            "name": "neutral",
+            "count": 11524,
+            "proportion": 0.1292725335128162,
+            "proportion_among_valid": 0.12930299358197567
+          },
+          {
+            "label": 3,
+            "name": "positive",
+            "count": 27041,
+            "proportion": 0.3033372595210051,
+            "proportion_among_valid": 0.3034087338988376
+          }
+        ]
+      }
+    ],
+    "mean_mentioned_aspects_per_review": 3.1372258679679175,
+    "mentioned_aspect_distribution": [
+      {
+        "mentioned_aspect_count": 0,
+        "review_count": 112,
+        "proportion": 0.0012563800549666275
+      },
+      {
+        "mentioned_aspect_count": 1,
+        "review_count": 9763,
+        "proportion": 0.10951820068427842
+      },
+      {
+        "mentioned_aspect_count": 2,
+        "review_count": 18840,
+        "proportion": 0.21134107353188625
+      },
+      {
+        "mentioned_aspect_count": 3,
+        "review_count": 28167,
+        "proportion": 0.3159683661450446
+      },
+      {
+        "mentioned_aspect_count": 4,
+        "review_count": 13591,
+        "proportion": 0.1524594761343878
+      },
+      {
+        "mentioned_aspect_count": 5,
+        "review_count": 18672,
+        "proportion": 0.2094565034494363
+      }
+    ]
+  },
+  "text": {
+    "lengths": {
+      "characters": {
+        "minimum": 3,
+        "maximum": 706,
+        "mean": 192.06621795950417,
+        "standard_deviation": 104.44035891588743,
+        "percentiles": {
+          "p00": 3.0,
+          "p01": 43.0,
+          "p05": 65.0,
+          "p25": 121.0,
+          "p50": 175.0,
+          "p75": 235.0,
+          "p90": 316.0,
+          "p95": 441.0,
+          "p99": 526.0,
+          "p100": 706.0
+        },
+        "iqr": 114.0,
+        "lower_fence": 0.0,
+        "upper_fence": 406.0,
+        "lower_outlier_count": 0,
+        "upper_outlier_count": 5523
+      },
+      "whitespace_tokens": {
+        "minimum": 1,
+        "maximum": 161,
+        "mean": 43.10114981210388,
+        "standard_deviation": 23.67910742072271,
+        "percentiles": {
+          "p00": 1.0,
+          "p01": 10.0,
+          "p05": 15.0,
+          "p25": 27.0,
+          "p50": 39.0,
+          "p75": 52.0,
+          "p90": 71.0,
+          "p95": 100.0,
+          "p99": 120.0,
+          "p100": 161.0
+        },
+        "iqr": 25.0,
+        "lower_fence": 0.0,
+        "upper_fence": 89.5,
+        "lower_outlier_count": 0,
+        "upper_outlier_count": 5936
+      },
+      "lines": {
+        "minimum": 1,
+        "maximum": 13,
+        "mean": 1.0340456559537832,
+        "standard_deviation": 0.34007438213630026,
+        "percentiles": {
+          "p00": 1.0,
+          "p01": 1.0,
+          "p05": 1.0,
+          "p25": 1.0,
+          "p50": 1.0,
+          "p75": 1.0,
+          "p90": 1.0,
+          "p95": 1.0,
+          "p99": 3.0,
+          "p100": 13.0
+        },
+        "iqr": 0.0,
+        "lower_fence": 1.0,
+        "upper_fence": 1.0,
+        "lower_outlier_count": 0,
+        "upper_outlier_count": 1249
+      }
+    },
+    "threshold_counts": {
+      "characters_lte_10": 2,
+      "tokens_lte_3": 3,
+      "characters_gte_p99": 894,
+      "tokens_gte_p99": 896
+    },
+    "patterns": {
+      "url": {
+        "review_count": 0,
+        "review_proportion": 0.0,
+        "occurrence_count": 0
+      },
+      "emoji_like": {
+        "review_count": 0,
+        "review_proportion": 0.0,
+        "occurrence_count": 0
+      },
+      "tab": {
+        "review_count": 0,
+        "review_proportion": 0.0,
+        "occurrence_count": 0
+      },
+      "line_break": {
+        "review_count": 1249,
+        "review_proportion": 0.014010881148690335,
+        "occurrence_count": 3035
+      },
+      "repeated_whitespace": {
+        "review_count": 4,
+        "review_proportion": 4.487071624880812e-05,
+        "occurrence_count": 4
+      },
+      "non_breaking_space": {
+        "review_count": 0,
+        "review_proportion": 0.0,
+        "occurrence_count": 0
+      },
+      "zero_width_character": {
+        "review_count": 2,
+        "review_proportion": 2.243535812440406e-05,
+        "occurrence_count": 4
+      },
+      "punctuation_character": {
+        "review_count": 88450,
+        "review_proportion": 0.9922037130517696,
+        "occurrence_count": 516672
+      },
+      "repeated_punctuation": {
+        "review_count": 3180,
+        "review_proportion": 0.03567221941780246,
+        "occurrence_count": 4126
+      },
+      "digit_character": {
+        "review_count": 17249,
+        "review_proportion": 0.1934937461439228,
+        "occurrence_count": 61328
+      }
+    },
+    "product_code_like_review_count": 1472
+  },
+  "duplicates": {
+    "exact": {
+      "unique_count": 89010,
+      "duplicate_group_count": 60,
+      "duplicate_member_count": 195,
+      "redundant_row_count": 135,
+      "normalization_merged_group_count": 0,
+      "label_conflict_group_count": 24,
+      "mixed_missing_group_count": 1,
+      "consistent_group_count": 35
+    },
+    "near": {
+      "verified_pair_count": 1021,
+      "high_confidence_pair_count": 767,
+      "needs_review_pair_count": 254,
+      "high_confidence_cluster_count": 68,
+      "clustered_review_count": 296,
+      "label_conflict_pair_count": 184,
+      "label_conflict_cluster_count": 21
+    },
+    "source_group_information_present": false
+  },
+  "samples": {
+    "aspect_label_samples": [
+      {
+        "aspect": "material",
+        "label": 0,
+        "label_name": "not_mentioned",
+        "review_id": 29,
+        "character_count": 133,
+        "preview": "Giao hàng nhanh, mình đã mua nhiều lần tại shop rồi. Đặt hôm qua mà nay có liền, hàng đẹp mà giá thành lại hợp lý. Ủng hộ shop 5 sao."
+      },
+      {
+        "aspect": "material",
+        "label": 1,
+        "label_name": "negative",
+        "review_id": 1180,
+        "character_count": 186,
+        "preview": "Áo len chất liệu hơi xù lông sau vài lần mặc. Kiểu dáng áo khoác bình thường. Kích cỡ áo khoác vừa vặn. Giá cả sản phẩm này khá cao so với chất lượng. Dịch vụ giao hàng của shop..."
+      },
+      {
+        "aspect": "material",
+        "label": 2,
+        "label_name": "neutral",
+        "review_id": 1430,
+        "character_count": 228,
+        "preview": "Vải quần kaki này hơi cứng, không được mềm mại như mong đợi. Kiểu dáng quần ống đứng này khá cơ bản. Kích cỡ lại rộng hơn bình thường. Giá thành sản phẩm ở mức trung bình. Shop..."
+      },
+      {
+        "aspect": "material",
+        "label": 3,
+        "label_name": "positive",
+        "review_id": 878,
+        "character_count": 193,
+        "preview": "Áo có chất liệu vải tốt, sờ vào mềm mịn. Thiết kế cổ áo không được ưng ý cho lắm. Kích cỡ thì đúng như mô tả, không cần phải chỉnh sửa gì. Giá cả hơi nhỉnh một chút, nhưng shop..."
+      },
+      {
+        "aspect": "design",
+        "label": 0,
+        "label_name": "not_mentioned",
+        "review_id": 169,
+        "character_count": 132,
+        "preview": "Mình mua size M mà mặc bị rộng vai với dài tay quá. Giá tiền thì khá là cao. Phải khen shipper giao hàng rất nhanh và chuyên nghiệp."
+      },
+      {
+        "aspect": "design",
+        "label": 1,
+        "label_name": "negative",
+        "review_id": 250,
+        "character_count": 189,
+        "preview": "Đi công viên nước mà một phen hú vía vì đồ bơi không có lớp lót, khi ướt là lộ hết phần nhạy cảm của con gái mình. May mà mình mua mẫu cũ có hình Sonic che chắn bớt, chứ không t..."
+      },
+      {
+        "aspect": "design",
+        "label": 2,
+        "label_name": "neutral",
+        "review_id": 617,
+        "character_count": 206,
+        "preview": "Chất vải áo sơ mi hơi nhăn, cần là ủi kỹ trước khi mặc. Kiểu dáng áo không có điểm nhấn đặc biệt. Kích cỡ áo vừa vặn thoải mái. Giá cả sản phẩm ở tầm trung, dịch vụ giao hàng nh..."
+      },
+      {
+        "aspect": "design",
+        "label": 3,
+        "label_name": "positive",
+        "review_id": 246,
+        "character_count": 196,
+        "preview": "Vải cotton gauze mềm nhất nhưng không hề mỏng manh. Dáng rộng rãi nhưng tay áo và cổ áo làm nó tôn dáng. Màu xanh tuyệt đẹp khi nhìn trực tiếp. Yêu chiếc váy này đến nỗi sẽ quay..."
+      },
+      {
+        "aspect": "size",
+        "label": 0,
+        "label_name": "not_mentioned",
+        "review_id": 812,
+        "character_count": 120,
+        "preview": "Giao hàng nhanh, đóng gói cẩn thận. Quần mới mở ra siêu thơm, chất vải dày dặn. Sản phẩm rất đẹp, mọi người nên mua nhé."
+      },
+      {
+        "aspect": "size",
+        "label": 1,
+        "label_name": "negative",
+        "review_id": 182,
+        "character_count": 184,
+        "preview": "Chất liệu vải này khá ổn, không quá mềm cũng không quá thô. Kích cỡ hơi rộng so với mô tả. Kiểu dáng đơn giản, mặc hàng ngày được. Giá cả ở mức chấp nhận được, shop giao hàng đú..."
+      },
+      {
+        "aspect": "size",
+        "label": 2,
+        "label_name": "neutral",
+        "review_id": 1454,
+        "character_count": 220,
+        "preview": "Chất liệu vải được, không quá xuất sắc nhưng cũng không tệ. Kiểu dáng cơ bản, không có gì nổi bật nhưng dễ mặc. Mình mặc size S thấy vừa vặn, không cần sửa. Săn được đợt sale nê..."
+      },
+      {
+        "aspect": "size",
+        "label": 3,
+        "label_name": "positive",
+        "review_id": 558,
+        "character_count": 190,
+        "preview": "Chất liệu áo thun không quá dày cũng không quá mỏng, mặc mùa hè được. Kiểu dáng đơn giản, không có điểm nhấn. Kích cỡ thì vừa vặn thoải mái. Giá tiền lại hơi cao. Shop giao hàng..."
+      },
+      {
+        "aspect": "price",
+        "label": 0,
+        "label_name": "not_mentioned",
+        "review_id": 1898,
+        "character_count": 152,
+        "preview": "Chất lượng không tốt lắm. Tôi mua từ tháng 5/2018 mà đến tháng 7/2018 một chiếc nơ đã bị rơi ra. Ngoài vấn đề đó thì con gái tôi rất thích đôi giày này."
+      },
+      {
+        "aspect": "price",
+        "label": 1,
+        "label_name": "negative",
+        "review_id": 881,
+        "character_count": 193,
+        "preview": "Chất liệu tệ kinh khủng, trông không giống hình chút nào. Vải này làm mình nhớ đến quần áo búp bê Barbie, thậm chí mình chắc là Barbie cũng thấy xấu hổ khi mặc nó. Mỏng dính và..."
+      },
+      {
+        "aspect": "price",
+        "label": 2,
+        "label_name": "neutral",
+        "review_id": 429,
+        "character_count": 187,
+        "preview": "Vải bị xù lông chỉ sau vài lần giặt. Kiểu dáng áo khá đơn điệu, không có điểm nhấn. Kích cỡ lại rất vừa vặn với mình. Giá cả cũng hợp lý. Dịch vụ chăm sóc khách hàng của shop bì..."
+      },
+      {
+        "aspect": "price",
+        "label": 3,
+        "label_name": "positive",
+        "review_id": 404,
+        "character_count": 174,
+        "preview": "Mình mua lúc giảm giá. Màu xanh trên họa tiết chim rất đẹp và mình thích chi tiết ở tay áo. Hơi mỏng một chút, nhưng ổn nếu mặc với áo lót màu nude hoặc áo hai dây bên trong."
+      },
+      {
+        "aspect": "service",
+        "label": 0,
+        "label_name": "not_mentioned",
+        "review_id": 404,
+        "character_count": 174,
+        "preview": "Mình mua lúc giảm giá. Màu xanh trên họa tiết chim rất đẹp và mình thích chi tiết ở tay áo. Hơi mỏng một chút, nhưng ổn nếu mặc với áo lót màu nude hoặc áo hai dây bên trong."
+      },
+      {
+        "aspect": "service",
+        "label": 1,
+        "label_name": "negative",
+        "review_id": 414,
+        "character_count": 189,
+        "preview": "Áo này chất vải không co giãn nhiều. Kiểu dáng khá đơn điệu, không có điểm nhấn. Kích cỡ áo hơi ôm sát. Giá thì phải chăng, phù hợp với sinh viên. Dịch vụ tư vấn của shop hơi ch..."
+      },
+      {
+        "aspect": "service",
+        "label": 2,
+        "label_name": "neutral",
+        "review_id": 2822,
+        "character_count": 219,
+        "preview": "Kiểu dáng áo khá phổ biến, dễ phối đồ. Áo mình mặc hơi rộng phần vai một chút nhưng vẫn chấp nhận được. Tuy nhiên, mức giá cho chiếc áo này thực sự quá mắc so với giá trị. Shop..."
+      },
+      {
+        "aspect": "service",
+        "label": 3,
+        "label_name": "positive",
+        "review_id": 215,
+        "character_count": 149,
+        "preview": "Quần đặt size L tưởng rộng ai dè mặc vừa in. Giá hơi chát so với mặt bằng chung. Nhưng shop giao hàng hỏa tốc và tư vấn cực kỳ nhiệt tình, đáng tiền."
+      }
+    ],
+    "multi_aspect_mixed_sentiment_samples": [
+      {
+        "review_id": 7,
+        "mentioned_aspect_count": 5,
+        "distinct_sentiment_count": 3,
+        "labels": {
+          "material": 3,
+          "design": 2,
+          "size": 1,
+          "price": 3,
+          "service": 1
+        },
+        "preview": "Áo sơ mi chất liệu voan nhẹ nhàng, kiểu dáng truyền thống. Kích cỡ áo hơi ôm, không thoải mái lắm. Mức giá này khá hợp lý với chất lượng vải. Dịch vụ đổi trả hàng gặp chút trục..."
+      },
+      {
+        "review_id": 31,
+        "mentioned_aspect_count": 5,
+        "distinct_sentiment_count": 3,
+        "labels": {
+          "material": 1,
+          "design": 2,
+          "size": 3,
+          "price": 2,
+          "service": 3
+        },
+        "preview": "Vải kate mặc hơi nhăn và cần ủi thường xuyên. Kích cỡ áo vừa vặn, không quá rộng hay chật. Kiểu dáng đơn giản, dễ mặc. Giá cả sản phẩm ở mức trung bình, shop giao hàng khá nhanh."
+      },
+      {
+        "review_id": 42,
+        "mentioned_aspect_count": 5,
+        "distinct_sentiment_count": 3,
+        "labels": {
+          "material": 1,
+          "design": 2,
+          "size": 3,
+          "price": 1,
+          "service": 3
+        },
+        "preview": "Chất liệu vải không được như mô tả, hơi mỏng. Kiểu dáng áo chỉ ở mức bình thường, không có gì đặc biệt. Kích cỡ áo thì vừa vặn với người. Mức giá hơi cao so với chất lượng nhận..."
+      },
+      {
+        "review_id": 49,
+        "mentioned_aspect_count": 5,
+        "distinct_sentiment_count": 3,
+        "labels": {
+          "material": 1,
+          "design": 2,
+          "size": 2,
+          "price": 2,
+          "service": 3
+        },
+        "preview": "Vải áo thun khá mỏng, chắc chỉ mặc được vài lần. Kiểu dáng áo cơ bản, dễ phối đồ. Kích cỡ áo hơi rộng một chút so với mô tả. Giá cả thì chấp nhận được. Dịch vụ tư vấn của shop r..."
+      },
+      {
+        "review_id": 53,
+        "mentioned_aspect_count": 5,
+        "distinct_sentiment_count": 3,
+        "labels": {
+          "material": 2,
+          "design": 1,
+          "size": 3,
+          "price": 2,
+          "service": 1
+        },
+        "preview": "Chất vải không có gì đặc biệt nhưng cũng không tệ. Kiểu dáng váy có chi tiết may bị lệch. Kích cỡ váy đúng như mô tả. Giá cả tương đối phải chăng. Shop không phản hồi tin nhắn đ..."
+      }
+    ],
+    "product_code_like_review_count": 1472,
+    "product_code_like_samples": [
+      {
+        "review_id": 4,
+        "preview": "Tôi nghĩ cái này sẽ hợp với dáng người đồng hồ cát có vòng 1 lớn, hoặc dáng người nhỏ nhắn; nhưng với dáng người thể thao của tôi thì chiếc áo này không làm được gì cho tôi. Tôi..."
+      },
+      {
+        "review_id": 110,
+        "preview": "Shop có đủ size từ XL đến 5XL, giao hàng khá nhanh. Tuy nhiên, lần này mình thấy form hơi rộng hơn so với hai lần trước và vải có vẻ dễ phai màu khi giặt. Bù lại, dáng ống suông..."
+      },
+      {
+        "review_id": 150,
+        "preview": "Áo mỏng mát, co giãn tốt. Với người ít mặc sơ mi thì mua em này rất ổn. Cao 1m7 nặng trên 60kg, ai nặng cân hơn thì nên mua size 3XL."
+      },
+      {
+        "review_id": 168,
+        "preview": "Tôi mua bộ này để hóa trang Halloween. Áo mặc vừa vặn, chất vải tốt. Tuy nhiên, phần corset có màu hồng đậm hơn trong hình và các móc cài cứ bị tuột. Tôi đặt size 6XL (thường mặ..."
+      },
+      {
+        "review_id": 256,
+        "preview": "Tôi đã mua chiếc áo này với họa tiết hoa văn màu xanh cỡ nhỏ. Tôi thường mặc size S hoặc M, vai rộng 36C. Size S mặc vừa. Tuy nhiên, tôi có một vài vấn đề với chiếc áo này: 1) H..."
+      },
+      {
+        "review_id": 335,
+        "preview": "Chất lượng sản phẩm ổn, màu đen hơi bạc nhẹ chứ không phải đen tuyền. Quần co giãn nhẹ, mặc thoải mái (mình 74kg mặc 2XL), đường kim mũi chỉ tốt. Độ bền thì cần thời gian mới biết."
+      },
+      {
+        "review_id": 393,
+        "preview": "Thất vọng quá, form rất nhỏ. Tôi mặc gần size 18, ngực 36DD, cao 1m70 mà tay áo và phần ngực vẫn rất chật. Form dáng kỳ cục, tôi sẽ trả hàng ngay lập tức."
+      },
+      {
+        "review_id": 445,
+        "preview": "Chiếc váy ôm sát kẻ sọc vừa vặn rất tốt cho đến khi tôi quay lại. Phần eo, nơi các sọc quấn quanh eo, có thêm vải và không nằm phẳng phiu. Tôi cao 163cm, nặng 54kg, vòng ngực 32..."
+      },
+      {
+        "review_id": 484,
+        "preview": "Cháu tôi khá gầy so với trẻ 3 tuổi nhưng tôi đặt size 4T mà mặc vẫn không ổn. Đừng lãng phí tiền vào bộ này. Phần đáy quần bó chặt không mặc nổi trong khi cổ áo lại rộng thùng t..."
+      },
+      {
+        "review_id": 535,
+        "preview": "Đúng kích cỡ đã mua, hài lòng với chất liệu nhưng màu sắc giống xanh than hơn. Hai lần mua cùng một màu nhưng đợt trước màu xanh hơn, size này cũng to hơn, giống như 2XL vậy."
+      }
+    ]
+  },
+  "recommended_policy": {
+    "text_cleaning": [
+      "Normalize Unicode to NFKC and collapse whitespace in the processed text while retaining the untouched source text.",
+      "Preserve Vietnamese diacritics, negation, punctuation, digits, emoji, and product-code-like tokens unless later experiments demonstrate that a signal is harmful.",
+      "Do not remove length outliers automatically; inspect them and use model truncation based on measured percentiles."
+    ],
+    "missing_labels": "Never replace missing labels with label 0. For independent aspect models, exclude a row only from the affected aspect; for a future multi-head model, use a masked loss or an explicitly documented complete-case policy.",
+    "grouping": {
+      "split_grouping": "Assign one group_id to every connected high-confidence cluster and keep all members in the same data split.",
+      "exact_duplicates": "Merge high-confidence cluster membership with exact duplicate groups before splitting.",
+      "label_conflicts": "Keep conflicting members grouped for splitting, but do not deduplicate, overwrite labels, or use majority labels without manual adjudication.",
+      "needs_review": "Do not auto-group needs-review pairs. Review them manually or leave them as independent groups.",
+      "unmatched_reviews": "Assign each unmatched review its own stable group_id."
+    },
+    "split_strategy": "Build a stable group key from the union of exact-duplicate groups and connected high-confidence near-duplicate clusters. Assign unmatched reviews individual stable group IDs, then perform a deterministic grouped split with multilabel distribution checks. Never allow a group to cross train, validation, or test boundaries.",
+    "label_conflicts": "Keep conflicting duplicate members in one split, retain all original labels, and require manual adjudication before any deduplication or label overwrite."
+  },
+  "limitations": [
+    "Near-duplicate LSH is a scalable heuristic and does not guarantee recall of every semantic paraphrase.",
+    "Product-code detection is a conservative uppercase letter-and-digit heuristic, not a domain lexicon.",
+    "The source dataset provides one train split and no original-review group identifier."
+  ]
+}

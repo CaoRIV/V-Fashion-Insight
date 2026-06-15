@@ -235,3 +235,25 @@ Outputs:
 LSH is a scalable candidate generator and does not guarantee that every
 semantic paraphrase will be found. Candidate groups are analysis artifacts and
 do not modify the dataset.
+
+## Build the Phase 1 EDA Report
+
+Generate the consolidated report, summary, and charts from the pinned local
+dataset and the preceding Phase 1 analysis artifacts:
+
+```powershell
+.\.venv\Scripts\vfi-build-eda.exe
+```
+
+Outputs:
+
+- `notebooks/01_eda.ipynb`
+- `reports/eda_report.md`
+- `reports/metrics/eda_summary.json`
+- `reports/figures/label_distribution.png`
+- `reports/figures/review_length_distribution.png`
+- `reports/figures/duplicate_summary.png`
+
+The notebook calls the same reusable source function as the CLI and stores no
+dataset rows in its outputs. Open it in a Jupyter-compatible editor and run all
+cells from a fresh kernel after the CLI and test suite pass.
