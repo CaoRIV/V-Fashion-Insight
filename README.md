@@ -205,3 +205,33 @@ The analyzer writes:
 Reports distinguish raw duplicates from normalized duplicates and identify
 groups with conflicting aspect labels or mixed missing labels. Group IDs are
 stable SHA-256 hashes of normalized text.
+
+## Analyze Near-Duplicates and Augmentation
+
+Find likely augmented review variants with scalable lexical similarity:
+
+```powershell
+.\.venv\Scripts\vfi-analyze-near-duplicates.exe
+```
+
+For a faster deterministic calibration run:
+
+```powershell
+.\.venv\Scripts\vfi-analyze-near-duplicates.exe --sample-size 5000
+```
+
+The analyzer uses 64-bit SimHash blocking over word unigrams and bigrams,
+followed by character trigram Jaccard and sequence similarity verification.
+Exact normalized duplicates are excluded because they are handled by the exact
+duplicate task. Only high-confidence links form cluster candidates; lower
+confidence links are marked `needs_review`.
+
+Outputs:
+
+- `reports/metrics/near_duplicate_analysis.json`
+- `reports/metrics/near_duplicate_pairs.csv`
+- `reports/metrics/near_duplicate_clusters.csv`
+
+LSH is a scalable candidate generator and does not guarantee that every
+semantic paraphrase will be found. Candidate groups are analysis artifacts and
+do not modify the dataset.
