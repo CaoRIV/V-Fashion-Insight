@@ -9,6 +9,7 @@ import json
 import re
 import unicodedata
 from collections.abc import Mapping, Sequence
+from numbers import Integral, Real
 from pathlib import Path
 from typing import Any
 
@@ -52,9 +53,9 @@ def duplicate_group_id(normalized_text: str) -> str:
 def _serialize_identifier(value: Any) -> int | str | None:
     if pd.isna(value):
         return None
-    if isinstance(value, int):
-        return value
-    if isinstance(value, float) and value.is_integer():
+    if isinstance(value, Integral):
+        return int(value)
+    if isinstance(value, Real) and float(value).is_integer():
         return int(value)
     return str(value)
 

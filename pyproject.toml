@@ -20,6 +20,7 @@ dependencies = [
 
 [project.scripts]
 vfi-analyze-duplicates = "v_fashion_insight.data.analyze_duplicates:main"
+vfi-analyze-near-duplicates = "v_fashion_insight.data.analyze_near_duplicates:main"
 vfi-download-data = "v_fashion_insight.data.download:main"
 vfi-profile-labels = "v_fashion_insight.data.profile_labels:main"
 vfi-profile-text = "v_fashion_insight.data.profile_text:main"
