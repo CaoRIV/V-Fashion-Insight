@@ -184,3 +184,24 @@ IQR outlier counts; short and long review counts; and observed URLs,
 emoji-like symbols, unusual whitespace, punctuation, and digits. Only review
 IDs and lengths are stored for the longest samples, not duplicated review
 text.
+
+## Analyze Exact Duplicates
+
+Group exact duplicates after conservative analysis-only normalization:
+
+```powershell
+.\.venv\Scripts\vfi-analyze-duplicates.exe
+```
+
+Normalization applies Unicode NFKC, case folding, zero-width character
+removal, and whitespace collapsing. Vietnamese diacritics, punctuation, and
+digits are preserved. The source dataset is not changed.
+
+The analyzer writes:
+
+- `reports/metrics/exact_duplicate_analysis.json`
+- `reports/metrics/exact_duplicate_groups.csv`
+
+Reports distinguish raw duplicates from normalized duplicates and identify
+groups with conflicting aspect labels or mixed missing labels. Group IDs are
+stable SHA-256 hashes of normalized text.

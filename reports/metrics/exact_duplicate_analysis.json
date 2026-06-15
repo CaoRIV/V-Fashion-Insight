@@ -1,0 +1,2954 @@
+{
+  "source": {
+    "metadata_path": "data/raw/metadata.json",
+    "dataset_name": "vinhplaykennen/FashionReviews",
+    "config_name": null,
+    "resolved_revision": "60abb1cef934cb248b88a2ce4c99bb1ea3129c92",
+    "cache_dir": "data/raw/huggingface",
+    "downloaded_at_utc": "2026-06-14T14:35:16.059266+00:00"
+  },
+  "normalization": {
+    "unicode_form": "NFKC",
+    "case": "casefold",
+    "whitespace": "collapse all Unicode whitespace to one space",
+    "zero_width_characters": "remove U+200B/U+200C/U+200D/U+FEFF",
+    "preserved": "Vietnamese diacritics, punctuation, and digits",
+    "scope": "analysis only; source reviews are not modified"
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_rows": 89145,
+      "fingerprint": "069278ac005d656e",
+      "raw_text": {
+        "unique_count": 89010,
+        "duplicate_group_count": 60,
+        "duplicate_member_count": 195,
+        "redundant_row_count": 135
+      },
+      "normalized_text": {
+        "unique_count": 89010,
+        "duplicate_group_count": 60,
+        "duplicate_member_count": 195,
+        "redundant_row_count": 135,
+        "normalization_merged_group_count": 0,
+        "label_conflict_group_count": 24,
+        "mixed_missing_group_count": 1,
+        "consistent_group_count": 35
+      },
+      "representative_groups": [
+        {
+          "group_id": "003c866871a57c9e974bef3b0ea26847c1ad9129c7a666589e7fac6b4de74a7e",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              2
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              2
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            24340,
+            58505
+          ],
+          "representative_preview": "size s nhưng mà thấy to lắm như size l, nói chung với giá tiền này thì cũng tốt"
+        },
+        {
+          "group_id": "00bf04822011c9123e93de56a813ad64648e8a15a3d3a1488d3cd1f8d0025c15",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            13798,
+            55869
+          ],
+          "representative_preview": "thời trang và sang trọng, ôm vừa vặn và thoải mái,"
+        },
+        {
+          "group_id": "07045de909e564bd17e717d54999874fc0504b63f9a634acaa4fd54dce0d4d3b",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            30492,
+            39026
+          ],
+          "representative_preview": "giá rẻ nhưng sản phẩm tốt. chắc là sẽ đặt 1 cái màu khác để thay đổi"
+        },
+        {
+          "group_id": "08b676c6dcedfe44d66b0e5c8774517a43161120732cf30b958d19df5715793c",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              3
+            ],
+            "Kích cỡ": [
+              2,
+              3
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            35234,
+            51456
+          ],
+          "representative_preview": "chất liệu mềm mại và bền đẹp, vừa vặn với mọi dáng người, ôm vừa vặn và thoải mái, thiết kế nút độc đáo,"
+        },
+        {
+          "group_id": "110703e98947325b7fa61a20949b63a5ef687eb2aa20ce25f315499a1a3ac100",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              2,
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            30890,
+            82178
+          ],
+          "representative_preview": "giá đó chất liệu vậy là tốt chứ không yêu cầu tốt hơn tốt"
+        },
+        {
+          "group_id": "194528425200bde499d2261ea2f59af45b5cc410193fec84f46038360e354416",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              3
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            21061,
+            57957
+          ],
+          "representative_preview": "quần jean baggy thời trang, chất liệu mềm mại và bền đẹp, vừa vặn với mọi dáng người, áo hơi mỏng"
+        },
+        {
+          "group_id": "1a998b75ddb141eb79247a8cf379621acc2312c5dbec1baa9454f9e2b76d0b19",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng",
+            "Giá cả",
+            "Dịch vụ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              1
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              1
+            ],
+            "Dịch vụ": [
+              0,
+              1
+            ]
+          },
+          "member_ids": [
+            9322,
+            73252
+          ],
+          "representative_preview": "cửa hàng bán đồ không tốt,treo đầu dê bán thịt chó, tôi mua màu hồng giao hàng sọc trắng đen"
+        },
+        {
+          "group_id": "2064d912331aaa487e3a69275fad4d5455a9e330dca7053f6f60bacf6f8c1811",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              3
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            48762,
+            49988
+          ],
+          "representative_preview": "chất liệu vải tốt lên form chuẩn giao hàng nhanh tốt hợp túi tiền"
+        },
+        {
+          "group_id": "38476dc89847f1f79731cc6ad106d5de5f207cb6a1f2e0fee201009df7c89f2a",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0,
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            44687,
+            55441
+          ],
+          "representative_preview": "đặt quần này giao quần kia, làm ăn kiểu này ai mà dám mua"
+        },
+        {
+          "group_id": "4ccfa76de336a102e03b27344d2f4f486d932eabd7d8559d0e844b828dc59af5",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            28568,
+            30977
+          ],
+          "representative_preview": "vừa rộng vừa bự vải mỏng nữa"
+        },
+        {
+          "group_id": "4f90bdc0e6cb714b3958985fbe08ec69ef36511037a261f3a94a179f5a71d7d0",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              2
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            55480,
+            64044
+          ],
+          "representative_preview": "hàng tốt lắm í mà vải hơi mỏng, thôi tiền nào của nấy"
+        },
+        {
+          "group_id": "522b628d642485e6b0a41b63f626e675c274cf57e76d9a3d14a3d72a5fb63ba3",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              2,
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            24244,
+            71997
+          ],
+          "representative_preview": "giá tốt, hàng đẹp 5 nhé"
+        },
+        {
+          "group_id": "744ff1188b08472633610fb6d9164bc2250355790ae8d2b07af3f3824bf3a04b",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              1
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            45702,
+            68281
+          ],
+          "representative_preview": "vừa đẹp không nhưng ảo mỏng, màu quần không như trong hình"
+        },
+        {
+          "group_id": "7c8f3d4a0beb956cd764f717dc7ed1b4df451ebfb57ca3f27323162dfbcff801",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              1
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            2721,
+            34902
+          ],
+          "representative_preview": "treo đầu dê bán thịt chó, sẽ không mua ở đây nữa"
+        },
+        {
+          "group_id": "8351a57930b1337c34e2389b0737f4b9a05f5d78d5378d4e067973c4ca9206ac",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            49729,
+            81766
+          ],
+          "representative_preview": "chất áo vải vô cùng mỏng tưởng tượng có thể nhìn xuyên qua được luôn ấy. đây chun thắt áo kém chất lượng và không giống như mô tả. cái này là mình đánh giá á..."
+        },
+        {
+          "group_id": "8532d02b3f27369a58154898f3d47642192edc53cad453d5cc029c9ea794d70f",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              2
+            ],
+            "Giá cả": [
+              2,
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            56538,
+            71093
+          ],
+          "representative_preview": "ổn vừa vặn 45 55kg đẹp. ổn trong tầm giá"
+        },
+        {
+          "group_id": "96af2e645ea5cc217f6be92bb7390d9a1ee14fbdfd47d700396adf07433da873",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              1
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            7465,
+            39865
+          ],
+          "representative_preview": "đầm về không giống hình gì hết trơn định treo đầu dê bán thịt chó hay sao á, không hài lòng chút nào hết"
+        },
+        {
+          "group_id": "9f09450298fc467d0e472dc027dd5eef5423fd15e61080ce35d96589db638e83",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kích cỡ",
+            "Giá cả",
+            "Dịch vụ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0,
+              2
+            ],
+            "Dịch vụ": [
+              0,
+              2
+            ]
+          },
+          "member_ids": [
+            62292,
+            64988
+          ],
+          "representative_preview": "ống quần rộng đóng gói sơ sài nhưng cũng ổn"
+        },
+        {
+          "group_id": "b4cb88021dcb1f0edfb54e91faf4d5817b5b36fd42aa17f219c1c51a7e231363",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              1
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0,
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            53760,
+            68321
+          ],
+          "representative_preview": "như hình , nhưng ống quần hơi rộng và dài . rất ưng nên mọi người có thể mua thử nhé"
+        },
+        {
+          "group_id": "bb00489aedec481d42459fa4a6902a2b2ded6fee5ec68687a1b34d0665c93b2c",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            2578,
+            77038
+          ],
+          "representative_preview": "chất liệu mềm mại và bền đẹp, ác vừa nhưng quần to"
+        }
+      ],
+      "groups": [
+        {
+          "group_id": "003c866871a57c9e974bef3b0ea26847c1ad9129c7a666589e7fac6b4de74a7e",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              2
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              2
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            24340,
+            58505
+          ],
+          "representative_preview": "size s nhưng mà thấy to lắm như size l, nói chung với giá tiền này thì cũng tốt"
+        },
+        {
+          "group_id": "00bf04822011c9123e93de56a813ad64648e8a15a3d3a1488d3cd1f8d0025c15",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            13798,
+            55869
+          ],
+          "representative_preview": "thời trang và sang trọng, ôm vừa vặn và thoải mái,"
+        },
+        {
+          "group_id": "07045de909e564bd17e717d54999874fc0504b63f9a634acaa4fd54dce0d4d3b",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            30492,
+            39026
+          ],
+          "representative_preview": "giá rẻ nhưng sản phẩm tốt. chắc là sẽ đặt 1 cái màu khác để thay đổi"
+        },
+        {
+          "group_id": "08b676c6dcedfe44d66b0e5c8774517a43161120732cf30b958d19df5715793c",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              3
+            ],
+            "Kích cỡ": [
+              2,
+              3
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            35234,
+            51456
+          ],
+          "representative_preview": "chất liệu mềm mại và bền đẹp, vừa vặn với mọi dáng người, ôm vừa vặn và thoải mái, thiết kế nút độc đáo,"
+        },
+        {
+          "group_id": "110703e98947325b7fa61a20949b63a5ef687eb2aa20ce25f315499a1a3ac100",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              2,
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            30890,
+            82178
+          ],
+          "representative_preview": "giá đó chất liệu vậy là tốt chứ không yêu cầu tốt hơn tốt"
+        },
+        {
+          "group_id": "194528425200bde499d2261ea2f59af45b5cc410193fec84f46038360e354416",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              3
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            21061,
+            57957
+          ],
+          "representative_preview": "quần jean baggy thời trang, chất liệu mềm mại và bền đẹp, vừa vặn với mọi dáng người, áo hơi mỏng"
+        },
+        {
+          "group_id": "1a998b75ddb141eb79247a8cf379621acc2312c5dbec1baa9454f9e2b76d0b19",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng",
+            "Giá cả",
+            "Dịch vụ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              1
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              1
+            ],
+            "Dịch vụ": [
+              0,
+              1
+            ]
+          },
+          "member_ids": [
+            9322,
+            73252
+          ],
+          "representative_preview": "cửa hàng bán đồ không tốt,treo đầu dê bán thịt chó, tôi mua màu hồng giao hàng sọc trắng đen"
+        },
+        {
+          "group_id": "2064d912331aaa487e3a69275fad4d5455a9e330dca7053f6f60bacf6f8c1811",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              3
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            48762,
+            49988
+          ],
+          "representative_preview": "chất liệu vải tốt lên form chuẩn giao hàng nhanh tốt hợp túi tiền"
+        },
+        {
+          "group_id": "38476dc89847f1f79731cc6ad106d5de5f207cb6a1f2e0fee201009df7c89f2a",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0,
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            44687,
+            55441
+          ],
+          "representative_preview": "đặt quần này giao quần kia, làm ăn kiểu này ai mà dám mua"
+        },
+        {
+          "group_id": "4ccfa76de336a102e03b27344d2f4f486d932eabd7d8559d0e844b828dc59af5",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            28568,
+            30977
+          ],
+          "representative_preview": "vừa rộng vừa bự vải mỏng nữa"
+        },
+        {
+          "group_id": "4f90bdc0e6cb714b3958985fbe08ec69ef36511037a261f3a94a179f5a71d7d0",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              2
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            55480,
+            64044
+          ],
+          "representative_preview": "hàng tốt lắm í mà vải hơi mỏng, thôi tiền nào của nấy"
+        },
+        {
+          "group_id": "522b628d642485e6b0a41b63f626e675c274cf57e76d9a3d14a3d72a5fb63ba3",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              2,
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            24244,
+            71997
+          ],
+          "representative_preview": "giá tốt, hàng đẹp 5 nhé"
+        },
+        {
+          "group_id": "744ff1188b08472633610fb6d9164bc2250355790ae8d2b07af3f3824bf3a04b",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              1
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            45702,
+            68281
+          ],
+          "representative_preview": "vừa đẹp không nhưng ảo mỏng, màu quần không như trong hình"
+        },
+        {
+          "group_id": "7c8f3d4a0beb956cd764f717dc7ed1b4df451ebfb57ca3f27323162dfbcff801",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              1
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            2721,
+            34902
+          ],
+          "representative_preview": "treo đầu dê bán thịt chó, sẽ không mua ở đây nữa"
+        },
+        {
+          "group_id": "8351a57930b1337c34e2389b0737f4b9a05f5d78d5378d4e067973c4ca9206ac",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            49729,
+            81766
+          ],
+          "representative_preview": "chất áo vải vô cùng mỏng tưởng tượng có thể nhìn xuyên qua được luôn ấy. đây chun thắt áo kém chất lượng và không giống như mô tả. cái này là mình đánh giá á..."
+        },
+        {
+          "group_id": "8532d02b3f27369a58154898f3d47642192edc53cad453d5cc029c9ea794d70f",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              2
+            ],
+            "Giá cả": [
+              2,
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            56538,
+            71093
+          ],
+          "representative_preview": "ổn vừa vặn 45 55kg đẹp. ổn trong tầm giá"
+        },
+        {
+          "group_id": "96af2e645ea5cc217f6be92bb7390d9a1ee14fbdfd47d700396adf07433da873",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Giá cả"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0,
+              1
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            7465,
+            39865
+          ],
+          "representative_preview": "đầm về không giống hình gì hết trơn định treo đầu dê bán thịt chó hay sao á, không hài lòng chút nào hết"
+        },
+        {
+          "group_id": "9f09450298fc467d0e472dc027dd5eef5423fd15e61080ce35d96589db638e83",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kích cỡ",
+            "Giá cả",
+            "Dịch vụ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0,
+              2
+            ],
+            "Dịch vụ": [
+              0,
+              2
+            ]
+          },
+          "member_ids": [
+            62292,
+            64988
+          ],
+          "representative_preview": "ống quần rộng đóng gói sơ sài nhưng cũng ổn"
+        },
+        {
+          "group_id": "b4cb88021dcb1f0edfb54e91faf4d5817b5b36fd42aa17f219c1c51a7e231363",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0,
+              1
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0,
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            53760,
+            68321
+          ],
+          "representative_preview": "như hình , nhưng ống quần hơi rộng và dài . rất ưng nên mọi người có thể mua thử nhé"
+        },
+        {
+          "group_id": "bb00489aedec481d42459fa4a6902a2b2ded6fee5ec68687a1b34d0665c93b2c",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0,
+              1
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            2578,
+            77038
+          ],
+          "representative_preview": "chất liệu mềm mại và bền đẹp, ác vừa nhưng quần to"
+        },
+        {
+          "group_id": "c495565438fd864c76a73747a1f3a3dfba7709e5ec70558f7521c90ef916f90e",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            82015,
+            86868
+          ],
+          "representative_preview": "vải hơi mỏng,mặc cũng tạm,tạm cho 5 sao"
+        },
+        {
+          "group_id": "f1e341cd05a7da368b7108ea21dc8d120b7075a5d3c624870201b2c398d8dc01",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Chất liệu"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1,
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            16503,
+            34404
+          ],
+          "representative_preview": "hàng giống như mô tả, cao 1m6 thấy hơi ngắn, không hài lòng lắm, vải hơi mỏng"
+        },
+        {
+          "group_id": "f2998a98a2a8d77c92324577c8992d3fd59cc9499460fc30b709373057647a41",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0,
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            46791,
+            65038
+          ],
+          "representative_preview": "bắp tay to . vải bình thường"
+        },
+        {
+          "group_id": "f6d9e088b5f649ed43598e3601435027834ee41781d6df841db59877fce148d0",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": true,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [
+            "Kiểu dáng",
+            "Kích cỡ"
+          ],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              2,
+              3
+            ],
+            "Kích cỡ": [
+              0,
+              2
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            58064,
+            82053
+          ],
+          "representative_preview": "giá tuyệt vời cho tiền bạc, quần jean baggy thời trang,"
+        },
+        {
+          "group_id": "b726335cffc2545c3851f5de0fd65f1d6d0fcb95cb60c35a40115619c744f551",
+          "member_count": 13,
+          "redundant_row_count": 12,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": true,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [
+            "Dịch vụ"
+          ],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              2
+            ],
+            "Giá cả": [
+              2
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            1411,
+            12030,
+            13657,
+            17571,
+            30536,
+            35088,
+            37319,
+            47494,
+            56767,
+            58295,
+            61182,
+            67362,
+            77651
+          ],
+          "representative_preview": "Đặt size L mà mặc hơi rộng đùi một xíu, tạm chấp nhận được. Giá mức trung bình, tiền nào của nấy. Giao hàng đúng hạn, shipper thân thiện."
+        },
+        {
+          "group_id": "dedc92c2e2c10ca58a892f6448bf0143ebb1b653511009fb163ef654759ddd0a",
+          "member_count": 25,
+          "redundant_row_count": 24,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              2
+            ],
+            "Kích cỡ": [
+              2
+            ],
+            "Giá cả": [
+              2
+            ],
+            "Dịch vụ": [
+              2
+            ]
+          },
+          "member_ids": [
+            1040,
+            1172,
+            2346,
+            6674,
+            12496,
+            21902,
+            22597,
+            24812,
+            26103,
+            27967,
+            28366,
+            35847,
+            37483,
+            42041,
+            45995,
+            47098,
+            49082,
+            50691,
+            51769,
+            63217,
+            72410,
+            75050,
+            81582,
+            83210,
+            88857
+          ],
+          "representative_preview": "Chất liệu cotton tàm tạm, kiểu dáng cơ bản mặc ở nhà hợp lý. Tay áo hơi dài một chút nhưng xắn lên vẫn ổn. Giá cả ở mức trung bình tiền nào của nấy. Shop đón..."
+        },
+        {
+          "group_id": "58133ea37df52e8ab5d4f1b1c6aa909628dbc2283c9a00fc19bcc703847c2e35",
+          "member_count": 16,
+          "redundant_row_count": 15,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              3
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              2
+            ]
+          },
+          "member_ids": [
+            961,
+            1900,
+            2627,
+            10203,
+            12866,
+            14729,
+            20514,
+            22057,
+            26826,
+            28925,
+            35277,
+            38455,
+            40514,
+            41397,
+            51569,
+            83385
+          ],
+          "representative_preview": "Mình mua set đồ này mặc lên người cực kỳ vừa vặn. Săn được đợt sale nên mua được giá rẻ bất ngờ vô cùng hời. Tuy nhiên khâu đóng gói của shop chỉ ở mức bình ..."
+        },
+        {
+          "group_id": "c401515acf2e7d89d3eed6ca393309830840205ffe511acaec287d5f905190cd",
+          "member_count": 12,
+          "redundant_row_count": 11,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              1
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            66,
+            3276,
+            18003,
+            23817,
+            32518,
+            33494,
+            40842,
+            49745,
+            56965,
+            58549,
+            78084,
+            78497
+          ],
+          "representative_preview": "Quần bị chật phần eo không ních vào nổi. Giá cả thì đắt đỏ lố bịch so với thị trường. Được cái shop nhắn tin hỗ trợ đổi size rất nhiệt tình và nhanh chóng."
+        },
+        {
+          "group_id": "95f9d397264821572caca681741c3004049613e130a48ca613d0be5f3323bf6d",
+          "member_count": 9,
+          "redundant_row_count": 8,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              3
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            771,
+            16547,
+            26202,
+            29934,
+            48524,
+            51411,
+            56900,
+            76241,
+            88758
+          ],
+          "representative_preview": "Mình cao 1m6 nặng 50kg mặc size M vừa y xì luôn, không phải bóp lại. Canh sale nên mua được giá cực kỳ rẻ, nhưng shop gói hàng sơ sài quá, hộp móp hết trơn."
+        },
+        {
+          "group_id": "3cfc0addbdc8cd55e4a7f6698487455b499e6fc39aabb97b23df9a36fdc8e9e0",
+          "member_count": 7,
+          "redundant_row_count": 6,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              3
+            ],
+            "Giá cả": [
+              1
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            1486,
+            5810,
+            18147,
+            57694,
+            60439,
+            63450,
+            76222
+          ],
+          "representative_preview": "Chất vải nỉ sờ vào bình thường, không quá dày dặn. Được cái quần may rất chuẩn, mình mặc vừa in không cần sửa. Tuy nhiên mức giá này thực sự hơi chát, cộng t..."
+        },
+        {
+          "group_id": "f108e8dacde567bc1c0a3efa085a501e9394ceb6a54bdae68801d6b9be1b3b62",
+          "member_count": 4,
+          "redundant_row_count": 3,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            12082,
+            17711,
+            60160,
+            78236
+          ],
+          "representative_preview": "Chất lượng sản phẩm tuyệt vời, đóng gói đẹp và chắc chắn."
+        },
+        {
+          "group_id": "6f871a689c2934a6b0b72ab6984d7c856fd205b015753ccf4d6fe6e9e9274bcd",
+          "member_count": 3,
+          "redundant_row_count": 2,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              2
+            ],
+            "Kích cỡ": [
+              2
+            ],
+            "Giá cả": [
+              2
+            ],
+            "Dịch vụ": [
+              2
+            ]
+          },
+          "member_ids": [
+            6827,
+            34604,
+            66541
+          ],
+          "representative_preview": "Chất liệu cotton tàm tạm, kiểu dáng cơ bản mặc ở nhà hợp lý. Tay áo hơi dài một chút nhưng xắn lên vẫn ổn. Giá cả ở mức trung bình, tiền nào của nấy. Shop đó..."
+        },
+        {
+          "group_id": "84620b4b7c1a7903f44ba51285cf3b0d39f00f343525054382bee3ffeabe9061",
+          "member_count": 3,
+          "redundant_row_count": 2,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            2253,
+            38464,
+            66610
+          ],
+          "representative_preview": "sản phẩm tốt, giá hạt dẻ, ủng hộ cửa hàng lần sau khi có nhu cầu, like"
+        },
+        {
+          "group_id": "e3001bf231a973a3bf9472860cb4938a1b4042273466334ea6300d708d4ee2cd",
+          "member_count": 3,
+          "redundant_row_count": 2,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              3
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              2
+            ]
+          },
+          "member_ids": [
+            8023,
+            56973,
+            64441
+          ],
+          "representative_preview": "Mình mua set đồ này mặc lên người cực kỳ vừa vặn. Săn được đúng đợt flash sale nên mua được với giá rẻ bất ngờ, vô cùng hời. Tuy nhiên khâu đóng gói của shop..."
+        },
+        {
+          "group_id": "0fcf03adfbe6f3246a5037a7ad3e29ea5e24e6e6d762c86114fe351b655d537a",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            3107,
+            43361
+          ],
+          "representative_preview": "hàng không đúng mẫu và bị lỗi"
+        },
+        {
+          "group_id": "0ff19d0f6fb76d2ff66e111eb8385879924e97d707993a8ee85b8c4034064311",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            16200,
+            71588
+          ],
+          "representative_preview": "đầm đẹp nhma rộng quá phải ôm xíu thì tuyệt vời"
+        },
+        {
+          "group_id": "1267b6bf1ba2efbe8e30d91e5ad453be361b647fd34ba0cd328a4d14b72c78ca",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            843,
+            34332
+          ],
+          "representative_preview": "shipper thân thiện 10 điểm đồ đẹp y hình"
+        },
+        {
+          "group_id": "1337d1dbe4e194193b8bbda3c77d67549eb1c5508495818241d89f666322e22a",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            12842,
+            83563
+          ],
+          "representative_preview": "tại mình hơi cao nên đầm nhìn ngắn, nhưng mà đẹp nha"
+        },
+        {
+          "group_id": "2874b9d4d6e0d92d88b9c154a6e5e1424a4a63ade0bff8b87045f5b4442e6467",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            12291,
+            79375
+          ],
+          "representative_preview": "Vì không có nhiều túi bên trong nên việc sắp xếp đồ đạc khá khó khăn. Tôi mua cái này cho chuyến đi Châu Âu, nhưng khi về nhà thì phát hiện nó đã bị rách ở đ..."
+        },
+        {
+          "group_id": "36a88a1e22eb3556344a0dab92063dc4b8d29d5eda23a2cea366f365012264a9",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              3
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            30788,
+            35836
+          ],
+          "representative_preview": "Mình cao 1m6 nặng 50kg mặc size M vừa y xì luôn. Canh sale nên mua được giá cực kỳ rẻ, nhưng shop gói hàng sơ sài quá, hộp móp hết trơn."
+        },
+        {
+          "group_id": "3c74b2ad2553fc2fdbab849f425703cb738ff9fb523115fb6b4fff7fda0a1ae8",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            30304,
+            59086
+          ],
+          "representative_preview": "tệ quá ngắn và đặt size s nhưng lại quá rộng"
+        },
+        {
+          "group_id": "42003a64f552c8165939e4a3f7ed21373ae477ecfc55e45330415254194b1575",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            2802,
+            75468
+          ],
+          "representative_preview": "Chất lượng sản phẩm tốt, đóng gói cẩn thận và giao hàng nhanh chóng."
+        },
+        {
+          "group_id": "48db67658e306c82739b5fce8bfb69e09d161a2ab7c32464f79aa65caa6c24c9",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              2
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            1927,
+            12565
+          ],
+          "representative_preview": "hồng phấn, nhạt hơn màu trong hình, chất vải dày dặn, không giống chất vải trong hình, chất trong hình mỏng hơn nhưng mặc thích hơn, mình có 1 cái mua tương ..."
+        },
+        {
+          "group_id": "4e3227fb3897949b85bd1e878ae652e48f0d13ddaf47805392bd76a23de1f58b",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              2
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            44894,
+            84292
+          ],
+          "representative_preview": "hàng đẹp 65kg mặc vẫn vừa nhe . tui sợ hụt hẫng nhưng không . rất đẹp nên mua nha đáng đồng tiền"
+        },
+        {
+          "group_id": "6a7f1cc88a2d48fc5cb112a82d25d001f201d18fc7d561183e0daab4376fc36a",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            9156,
+            16964
+          ],
+          "representative_preview": "Sản phẩm tuyệt vời, đúng với mô tả. Giao hàng nhanh chóng, shipper thân thiện và dễ mến."
+        },
+        {
+          "group_id": "7b47c068bfc171d3509071ebb76b34dd2424f16bac49b0d4bdc6901374237768",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            26934,
+            76531
+          ],
+          "representative_preview": "cửa hàng giao hàng nhanh đúng mẫu"
+        },
+        {
+          "group_id": "8e716ca1e9da03d6304eae34a1217d5915223093ca769c0e33e233af5dbc83a5",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            30275,
+            73860
+          ],
+          "representative_preview": "vải mềm mịn và thoải mái,"
+        },
+        {
+          "group_id": "8f095acf811b7110ee50d319e83d7cf7bca80369144dc4e013fc8433ea3c4926",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            67275,
+            69743
+          ],
+          "representative_preview": "kết cấu gân thời trang, váy body con tôn dáng, thiết kế tay ngắn đa năng,"
+        },
+        {
+          "group_id": "a3cf02206375b3dd8fe96610b0a5f59f290e5c874b5bab1f02c088100c3eb1f5",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            37171,
+            78709
+          ],
+          "representative_preview": "quần không giống như trong ảnh . thất vọng"
+        },
+        {
+          "group_id": "b6f7047770df08e64efd7d6b66a776bc85ae2bde261a544b143d8ef3b16d366b",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              1
+            ]
+          },
+          "member_ids": [
+            39625,
+            40402
+          ],
+          "representative_preview": "Áo nỉ này bị quá to, tay áo rộng thùng thình và đường may vai bị trễ xuống cánh tay, mặc lên không tôn dáng chút nào. Mình mua làm quà Giáng sinh nên giờ thấ..."
+        },
+        {
+          "group_id": "d25b4fa4c11bbc1f0e2a60244ecbf1010e23bb9ade67309f7112c22e615d7f53",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            50832,
+            80656
+          ],
+          "representative_preview": "Phải nói là sản phẩm quá đỉnh, cả người bán lẫn người giao hàng đều rất tâm huyết trong công việc."
+        },
+        {
+          "group_id": "d3eb34f07f42627b87dd67bb1086cf935a9f31c31b85b5588fd18ae015e0e757",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              1
+            ],
+            "Kiểu dáng": [
+              1
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            23219,
+            46407
+          ],
+          "representative_preview": "sản phẩm không giống như ảnh, vải không giống"
+        },
+        {
+          "group_id": "d793c7d7c4c86c2cbff14326a135be4c1ad0d9b62b0367e7f81b367ad149d696",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            4775,
+            34888
+          ],
+          "representative_preview": "Cửa hàng đóng gói sản phẩm rất cẩn thận và giao hàng nhanh chóng. Tôi chắc chắn sẽ tiếp tục ủng hộ."
+        },
+        {
+          "group_id": "db00452c0a279b96bddc0cc4294ad7eee43de5e6dfeff09e07feb037460d7e84",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              1
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            15437,
+            30952
+          ],
+          "representative_preview": "Quần bị chật phần eo không ních vào nổi. Giá cả thì đắt đỏ lố bịch so với thị trường. Được cái shop nhắn tin hỗ trợ đổi size rất nhiệt tình."
+        },
+        {
+          "group_id": "e3d71bbd993bd245b27182f8748d65471714e67945aa46460aeea950d5ec236b",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            24672,
+            46858
+          ],
+          "representative_preview": "vải mềm. giao hàng nhanh đúng màu"
+        },
+        {
+          "group_id": "e449ae25042698e1d8dbf2af3c43850f3768bcbbb2dfb448a3e585854ad5bd08",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              3
+            ],
+            "Giá cả": [
+              2
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            17757,
+            62711
+          ],
+          "representative_preview": "Đặt size L mà mặc vừa vặn, không rộng cũng không chật. Giá mức trung bình, tiền nào của nấy. Giao hàng đúng hạn, shipper thân thiện."
+        },
+        {
+          "group_id": "e8b1fdd634c8b2b2665a53957d8a7b091d8d964faba2be7d70a88d180d04d350",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              1
+            ],
+            "Giá cả": [
+              1
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            28933,
+            61326
+          ],
+          "representative_preview": "Quần bị chật phần eo không ních vào nổi. Giá cả thì đắt đỏ lố bịch. Được cái shop nhắn tin hỗ trợ đổi size rất nhiệt tình và nhanh chóng."
+        },
+        {
+          "group_id": "edeac78e40255b382d0b5a1cb96026982f3446ea53f8c3f647c63b2e64b9ac79",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            392,
+            33037
+          ],
+          "representative_preview": "Sản phẩm chất lượng tốt, đóng gói cẩn thận, giao hàng nhanh."
+        },
+        {
+          "group_id": "f20ade82bbd75a7c1f4c4634f8dbfef5579a22e4eb3e59d07270fd2a1fc74512",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              3
+            ],
+            "Kiểu dáng": [
+              0
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              3
+            ],
+            "Dịch vụ": [
+              0
+            ]
+          },
+          "member_ids": [
+            45485,
+            70818
+          ],
+          "representative_preview": "vải dày dặn, màu hồng nhạt hơn so với hình nhưng đẹp. hàng rẻ nhưng chất lượng so với giá tiền."
+        },
+        {
+          "group_id": "fd921a284183e3a440550b8c3bc4ac804d29d74dc5a416420c8fd9e4cca42e30",
+          "member_count": 2,
+          "redundant_row_count": 1,
+          "raw_variant_count": 1,
+          "normalization_merged_variants": false,
+          "has_label_conflict": false,
+          "has_mixed_missing_labels": false,
+          "conflicting_label_columns": [],
+          "mixed_missing_label_columns": [],
+          "label_values": {
+            "Chất liệu": [
+              0
+            ],
+            "Kiểu dáng": [
+              3
+            ],
+            "Kích cỡ": [
+              0
+            ],
+            "Giá cả": [
+              0
+            ],
+            "Dịch vụ": [
+              3
+            ]
+          },
+          "member_ids": [
+            40434,
+            86001
+          ],
+          "representative_preview": "áo đúng như hình, đẹp ạ kiểu rất dễ thương ạ. cửa hàng giao hàng nhanh lắm ạ."
+        }
+      ]
+    }
+  }
+}
