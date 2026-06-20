@@ -1,4 +1,9 @@
+import json
+from pathlib import Path
+
+import pandas as pd
 import pytest
+from datasets import Dataset, DatasetDict
 
 from v_fashion_insight.data import preprocess
 from v_fashion_insight.data.preprocess import (
@@ -7,6 +12,11 @@ from v_fashion_insight.data.preprocess import (
     generate_review_id,
     generate_review_ids,
     normalize_review_text,
+)
+from v_fashion_insight.data.validate import (
+    ID_COLUMN,
+    LABEL_COLUMNS,
+    TEXT_COLUMN,
 )
 
 
@@ -149,3 +159,177 @@ def test_generate_review_id_rejects_invalid_identity_fields(
 
     with pytest.raises((TypeError, ValueError)):
         generate_review_id(**identity)  # type: ignore[arg-type]
+
+
+def _raw_dataset(*, invalid_label: bool = False) -> DatasetDict:
+    labels = {
+        LABEL_COLUMNS[0]: [3, 3, 3, None],
+        LABEL_COLUMNS[1]: [3, 3, 3, 0],
+        LABEL_COLUMNS[2]: [0, 0, 0, 0],
+        LABEL_COLUMNS[3]: [2, 2, 2, 0],
+        LABEL_COLUMNS[4]: [0, 0, 0, 3],
+    }
+    if invalid_label:
+        labels[LABEL_COLUMNS[3]][0] = 4
+
+    return DatasetDict(
+        {
+            "train": Dataset.from_dict(
+                {
+                    ID_COLUMN: [1, 2, 3, 4],
+                    TEXT_COLUMN: [
+                        "  A\u0301o\nđẹp  ",
+                        "Áo đẹp",
+                        "Áo rất đẹp",
+                        "Shop giao hàng nhanh",
+                    ],
+                    **labels,
+                }
+            )
+        }
+    )
+
+
+def _write_group_artifacts(directory: Path) -> tuple[Path, Path]:
+    exact_path = directory / "exact.csv"
+    near_path = directory / "near.csv"
+    pd.DataFrame(
+        [{"split": "train", "member_ids": "1|2"}]
+    ).to_csv(exact_path, index=False)
+    pd.DataFrame(
+        [{"split": "train", "member_ids": "2|3"}]
+    ).to_csv(near_path, index=False)
+    return exact_path, near_path
+
+
+def test_preprocess_downloaded_dataset_builds_deterministic_interim_data(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    source = {
+        "dataset_name": "owner/dataset",
+        "resolved_revision": "abc123",
+        "metadata_path": "metadata.json",
+    }
+    previous_offline_modes = (
+        preprocess.datasets_config.HF_DATASETS_OFFLINE,
+        preprocess.hub_constants.HF_HUB_OFFLINE,
+    )
+    observed_offline_modes: list[tuple[bool, bool]] = []
+
+    def fake_load_dataset(
+        *_args: object,
+        **_kwargs: object,
+    ) -> tuple[DatasetDict, dict[str, str]]:
+        observed_offline_modes.append(
+            (
+                preprocess.datasets_config.HF_DATASETS_OFFLINE,
+                preprocess.hub_constants.HF_HUB_OFFLINE,
+            )
+        )
+        return _raw_dataset(), source
+
+    monkeypatch.setattr(
+        preprocess,
+        "load_dataset_from_metadata",
+        fake_load_dataset,
+    )
+    exact_path, near_path = _write_group_artifacts(tmp_path)
+    interim_path = tmp_path / "interim.csv"
+    audit_path = tmp_path / "audit.json"
+
+    audit = preprocess.preprocess_downloaded_dataset(
+        metadata_path=tmp_path / "metadata.json",
+        exact_group_path=exact_path,
+        near_cluster_path=near_path,
+        interim_path=interim_path,
+        audit_path=audit_path,
+        conflict_policy="retain",
+    )
+    interim = pd.read_csv(interim_path)
+    mapping = interim.set_index("source_id")
+
+    assert interim["review_id"].is_unique
+    assert mapping.loc[1, "text"] == "Áo đẹp"
+    assert mapping.loc[1, "source_text"] == "  A\u0301o\nđẹp  "
+    assert (
+        mapping.loc[1, "group_id"]
+        == mapping.loc[2, "group_id"]
+        == mapping.loc[3, "group_id"]
+    )
+    assert mapping.loc[4, "group_id"] != mapping.loc[1, "group_id"]
+    assert pd.isna(mapping.loc[4, "material"])
+    assert audit["summary"] == {
+        "input_row_count": 4,
+        "written_row_count": 4,
+        "removed_row_count": 0,
+        "held_for_manual_review_count": 0,
+        "missing_label_cell_count": 1,
+        "exact_candidate_group_count": 1,
+        "near_candidate_group_count": 1,
+    }
+    assert audit["validation"]["allowed_error_count"] == 1
+    assert audit["grouping"]["summary"]["group_count"] == 2
+    assert json.loads(audit_path.read_text(encoding="utf-8")) == audit
+
+    first_csv = interim_path.read_bytes()
+    first_audit = audit_path.read_bytes()
+    with pytest.raises(FileExistsError, match="Refusing to overwrite"):
+        preprocess.preprocess_downloaded_dataset(
+            metadata_path=tmp_path / "metadata.json",
+            exact_group_path=exact_path,
+            near_cluster_path=near_path,
+            interim_path=interim_path,
+            audit_path=audit_path,
+            conflict_policy="retain",
+        )
+
+    preprocess.preprocess_downloaded_dataset(
+        metadata_path=tmp_path / "metadata.json",
+        exact_group_path=exact_path,
+        near_cluster_path=near_path,
+        interim_path=interim_path,
+        audit_path=audit_path,
+        conflict_policy="retain",
+        force=True,
+    )
+    assert interim_path.read_bytes() == first_csv
+    assert audit_path.read_bytes() == first_audit
+    assert observed_offline_modes == [(True, True), (True, True)]
+    assert (
+        preprocess.datasets_config.HF_DATASETS_OFFLINE,
+        preprocess.hub_constants.HF_HUB_OFFLINE,
+    ) == previous_offline_modes
+
+
+def test_preprocess_downloaded_dataset_stops_on_invalid_raw_labels(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    monkeypatch.setattr(
+        preprocess,
+        "load_dataset_from_metadata",
+        lambda *_args, **_kwargs: (
+            _raw_dataset(invalid_label=True),
+            {
+                "dataset_name": "owner/dataset",
+                "resolved_revision": "abc123",
+            },
+        ),
+    )
+    exact_path, near_path = _write_group_artifacts(tmp_path)
+    interim_path = tmp_path / "interim.csv"
+    audit_path = tmp_path / "audit.json"
+
+    with pytest.raises(ValueError, match="Blocking raw validation errors"):
+        preprocess.preprocess_downloaded_dataset(
+            metadata_path=tmp_path / "metadata.json",
+            exact_group_path=exact_path,
+            near_cluster_path=near_path,
+            interim_path=interim_path,
+            audit_path=audit_path,
+            conflict_policy="retain",
+        )
+
+    assert not interim_path.exists()
+    assert not audit_path.exists()

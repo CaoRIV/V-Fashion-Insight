@@ -257,3 +257,37 @@ Outputs:
 The notebook calls the same reusable source function as the CLI and stores no
 dataset rows in its outputs. Open it in a Jupyter-compatible editor and run all
 cells from a fresh kernel after the CLI and test suite pass.
+
+## Build the Interim Dataset
+
+After the exact and near-duplicate analysis artifacts exist, build the
+deterministic interim dataset:
+
+```powershell
+.\.venv\Scripts\vfi-preprocess-data.exe
+```
+
+Equivalent module command:
+
+```powershell
+.\.venv\Scripts\python.exe -m v_fashion_insight.data.preprocess
+```
+
+The pipeline:
+
+- Validates the pinned raw dataset while preserving known missing labels.
+- Applies conservative NFKC and whitespace normalization.
+- Generates stable review IDs from the dataset revision, source split, and
+  source identifier.
+- Unions exact duplicates with high-confidence near-duplicate clusters.
+- Preserves source text and all original labels without deduplication or label
+  overwrite.
+
+Outputs:
+
+- `data/interim/reviews.csv`
+- `reports/metrics/preprocessing_audit.json`
+
+The default conflict policy is `retain`. Use `--conflict-policy exclude` or
+`--conflict-policy manual_review` only when that decision is intentional.
+Existing outputs are not replaced unless `--force` is supplied.
