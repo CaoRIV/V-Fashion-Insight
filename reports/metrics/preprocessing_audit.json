@@ -1,0 +1,4485 @@
+{
+  "source": {
+    "metadata_path": "data/raw/metadata.json",
+    "dataset_name": "vinhplaykennen/FashionReviews",
+    "config_name": null,
+    "resolved_revision": "60abb1cef934cb248b88a2ce4c99bb1ea3129c92",
+    "cache_dir": "data/raw/huggingface",
+    "downloaded_at_utc": "2026-06-14T14:35:16.059266+00:00"
+  },
+  "inputs": {
+    "metadata_path": "data/raw/metadata.json",
+    "exact_group_path": "reports/metrics/exact_duplicate_groups.csv",
+    "near_cluster_path": "reports/metrics/near_duplicate_clusters.csv"
+  },
+  "normalization": {
+    "unicode_form": "NFKC",
+    "whitespace": "collapse all Unicode whitespace to one space",
+    "preserved": "Vietnamese diacritics, negation, punctuation, digits, emoji, and product-code-like tokens"
+  },
+  "validation": {
+    "status": "passed_with_allowed_missing_labels",
+    "allowed_error_codes": [
+      "null_label"
+    ],
+    "allowed_error_count": 5,
+    "warning_count": 1
+  },
+  "policy": {
+    "exact_duplicates": "group automatically",
+    "high_confidence_near_duplicates": "group automatically",
+    "needs_review_pairs": "do not group automatically",
+    "conflicting_groups": "retain"
+  },
+  "summary": {
+    "input_row_count": 89145,
+    "written_row_count": 89145,
+    "removed_row_count": 0,
+    "held_for_manual_review_count": 0,
+    "missing_label_cell_count": 70,
+    "exact_candidate_group_count": 60,
+    "near_candidate_group_count": 68
+  },
+  "removal_reasons": {
+    "conflicting_group_excluded": 0
+  },
+  "hold_reasons": {
+    "conflicting_group_manual_review": 0
+  },
+  "grouping": {
+    "summary": {
+      "row_count": 89145,
+      "group_count": 88868,
+      "multi_member_group_count": 116,
+      "conflict_group_count": 45,
+      "mixed_missing_group_count": 1,
+      "excluded_row_count": 0,
+      "manual_review_row_count": 0
+    },
+    "noteworthy_groups": [
+      {
+        "group_id": "group_00abeebf1935345b2cc77b64ade79e20950fda9029df7ccaf7cddc031aed4ccb",
+        "member_count": 2,
+        "member_ids": [
+          "review_21f9f89ebec4f170d2f5b392571ab56fdb4eb7d04f38b35a8791111469884839",
+          "review_2f90b602416a481191fd2d8f00803af6cb7b734442479c60048a8a73b0e06c94"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_01b3a0ebf6d1f177185e65d6cba0a5aaf789dafcc14032e39c6a6ce316cfa557",
+        "member_count": 2,
+        "member_ids": [
+          "review_0acdc428e25ec8c5eaf4029fc8ba1cb11acc014175edadc1f2ec94eb4e0b2618",
+          "review_699e2eed22451404c58dee9623c96e89516434fa8491abcafd32dd974c296b82"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_022ab34fe9d23173e99bd702b4715bb2bbb3c06b81efa65f2f10009392c60f93",
+        "member_count": 2,
+        "member_ids": [
+          "review_b4fc0f5b92bf2894822a4d5edbbfb4994f5eee9e80900d12b33acf0f2a82fc61",
+          "review_cad8c0b42ffc55604ebed52e27e55b9c261682a8a1016a625c7ed3fefb480b5a"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_02dbe847c9c5f2583e92198f0f33fecf1766f280cb52477b86f981ef6675069b",
+        "member_count": 2,
+        "member_ids": [
+          "review_b3671ec3ad67de8d71377bec4d466ce18c3963beb6326b1c2ddaf41fa0e6130c",
+          "review_b9d1d1fa42150a7a06a999edec0d4585ad1660111435083b33b79faf526e473f"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_05e87042ed10b2c36614d87955a910253f6f3556cca8ba0fdc18ca1312cee074",
+        "member_count": 2,
+        "member_ids": [
+          "review_2ec502b662a8671f152e7bde372c6b2f8e123c052aef7f362660a5053e305179",
+          "review_fdfe6a05d0e86fb10e19bf7fa2b2123d26e5536c5ce796c553e0fdd2869d4ab5"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_0bda00030cb6e3ca7e4068c4771b24dbed878541f2f75bd84e9d5287e26e9491",
+        "member_count": 2,
+        "member_ids": [
+          "review_4efe5c4ded2a14e6b84e5f26df2d810cb99a607071435ddb5b97cfc945463c1f",
+          "review_938744a1f9db0dd30cb356e754b816a229642025a698ce24b060271a10065114"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_0c70b6c4f25434db55b489de77dcf40e185a07d9226135dfb527450af6597a9f",
+        "member_count": 2,
+        "member_ids": [
+          "review_d13bdb56856fc6ca7a00313e50914610aa29f1f555a7b63b82888396fb633ca4",
+          "review_f0fdfcab2ae01bd0d817ce13bcdd94c3452121546677c72b0f0dcf00179cf2ad"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_0cef7c586e61fe7c0cf5ba538cb160d2d8bdc5b9f87c839e7e148a3671076098",
+        "member_count": 2,
+        "member_ids": [
+          "review_64fe1d159231392e9846051f5e704788fb6a112a4962d5287fa627912e03161e",
+          "review_dfdf39fe5b71010987f7e2c059ae43428f538d11cb15380da2c3d0a252db07dc"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0,
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_0d0eb6f4fd5b544de546b954af891f91c05c8bdcd144bf37df94906540e2a6c4",
+        "member_count": 3,
+        "member_ids": [
+          "review_6c0d5ba1b07f95060fdc3578a63a37a267d26d89e37c05091f0f2b05aaff3309",
+          "review_921880efc0c1f4c238cd113ebd4dea822918d75ccc4650c9651bb01db49e3cfe",
+          "review_c56e54e640c402e85f14722cc2f2d857dac6c4fec55d1453145428f2e6bb6523"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_0f8098338e02eac649fcb6e51e073ba5ed62ea2ed75875de2a91bbfc872d5031",
+        "member_count": 2,
+        "member_ids": [
+          "review_6bf4393ee984c6d522b3a6d1548ed79c3667c667d0e6ce79e7e2464ed5062d0e",
+          "review_a6eae8f8dcf24aa7ae8ad8c4421dedd3f260b7c3dac2237dd093c51eb487c58e"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_15f4fdfbbd7e989fe420ffbd53450f323fb9fd6358ce375771766d3e43a86f0d",
+        "member_count": 2,
+        "member_ids": [
+          "review_3f098e60a0fe8486e4d310f25b0f7d6f8b8472a5cf74cd02befb52afc1365643",
+          "review_f6d202ab9e265d68558c477ec88e3942e21d4351192a87f5a64d72a08ced8410"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_1d9e14f90bca8209e8dd4230367fa9baa62ccdb889a3dd0011819e664a6f58ea",
+        "member_count": 2,
+        "member_ids": [
+          "review_47ea62772424e3efe5f921bf62d75df06b46fac20d103328a59ccec09fd82b9a",
+          "review_a5a71d5a16755c14054d59d12a7aa0d04ed2299aa4c46bb462a4a91f5e659aae"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_1dfbeb83b029ccbca3bd5be15d8955295ce51b15108b14dee0667111c4adb70d",
+        "member_count": 2,
+        "member_ids": [
+          "review_671c1f6c8578d44d43a9796606e39beb44e4182e0e1427956cd264005a523fa8",
+          "review_9b1025472d764a32f599d43e7d8a305011195efd1c03f1d70f85bc02db4db0ed"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_21823fe4aacda743059b3156f89115a7d088db9c8fa7fe6b129f25f9e1df6ad2",
+        "member_count": 2,
+        "member_ids": [
+          "review_35934f6be7f5b04c98cf75f07979596fafa5038fbf15b50ee53faf1003d323b6",
+          "review_f29054a2431371b03dbd90298c115bcb964851242695dce777cfa19dfb37a66c"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_242922eb097c5ba4c7ee894aed10de849b500211b26f051c3d41b8cb9193ea44",
+        "member_count": 2,
+        "member_ids": [
+          "review_16785eb3978f49327de652c41eedc22c82dfd7c4c24c6d7ae2cbea917ecc5fc0",
+          "review_33c26583a0a020a3897a19b43fcad3affacec270fa1253ceba401ec159b60f11"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_2552a238bd049e1ff587a52b48e4e485caebfaf3b6135f5172aa78a05372205e",
+        "member_count": 2,
+        "member_ids": [
+          "review_a5d24da3b106c8fdcc4343f59dda354dc475607b761ddab7c96cccca0afbbb44",
+          "review_d47d9db2fa49069ae00b13230fe60bb04a2316565119b090ab1fed4c386e4bb0"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            2,
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_269d6e7f75ab893fba8070ee8332661572b27bf05fd5a767a2b4f005d551cfd1",
+        "member_count": 2,
+        "member_ids": [
+          "review_928d84712ba8c475f971b56d63c97c26e8b2dbdf38683fe521d7454ccacc77b8",
+          "review_c7ca1190d9992b5accb06f0491c1272fc292591790a67959632b67b75381f1b3"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1
+          ],
+          "design": [
+            0,
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_26ff922571e853dde764894f9926871f0c5a4bce31148ddd8e30f9c1e9655067",
+        "member_count": 2,
+        "member_ids": [
+          "review_2de75975e6bd1aef43ebea5e55ddef6ed1c13af25d6c24250ea33af1c29edb66",
+          "review_bf437f407e6218fd05ec61f3972496baccd055a8ea03f28f1e99ad0370b52e23"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            2
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            2,
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_28a84979267096367193aa3e4a293b2d0d0129745abe8b3b6aa8d678edef8253",
+        "member_count": 2,
+        "member_ids": [
+          "review_09d80107f7ab3a7bc2b1c697de1449e337ebcbeb210ee32c9d99714460d09452",
+          "review_bb89ca56a77f9687596bb062bc6606340c62a22b62b996631f46088e741a82cb"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "design",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0,
+            1
+          ],
+          "design": [
+            0,
+            1
+          ],
+          "size": [
+            0,
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_2960edf38c7287e5d32dd6e84ca595eee48eedd6cb0fc2a1f5f0dc562e4c992a",
+        "member_count": 2,
+        "member_ids": [
+          "review_62a32592f31410a78700e93d684c739006506a2e596bf7993025f1b705d56ac0",
+          "review_d3f7db4be2a756d3114c6be27b38d3c5b5eb7d247085b39a1822277886b370a6"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_2d800e53f4ce6feec185aa747ea5a34f7ad3fd7c144dbbd1f7091f54e2babc75",
+        "member_count": 2,
+        "member_ids": [
+          "review_9210317b34a03300fab6d0ec5f98a26158bb7152e04d3544dd7bc29205ae4472",
+          "review_cf0bf80578524304093be3fa00b1c98ac8e45cb73c0001ed70aca437a6588f8d"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_2e9e8f77e62c68b723981384c7fa925ddb2eb867156341d4b2b8e412178d3b98",
+        "member_count": 2,
+        "member_ids": [
+          "review_18b44404a8be52c60c64349282dc59bbefdf100fa3f86775fc27ef1aa6142212",
+          "review_95be242b76255faa5da6cc067d4d42dd8d40815afbe47142c1ea0e993c182336"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_2f8d55175299a3a3badb5aac16be3268291a0f92a8e7c2b11a0f3f65b303abeb",
+        "member_count": 2,
+        "member_ids": [
+          "review_a0b9c5e70180ad867de456839e76d505481832544b9fda0d5b66cb5e2a198c6c",
+          "review_faddc323cfe1c1a3c7dd5bf367fd28387a21513db810d2d455da033679ea0d0d"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_300786b08fc153efec3adb7c6c82f4d56b7572fa1df1a03c4c6d8f83c1d47c80",
+        "member_count": 2,
+        "member_ids": [
+          "review_35e8616f0b9194bb4261fae49827bfadbdb6a08045fd26bef74ff6361e33109a",
+          "review_c39780fff867f615f87ca40f50ab2b55022fc2bdaee978a1acdf65d4b1da3a7a"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_3384126496c1a13520c30ce3598f53f2e1a52907d3a38b97201179351f8f4d9c",
+        "member_count": 2,
+        "member_ids": [
+          "review_dcf903312788d8ab6f9830676ad5f7ba287e4df6ba0d473de38b1b6d6aa770c6",
+          "review_e2962329570435672c51b9b57177d1dc3536e9cf46ae49bf3271662c091b44e6"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_36771ca2e26b111dc23ca95405dbaed2ead1c61fb5801aa0f16a2de78fae1287",
+        "member_count": 2,
+        "member_ids": [
+          "review_95f58ff333af3c6a6c74293c5016473a8fea3782bbdb3e2836beace5e6a4d41b",
+          "review_b1c85ceed21fe0acde5512ba72590a593613846a9b955008b5fcc45aaf2a075d"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1,
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_37109e7ef08bdeeab48918bc6e47e7547381003a01bda1d0650737e567b8fc90",
+        "member_count": 2,
+        "member_ids": [
+          "review_44944dd37731059b80591d2f38ccc93cf0eee92675ae67454b4dd8837bf3fe06",
+          "review_527741358643e743d0bb935a38c28ed45078b7ad50d7b2e13f5b6649c8496be0"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0,
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_3bbdfff4b226b579247c08a300fb5760f194d1159d8d362e6c994e7dbce238d6",
+        "member_count": 2,
+        "member_ids": [
+          "review_903288ed469276a137c85ec9e0d868fa94a963f5b9f5b4f7de32f1988a27ba52",
+          "review_db8bf71b16e256cfb4469aae980d95e318c000747afa29b2cd30d2a147bbc638"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_3e47a9976fa1b2f0ac8c8fb1607a08a1e157c849bc105f77c3ff2de34b80db52",
+        "member_count": 2,
+        "member_ids": [
+          "review_16dc12d49d82a27a3106668414948388c52f9a11da13243f5559f5b6c6a6ddc3",
+          "review_eaf2915e31465adcae6e8877b6dbfad8ca841045214150c49c097b4a8878108c"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1,
+            2
+          ],
+          "design": [
+            2
+          ],
+          "size": [
+            2
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_3fce6e90c80da750e86e35026a1fa802cbb2813350935bc50aeb8ee2d4679143",
+        "member_count": 2,
+        "member_ids": [
+          "review_1f83d934cc88fa7b24e81f5495d1db8367da6813a0ff9d5321c13f405de7098f",
+          "review_4962232ba46380fb6bb0185480ae5aab8850357c50e846ec4545afff979a9daa"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_408be020f56046a16ed5b8befc3b93b495ee084c92758abbdd57b4e5a0075467",
+        "member_count": 2,
+        "member_ids": [
+          "review_55907c0bc5a44778ef9913d4162c0e6c018c544545d7a86b9bd66793f4837744",
+          "review_9fd71447f293f0cb1929cc8e3b819cbc3ed788be024098cd461c604fdff99dcd"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_44898f9c324aca990d59b625a78abb85349911f872f14cac9bd67fe5d7665249",
+        "member_count": 2,
+        "member_ids": [
+          "review_ad53e1600dfd4050001c2bcfe3408aaf34bf8da4432e57eb1e20186746397a3d",
+          "review_fb1c86d434e5288a98030cb3c2280ce22efd43192347c117bb3048d095e90b0c"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_46e672dfa13ce3582044181a8ed0ade809573ea95b5383ebdea485e2f92a34be",
+        "member_count": 2,
+        "member_ids": [
+          "review_34966e6307e3b13638559469f90a33784ee309c726e5b0b303c9c2130de10961",
+          "review_fd1478601a16097f164f208189612d44613758df7afcd5c26fc52670629dd5f7"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_472254b7f6e9c43007d397de4344591589ef82e3f868a3c39abe696a7c533704",
+        "member_count": 2,
+        "member_ids": [
+          "review_8b532030ee427b54fd8f29d75c5116162031df20cf624c2ce5621c7a21737254",
+          "review_e3d664ed111f675798a5d0e6ec55c13368cdc1c30328a7665b757bdd7987154d"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_4a312b7bf3d27f42515fa599bb10c9970e10b28bfa8a1795afd6e7d2b96af1dc",
+        "member_count": 2,
+        "member_ids": [
+          "review_1392d4bd6e0a4891b14027e5080067535eb813e0d32ec64b33032fd3c8e2754c",
+          "review_1d33f6fc6dfa72984ef128c9a1bb6eb4924b4f601beda7ec6cb0c07433bd095b"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0,
+            3
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_4c5bbf86acc96164174d2d2454154f1016308a031f8251732333f3dde11e892a",
+        "member_count": 2,
+        "member_ids": [
+          "review_9b3e1c8ceff558350cf199470f9a92074dbd7dd301d41ef83b087c8f329c71f0",
+          "review_f420172eef1e04908eb5801bd3b91bc0cea0c4b9b2a52fbcfb1fc08a8e02b2e5"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_515ba954b9bdbf1b97e8179eff7fa538878fe3f921d1850720a77b5c2b720ebf",
+        "member_count": 2,
+        "member_ids": [
+          "review_6f40471eb36913d31acccbd186e3b4813be509ea5e125cfac0ead747cb88a33d",
+          "review_9353c2adeba56caa32b7a434b12a352acb03f4bb3cde2a8b6178d15b9251d94b"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_5af4a5042c13101872c69947ec6f7f556f10d8938c9f9192eba396b240b72247",
+        "member_count": 2,
+        "member_ids": [
+          "review_1f226e19917f81d6b39ee819e469125dd65e52a732bb7248adf7efd290d125a2",
+          "review_ae9f3b9ad7b31588f91422aca2247907e5c36a307383981138e1d98c51e4f4b0"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0,
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_5d62cbf0e33b836a7a178b4f0270c15217406fdb2a75dbf076bba3ad71f78675",
+        "member_count": 2,
+        "member_ids": [
+          "review_c724d1b4bff2f50443d2401fc314e79d2021f71ce6652b04b7d838f1b9643b9a",
+          "review_ef57db7b6d29940cf3aff3f5514b5920a455262b7db6b4e63c95ea0e8f6bd087"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_5db0f1124fbdf3ea123cab2d2e4183cdd5871e8d5454628f3aed813c00824597",
+        "member_count": 2,
+        "member_ids": [
+          "review_d69c1daa88e04c6fffd903e624a928b0f58b929518a28732e9cc86969d8e3542",
+          "review_e14922cee9ddc3d9f1fd1c4a05bb3b76051903111536e12eadbe46f64e9e1a8d"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "design",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1,
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_5f55014618e1615fbbda960ac5cc9086c4e125d12c1dfeee9a162b1cc3113785",
+        "member_count": 43,
+        "member_ids": [
+          "review_007795afbb74633007d3e0ba91174c2aae58d447bfd93f14f25f4da7fa320f55",
+          "review_0ace14ceb2b6ba52a1a46b3998cc09b276946b984a168fba0bd96c2868fe53de",
+          "review_0d33ea7d19d15c290685e386293ea506720e7c9a8ed345f5a66f0f290bf685d5",
+          "review_0da55e12a4885f7e748e0622476f59b5fd5d6590e00550ee55e4d7085c3f45ef",
+          "review_20828470d6fa5b815d16be16d6920841b0a03545c3631ed5f4294f60de4457b5",
+          "review_28f2c67a68f878943a142d2f7aa01c817c5e493e1acd92c0179810ceaf4f8c27",
+          "review_2b95e1c4d85285a75f790f2342b2a2667e331904788de7c4deecc5000e405b57",
+          "review_37c9eba787660b17c658dba68be877101b1af734c3e1afe192263f60788eff3e",
+          "review_3920751f6a979c5182cfbb89a9f9d31674188b288225e94500e13b027589dd41",
+          "review_3d67b00e6ef0557d19147dc25b3512e94af6e8708504b85a12ff8c1c42ecab0c",
+          "review_4032fe69888af375f1d807ccb76ba7f681559af455dbdbe385e4e767574f054f",
+          "review_4efcb66f23655a7c98a5c1db64447fe89f6c69c0223b480d1029cee4ca70b41d",
+          "review_50fe58a35fca7c8dd59ff977cd346387fb822a3590fbe99d917282675aaeafa8",
+          "review_5a79cfeab1fa2f2bbdc5202227812ee012f9c827b2741a73ad0e0efc073b01b1",
+          "review_5b4a4c6ff3592d1778b8d66b13b7f22f0e72b8079467335f8c6b7f6a45f61d69",
+          "review_62eb3d8c8c5fcc850dc0b9bd4c35bd68475d225a25f0c0b9d44272aa3f0e4102",
+          "review_669f45d083176f069111422b28ff0ae8ea8d7aa9d63a1a9a9860db9f68722c7d",
+          "review_6e46f549de221deb216449e63c7799a98a9ba8c8d43d40bc5c82e9c2a66c3a72",
+          "review_719cdec9ba70ed0d4d0179b25366fa9b1e7fcd94bb61d2b70e09299ad5bad673",
+          "review_742e89086506413fc713c575c0c120410a6678bfe364b9565d886ad9225669b5",
+          "review_7551e015faf413af2a0df425ea692e4665f67b5b5dadc5e36147628ea8e9b4f4",
+          "review_76f9dedfebceebf68a73c787923c801450d037c218a5a258c04253f8fd5caaf6",
+          "review_825a59afafc9d8ffa4a44191f587dd308085b82e1076573ddacdc29363ee74d3",
+          "review_97ef7ff5bcfe4a26599782c214a8b7b03885b55c1ef351165bd05c537aa71607",
+          "review_9d3230b4d88481c5edf1752cf97c376c6371cb6554b88c6f11e42083991c5840",
+          "review_a22a6d12b7423f3b90a49a5b5e707ebdc26f97a613adc42e12d069d93bb13a68",
+          "review_a4d8bbac10e20b2fa9b653fe544d6f9a2f556926131bcf22c02a0c7cb7906194",
+          "review_ac2aaac85abb7f617e6035a2d526466c2f9971f74e8f3daa27566f33217d60ec",
+          "review_b77c0c9e2114846c4336ac192369d8ee8931d347c7d7f7e6df1af37488ed02d9",
+          "review_baf296b88d6b18e767d478c66a564650296b9897c0db9ed93fd6080d6a4ba102",
+          "review_c15e6ef32ec6cf62547814be017e2730a467be118c1acf579fcc92f2190c1ce6",
+          "review_c1f2351d68acc310685882c2be3a1e0415838cb2de61a7e52ef7c4ec7fe7fe8d",
+          "review_c32f58e8f1d07537c5291b97e13393b864705381a340bcd3776a887458347304",
+          "review_c36dd10af375a174ff81e23345e52b4deec62a742a4d7831681d6efb2ae3289e",
+          "review_c58586dd2cc1831469279d6a22365336d11f24fb0f4277973cfb49f39e0555ae",
+          "review_d3241fb0f48dee8745b9c08e912195066051dd5d2c14217a42c9c916017d21a1",
+          "review_d7f2adf0963fcc1d4ffa3f4f56239dbebff6f65079cf8ec653711f6820424e89",
+          "review_da805a8fe7857d287acb6fd2d73e6496eed97103cfd9f40d7b8411f5f0c67e18",
+          "review_dfa918257f86aaa626e25086122bae6809b9bf815f8a7a6fb9c17b2f2b12ce69",
+          "review_e63dd6ba85d3eec74d8f872d892a799dd6aec7e78144a5ce4c6b22f9ad441d58",
+          "review_f242397395c2747440b3acafceb26087ec518d76c183fc8294883d7a4b253c3e",
+          "review_f31c6b59fb43675763d4f60a8a3de6a393fbc6c65cf758712ad8f8e81d19b9e8",
+          "review_fce97801f9f6043e5a7a60e1876a447d94a4d8fc2a70e59aefe16ef7090f6269"
+        ],
+        "evidence_types": [
+          "exact",
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "service"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            2
+          ],
+          "size": [
+            2
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            1,
+            2
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_6071ee1d8d52e0db19efd5a28ce6d80a4f44114341c27df1d509eccacb933fdb",
+        "member_count": 2,
+        "member_ids": [
+          "review_96f6451ab760c1661807ca399665532c80956648ddd6a766a30c49ee3407af02",
+          "review_fa77e9cf99133034fc181c56c1460191826b2f2efb909a2b3c43a6e7eaa20e9b"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_609431abab9e9a0be4902fc2ab2190a3dc2bd3ae19511ec0a35b03e0bd5ac3b6",
+        "member_count": 2,
+        "member_ids": [
+          "review_589abbb2f58f76f4e9d36f21319d53a86f91dc3a76db9f817c637ef3080ef04e",
+          "review_6c6509771272e88f52d042dbf266647d5998d099cc65f7f04039e481c25b0480"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_61f18cfe4a25390fbbd7f43dfb8d73ecea2719cb21f022f10c6b23aa746c3175",
+        "member_count": 2,
+        "member_ids": [
+          "review_87919c5ca2834f969516b7d95c424845ced100f52da107c9f90ce12db9a98e21",
+          "review_ecbcd9feab1c9f692e92fbb458a36e32a6d8ee3f70331877b071a732072e3962"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_6604a8647b449d761ec378e29d11e9449db7f97d7b96da5903e7be1be68189ec",
+        "member_count": 2,
+        "member_ids": [
+          "review_bf56de72a90384397fc35e16c627fda233ed2fe87563ff826304bb3c5e39d912",
+          "review_f6f4709f32874abd37ebf866928275909510a9dac11f5e1b92bfa03eb5044e15"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_66d3e6e6f649d2a94d3c64591053f48f1a9576324050abcba28026cef6d22d2f",
+        "member_count": 2,
+        "member_ids": [
+          "review_099e4dee8261c0f9810b5983f940c11d51081950c42fd1d1cc4c1a4affce83f8",
+          "review_caa649f8404a2c584e87eb5f3cdf0f98410aff0888421f95b607cb59798a95d5"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_68e219ab9f2161f0c1192e9d1dcb14fa14baa80bacd7a4cb3c88c21eb053ad80",
+        "member_count": 2,
+        "member_ids": [
+          "review_19cd949c80864914895b19901c857fd714cf1550dba856bfc2bd91fd7ac9c0a4",
+          "review_7a6d77536941ea498da0286c4df43780590a1e9b1fc96697bcb8d7ba48af4f96"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_6bfd4c58bad3f27393b11f27aec005c0e25d229b691a40620aaf26bd20d110db",
+        "member_count": 2,
+        "member_ids": [
+          "review_2bcf27498bdbf87f5c2d2182240f81243ca974c4dc28968a13d7f6807b0d25bb",
+          "review_8d2069bc14440601a55b7497e39afcabaee6e6139bf36fabb96840de5c3120ac"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2,
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_6d52e2068727e5f3c9abd1a92149fdbec2d84b87c8f7c42084bb333e3b25aa5b",
+        "member_count": 2,
+        "member_ids": [
+          "review_95aebd8fd3526214023813d5b5e5a3d7c14e3846ea26c9d9833d2e6b7dbb1b2d",
+          "review_ce8ca2f5ef99fdf0359b1abdb5a865068c4b1772d1dbda9f073b914235ae117f"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_6e7651a4f497f113bfb42d608b2a504ef03d3f21d1300fe3bd07185babe7612b",
+        "member_count": 39,
+        "member_ids": [
+          "review_0ecf5ae0e5a4369da48f6719d1161e120dd516d87b6dc6a25ee1e2989ac16392",
+          "review_0ef993a7c042a5360037af9ea360b2ed955ff62088636d75c170fb227445a4e6",
+          "review_100630311de7eb07763e2c0af0c61a7c338af47feaee9095cd0167a9c27fd067",
+          "review_112e112d1b81dd0c1a61bce542db755353d8432492b597b560e30c4d5a7f273b",
+          "review_18da0d549aeeb1bdfa55cc8b13453693937a1c6d1bc7fc1ff379a22dd190177b",
+          "review_3ad60b40ac05e8fff0a1e84f6b586566c5036908c28541de5048ffab5cb7722d",
+          "review_4249a6a7fecea5a03887aeb686bddb45e3c700757a509e6901c2c79744b5ef0b",
+          "review_44e9c3ee1b65909338c378152aebc47960fcb0aa89d04227448ab15ff340420a",
+          "review_4673fd221c59290644c103754df1e5eb9cc504e6eccf2408d8cb60ec05a2770a",
+          "review_48d0af2b1d99a842bb5cbe7990342e0816db29792e9facf805954c23bf6fc797",
+          "review_49510d4d89c87716683946415c5d299764041f52ef743903ddf9b4bc24df02fd",
+          "review_4db74f8d159a3b5ebaffd164195f9284b003e4d71951d55c0791f7c9d8d8bfe0",
+          "review_4eb18262b22d43824f0ffab15cde62df05e415385c06c60167e2a47d272fdff3",
+          "review_5454602cd7f4606f995d5c06e94587b8793a8dd7cc41af6c5029a27332a422fd",
+          "review_54f765abe68d700c76290a5012096570eb585699dd1b8a4940d1a2e80d38c80e",
+          "review_701433b56c1911504e7ea55599da2ab2388119279800cf18a597350dcb3fe650",
+          "review_72edfb9152e413a3da0ab64403af9b4952021b15423cb7fe688f171de0235a6f",
+          "review_7ee3a46ff79a3692578556ba3905ae66db7fe05447aa84e6541a665a545c79e2",
+          "review_8bfd923a70ee4ec4699aaf82ae057f1a040a3568190768f6ca666e19b245bebc",
+          "review_90c4167d00b66aa602dd3204df15dd377135dfa86590e2e0f3953f8b4619732c",
+          "review_93905f09e8d8942183872bd0d118c135e8a250d64629a7cea4b965bddc8d649c",
+          "review_96a8798408e7dee59f5ec5851873302042286251be25fac3f350992ee65b4978",
+          "review_a2b9d2fe9efe22a2437542d42af92617e957760fc55b97fbab99966eb75eba39",
+          "review_a70a6b399b68e09631cc4a5763a855a3ea0ef766cf8dd2c4982b8c0016a4f2f4",
+          "review_a88c8da4e52332453434a4f2ddd9ce2263dd81008284d21817b9a4d58bd5561e",
+          "review_b6bb85297e3ed854cc43c4243199808e25a5fd2fb0d400c11ba4d0fff7381e31",
+          "review_b79b2756a7424e3fa252c29b5e00403eafb0eb085ebc0bb03638cc87ccc352a4",
+          "review_c6876d0cd331f39f881ced9d4b133b4a8878eaace5b4f4fe79df0f86ca9b5ba5",
+          "review_d2b43bb433201eb349d32f6b4c2a4861a9e7e839db9eb2834be4b8a0c4434e8b",
+          "review_d35933864968b5424795cd2a060557c78c2f406405f5b1ac9f07adda34bc107e",
+          "review_d400688d196110973669aadb9fc28b054fe2a53d8395ad660a2d94ec2d14a5d3",
+          "review_d4299dd543fcfcd8153ecec484f6fb77fecd65c58dc6e29e682c03169f988939",
+          "review_dfb427b7b8490bb9e6a35b57e4da2f7018c273c24d7072e1faea490bbf027fc9",
+          "review_edc210f8ed12d3a16060efef662df5be07a7d63bf9563784e1e74657ae8a4823",
+          "review_f0e1808728163b34803b79e6e1aa2f992d53b8b15508742f4d8bc2285cc1dd45",
+          "review_f62ac5978aa5799af74773aaeada16614f98816189f589e60e8a2409b71187d2",
+          "review_f80091c23f22fa01ea98bac3eee36fc783072e1edcb4d0f529c4fd4edd6c02ea",
+          "review_f891c8455eee1e346d4acb4ed430ccc844dcf7c0bc4cd03e864631d0ee324e3f",
+          "review_fd3bf6e20b5db9199c29eca75ff291a112f4839610b415d3358e398bb3ab320e"
+        ],
+        "evidence_types": [
+          "exact",
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design",
+          "service"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0,
+            2
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            1,
+            2
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7030daee46b47b122de6d34e56c567af9b933cb17bc98a2b55e20a05ef7e282d",
+        "member_count": 2,
+        "member_ids": [
+          "review_a6edc4c2a46e5a15462bf8743dcdefde79a2285db3dd229b77be0c97eb5779cd",
+          "review_e3d1496bee254877ae8e0284713b202423b2929ee439d4ba3aa7961cfae1f65e"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_71206f080ad4cbff2aa51853d6481e3b195bdef57e09c957194dec0b1712772d",
+        "member_count": 2,
+        "member_ids": [
+          "review_82aa30abfa34c6970ae7ef547206e8d5a57e76511baf5af5a712ffff5de30a5f",
+          "review_aad0908234117e28e87f79e7948b56b7c64b9e87fd8cce501f81e711e9a4a811"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2,
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_71b82b20c0c7de764e7d2628a66013239dd50a43710fd9ada63a622cc23efb30",
+        "member_count": 2,
+        "member_ids": [
+          "review_37ef4226e4b699c84b5c3fdc226ca73766411d9ec0ace31dc780dc47158ec657",
+          "review_d5bdb786d9973c37926ab9a7b69d903921240a33e88083a7c4078181f3d4d4c2"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7201c9b9401164dfd45bcdd7067374a5ca4a3b17506ef3880d6363420f6ad4e6",
+        "member_count": 2,
+        "member_ids": [
+          "review_c60a58977d35aa93ec35cdab3e377d04c9fbb68e8e20b150406f676579081674",
+          "review_ec80c77c160222eada4c0e4813a20116d3972e4639458173a224e782f8dfc8fc"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0,
+            1
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7657e969edcf96bf81ade5e2179b793b775d9dfae3efe9e12c3c98b973c05dc1",
+        "member_count": 3,
+        "member_ids": [
+          "review_3b3a21f12cb754ffe86d4235253e9ce9df8ad063c1aa713561e19b6e3ca2a8a8",
+          "review_894f88ae8e3c168bb824de040a47d0f07df974e9cbe39ece423febc44531adbd",
+          "review_b08c5d0aa2cb58887af8098b7e77c902dfa4b89d592c0116aa93f2c29bb173fd"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7a105f233fad3fe4e30750daa1c4cc40356cd0c546355f24aca1570bd2aabe4e",
+        "member_count": 2,
+        "member_ids": [
+          "review_ada80e4b9ee9e9eaff0736c16b7b69d893955e1abf720157bf58a557a8907377",
+          "review_e377b6b6682e5ff177553a36f8452e72556674a4580c6c9109b2af1afc64f315"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7b3e4959666f4297e87468c1871b1b21232dfd40febcdaba63479afc2354911f",
+        "member_count": 2,
+        "member_ids": [
+          "review_36f7a36764142ea110d801acfc86e9bf8dbd7c9ba0a6a038a946167915dc577a",
+          "review_7e45500a64d6843c195d27e9c971dd33765b6fab24129d58f049d491b6b36bfb"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7b4a408038763b6aaa74451220114d37bf8336b4a529c1fa695a76649dfc46d0",
+        "member_count": 2,
+        "member_ids": [
+          "review_743c8dd7bc383b6833440ef2ced9f2fdbdf56d1b40ced5924d077616374ab05e",
+          "review_cd2392acef39eaad39863b2f543220bcc38fe7b5d552699fcd0541282498d47e"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7b6f1b9f2b2920ed0ee7121c6be591f21b6bdb5f7e4602e637878ab51c5befd6",
+        "member_count": 29,
+        "member_ids": [
+          "review_09110bf809cd3117c279ced43f33daecabc40afa8b94e05cf1d85750f4266a42",
+          "review_09b580666874d6a50cd8f9ca6f37cc9e6771d2c89975ec664eee8598f82acadc",
+          "review_0cba0cc1f6c652a3fcfcc32f3266fe76bd50c2a495f1f610d70eb4523d4e6af3",
+          "review_0d1796ceb6eb9d0931c6dccf37e299da43cc880c67d75b63f34543461225b316",
+          "review_1bf3e57388d6042fa130699079c79584614876f68ecc685023c5409dd738da8e",
+          "review_362a7894ef6d6232d670f3ff923772f4ef6b2dfe0c546d98b68af590a1c57924",
+          "review_38d7ec71135dd85a85cba6e12f26ecdbc5746a88006b555e3d9081eec53fa889",
+          "review_3942ac8b9fd9af3453a21145655470349c72882c62e1b65102e4ad85640ae219",
+          "review_3c395e874c1109d0bb8687afa756e01a90dcfd5d02a327d11252a31ea2bffed9",
+          "review_3de3a79ad1d02ab540a54d622b9a863dd20677d8329a9fb294aa33b6e1d307d6",
+          "review_428fd27ebd5d22a0cddf4540c3c9cf94fb4b55be11c6dd5f1037531d46f3eaf9",
+          "review_42f9e2a953ede79586d810d65db2430a6e2ce6e0015fcc5af8e288e490ee0f2a",
+          "review_551f11834c2fdc722f8064c02b9c2a05d4c56d086541b23bd7cf224460764a3d",
+          "review_5757f6e0e1ebdcc0226ff52771363622f6b939a172b12f2aa31d11226de93f71",
+          "review_5a874a83781f82ece05702416980b73c0e75dace382c9c2cddc97f3efee27924",
+          "review_67a9af93985e20afe9fa9489d4263741c7cadda919c436535c113b95211f90d0",
+          "review_6d075fc2c91547e88bfc29ce50d85fbaf1d30e4cf9e62855e56c400fec50eb9e",
+          "review_77f80a9a3b75337ed36fd9597924a50b1eb81effc95f6349f4739554ac77730e",
+          "review_8d88f87f8cbae8605481a1bffe25dafa5b863e23438083618fec90eb2caa226a",
+          "review_9e91374030df9e121c348fbf38b707edc96f945d95e1476d38799d0e2e86af82",
+          "review_9f4ef518eb7094bbffeaa3c9767ba9bfb1e06a415abe841fd2cbe63e0a54cb3f",
+          "review_a1733dd647364d90e3b7d599f193c40f015c8b045ffe049b49780255680559eb",
+          "review_a7657e400da24d3c4f715781f6425b5d8a4a60a47470cd19a7b88e2fdc619ba2",
+          "review_cae79c167934c6950e32844c836bfa9851af0a66dc28b29f65f46f572bc2b4d6",
+          "review_cd5f987dc1a3d1e94d5736eff0ba4824f09a9ab005a5038864ce26b4cc14adbc",
+          "review_d1fdbf17383d9bb6fde62f90624bad782e968207f7c8860d4aeff3a194e8a53c",
+          "review_d2f32f0a33b468dfcd186616fb7e8078ce8e44e3d30c580b01e2c589bd8aa143",
+          "review_d47f0a5ea7889f7b096482c29b3f5e11d47b15b344afa4d915ced620d8f009f8",
+          "review_edac8fc774feddf2bd20f27b5eb8f4688e780ac4d0593280fbcaf52b7e0e5ac1"
+        ],
+        "evidence_types": [
+          "exact",
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7b7c6a425a3a7de38e89c94f08abd022bee41a7240e544ed7f100347432a2081",
+        "member_count": 2,
+        "member_ids": [
+          "review_937a3480f751271cff06c1cf29403bff80a1bcf717c011d880aa686b5e8fb143",
+          "review_a268a8d8cb83884fb232fe03ab4ce2e287c7aa5a81f7d39ec2182fa127f87d77"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_7e32245d19389b5ca5650ffc1abd045a6b3f3ac89db92d8d1ba810668c123c36",
+        "member_count": 2,
+        "member_ids": [
+          "review_228eac2e51bec49f32057d78b81fd9d02b13c9224d46fddd8f6f15b2fd085caa",
+          "review_dc553004a25632d9f33ee71881ab45b83bfd04bd1a4336916e4556cd5f0cac46"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_811bc7228d6c7a8f97c68ebc7511cbb9e7cd948b94ed5937507375a16473b54c",
+        "member_count": 2,
+        "member_ids": [
+          "review_11f5b1416548433d1ac90d79a66a859cb8823e1b3917c3f7941625116760be4c",
+          "review_6c5cbaa2974d33802417337ecee85baf383210fcb4ac1c6438a7f27e69513771"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            2,
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_835a568e22cf475b22eb08039edb8c2d468de202d736e9334d88c133ea5dec6d",
+        "member_count": 2,
+        "member_ids": [
+          "review_cf0fce88ad7bc51a5437b8b8a8d76797c22e253c844b9218a66caceb12f21d47",
+          "review_d47cf2e1f7a3eba492aae1b1ad1ecf0e76c08643c124b731bfa5e2ca1e201a9c"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0,
+            1
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_861d00e274c3ed528f1924471e0364761824b191fa4ad04a50ecc284c15bd419",
+        "member_count": 2,
+        "member_ids": [
+          "review_23e87e7d9f0a4727c147595a1bd737cc55b5858abf452d1d7cc0e8d40c351745",
+          "review_b74bc8a7edb23919dc3000ec3515b53cf7a66b13808f275b9db6060bd67b2ac3"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            2,
+            3
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_8717b2b12ed3fc137e4a9a70115d1fa2ced0b406bdc4815a97f88696b46837cd",
+        "member_count": 2,
+        "member_ids": [
+          "review_64a18f11218890c3b70a452451c605afc07fd5f9df84193380c4fa89bce7e292",
+          "review_955eb0fe5a14316189035472f8502dde593474b42564ecfbd372eb329aed6963"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1
+          ],
+          "design": [
+            2
+          ],
+          "size": [
+            2
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_8a9da3e959f26fa78fb61b1c773d484d0251e00f2a921cc5d0c3a6658222a30b",
+        "member_count": 2,
+        "member_ids": [
+          "review_5b99a9f439bd11a75cafc87beedcd4653b0b4f614fcdd0d1bed82b613673a5b1",
+          "review_865e10a5f21f89577abee59a76af38aad61c415b9c183f3903d21a5bd78c6d26"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_8aeecdb664714842acebde1ef57ff84e99ca2bd42c9f5e77e3f5da44d04de9e3",
+        "member_count": 2,
+        "member_ids": [
+          "review_1f0bf7f016df24f76242d619c2c7c44059005b0bdcf248cd63f19fbaefa70f8f",
+          "review_da001d291513accbafddd7c3861699ba45e3505c7fd26c627625bcfb73252b6c"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_8b83e3b0e2ceb2762b5de21935d42d37b7f95e9cef86a472c44bf04aa0fc3453",
+        "member_count": 2,
+        "member_ids": [
+          "review_8c5b535594f5332d2ea458f8a012e9ebcc94e42166eab1f136d7a7e5083f8912",
+          "review_dd215827ce53268abf9ed3da92823469e645a551e94eeacf7b7722dd57838cee"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_9410d345f4dbc475a48836d24168da9e19baae35ade65063fd0e887f34a80f85",
+        "member_count": 2,
+        "member_ids": [
+          "review_4d821882b720ffa88cba1763ce18679200a29176d8a8b0a14825af20eb66c4df",
+          "review_f4a558c27a7bf4fa3bbfeba4df17088c159967886ddeb99fbfc604b9801899a9"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0,
+            1
+          ],
+          "design": [
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_94b191643bcbbaffa00b3460262b5a2d0b141fd7d0b81a6d6fd01afdfa73df37",
+        "member_count": 2,
+        "member_ids": [
+          "review_40524058f21c322724523927c5a2fa0e7e0a94326fb1b7416aa808a4923b64ac",
+          "review_576c8fd1212f689845edb407dac671c8ce26995585d7004a0d06764db03f4e48"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_95534626022b8dafd6bd8feee6ad6d2ed7ece446bc9a10a87462909cc301278a",
+        "member_count": 2,
+        "member_ids": [
+          "review_5c15d078ba09b63c3f3cb6ff426f8ebeb25e2b892303b084aa0fd6334b7ff9a0",
+          "review_f6aeaa90d0b9fbba139bb628f715db13159f3d3ce74d6e6f42e73cb343a79aef"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_95c8a067bfed84111870969de4d346b2af957870663717e75b45a08dc3293c04",
+        "member_count": 2,
+        "member_ids": [
+          "review_21f34850df527ea802cdc8d09363122a14c8a93da7fa0fc347678883c64c3eef",
+          "review_87825287dacfd172deb8f331b0b2d5866c10852edd7c2a4bbd0d9ffb853a9e2a"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1
+          ],
+          "design": [
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_9ba9a9b0d213eb2995a79a0d2e3261f0954d12695a3ca30e77f0df60fd0b65f9",
+        "member_count": 2,
+        "member_ids": [
+          "review_6a0cec848ead20f140481964b93d054324374bd8bfe461bb36986839c2a03db7",
+          "review_6b0d0b36d45602759f314ac32ec2f8de0b9c9298922a424aa8a29436d87ae044"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1,
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_9dacfbb592f762a35ac55423c089f4fbd3bdda4498be804296d0805a24afb8b5",
+        "member_count": 2,
+        "member_ids": [
+          "review_61be386193b5c5237acc391dbd1f57e6317c935ce1700d19bbf9813726eca478",
+          "review_752a5a0578d73c856f0b28224f8bd185d810dbf22d2b0febabe528ec908f203a"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_a74bbca4ef62978bd8bf4e9d35ae8a853716a43e462c5015038eee17bdb78f15",
+        "member_count": 2,
+        "member_ids": [
+          "review_32504b00bcc8bd068c537164ce6e77fd5ae33ba10583f9940857536238052ead",
+          "review_8611872aa0f21158b8c7207bd97e832cd818593b8c80d279bbc6f59dbe35fb64"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_a75e743e4eec81c52174a160289530c4b2aa671394a315245dc0c8037b646c4d",
+        "member_count": 2,
+        "member_ids": [
+          "review_2c0bcc6ae4f9cef93e3d85920902d7f2b8fc8dad62d59f2939cb418e7c4ff822",
+          "review_8f126af2a911e060ab83c50d8941df99f2534ad860544c99e19e24420633f367"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            2
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_a9a57a398028e9056142507e231d13b0e2c9f7028584bf7416b07e458db61424",
+        "member_count": 2,
+        "member_ids": [
+          "review_caa288cb92cbaad8f976015e57a77049408015711c9df70e8e4cf85c45925f5f",
+          "review_f6260991ac329420edd5320e671d80c1ea44489dfbe3a38a4fd104a8c7458c16"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1
+          ],
+          "design": [
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_b0d0da4eb5649a60dc3bd68d96088a8fa22a34da825bc59747934e6faade2974",
+        "member_count": 2,
+        "member_ids": [
+          "review_3376d7fe6c4ae3c8359452d915e6eae383653ae141521cac7541903a62d46996",
+          "review_576ee101f2919f7b75fc003a4adf34bc616e6fc1ec880511e863c8ca8878399e"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_b421e64544e39ee1762c3c8f9d02a2edf6d3ee36911e0e7704cfd3c1b22823e7",
+        "member_count": 2,
+        "member_ids": [
+          "review_6e7942f02381b71d51b63e95fd8076812bc38b2932e9e0457c6c4fb812df6dc2",
+          "review_aa3a8ac7aaa3c363582013f87451a823a612e44ba0ec016227cfb918a33b9c7a"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            2,
+            3
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_b5f948954851f3c9b5b042a8137f291393fbda77b1b9f5fc33f35a24883ae304",
+        "member_count": 2,
+        "member_ids": [
+          "review_1e7b79b65c7bc617c33d38a6f0aa28a2b0856f9507b074780696ff122a4d74d9",
+          "review_39c396958c7f70e43f2fc5a0d33c206f72d435ac96275977c2d0f448d281eb68"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_b67a4cfa3aa1c8889ee76b63d42195ef8cd0bc47ee7cad47216c7c02fae9960e",
+        "member_count": 18,
+        "member_ids": [
+          "review_04eed66de488fc58683ad4275003bb4c2fdf3206af4fdc62cf6ac32fc042e400",
+          "review_06add2d5eecde01de61c7be84a30ca31fb2d376d7ae1f45e77a41bf83c50fb99",
+          "review_29563f9688011cd9a8a34375e3a2ac5c6dddbab4536911df53642e0e8557b43b",
+          "review_36a0f9dd8ae96bf438f25f4fe38d04101907a48601b5cfe2a98be6e7d28be5e7",
+          "review_4d041f90f307b8e819684edbdd115b9a7dc1057f5d22423a1940c0adaa761fa9",
+          "review_5179db827afe8d19fc4ef2c3fd10cfa77c31327758b9b9e617be10959dcdc9df",
+          "review_6196bb759340afb01da592a51167b7562066246b776949a65a3aee5693a9979b",
+          "review_6325a5469644300af0931eb9012a5cb1462ac3b47b89b009bcad8d1d74450585",
+          "review_6ad1bdb81293501bf45e6af2d1646f58d7a4c162fc76dba2ab9c6d8ba33bcc25",
+          "review_7a5cc55158e9615576f49fb12cd8c40a98c62aaba6fa7564457747c3b4c56d1d",
+          "review_9d2b88ddb74aadd97dad3c729637681b84e90bb118daca79114164ed35ea2cd9",
+          "review_b56c5b598fbbe7b2d77bc0d5228d67945dc3bd21bb3b49a317cbaed3029b9560",
+          "review_d465b19a3b5d55071940c614b4e5c42ab43d79d8b29e28137ee95e046fd2ff17",
+          "review_e5a59f9795502c95f7753583747ce8ebfdfccad369781a2a9b7c4b0ddfe5b3e4",
+          "review_e95776dee50d0806407e8388645881bfd8d4b9b2e202c6316bb511aa34441f77",
+          "review_f32debd44ab6a43612d78330bd1e9d4ba14c06595847a6c1c67c7224202f6043",
+          "review_f60cd2ad10127466396e979ae79ffa57ca53180923a42a4eb52d5ffc05bba32d",
+          "review_f9f145dfa93173d91b9418f58263263eff82c454b2293429ce2892130c8b09f5"
+        ],
+        "evidence_types": [
+          "exact",
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_b83c18b5f08f696c368b32a0bbf5a28636408c145a73cb2f8140046df895c422",
+        "member_count": 2,
+        "member_ids": [
+          "review_230dd86b47223523c3a3f56f258afb6958a5f62fe491a9eb01d021787e77b56e",
+          "review_828aade6079e13de856ff964dab7afc1c10af9a81198a2ec133f7af3114c32d5"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0,
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_bb35df3f79aa4667b44c21003dafce3ea380af858ffcafaf3e5fcdd02ed3bb9f",
+        "member_count": 2,
+        "member_ids": [
+          "review_07849e9cb08801c2bcbbb55de71e444ac1b8a3911daa960548e5347667e72202",
+          "review_cc6114367a6a878e5c0694c0a4c3b9624efc92f561f4029113a3111261e2a61e"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_bb8a17bdcffda8c0030dc19a8aa508e6b90bbdc02381eb84ab281f6b199ae3af",
+        "member_count": 2,
+        "member_ids": [
+          "review_4f8e338f3e3725849cc5f517270add33e9d6427caeb035d3198da72e69260603",
+          "review_9641e98dad91f4789dd4f1ac1b697b56fcffbea19ebbb1a734fe35d352fc200e"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "service"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            1,
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_bbd19f2de8aab604377cb667ee65729874c6f023bb996830188f3b3eee14b5a4",
+        "member_count": 15,
+        "member_ids": [
+          "review_28637fe68099bfb7846ac4e03766a2d483190d3416eb559042d91a838f725e9b",
+          "review_2cf315ccfc70cb528773f0b3a696c85636c2a04ac8faf8e6532af5b6cb433715",
+          "review_2d155474c03f322fbc54f6b8d3c8d946aa3b6198c494a79143ed0d78f4ac2987",
+          "review_2ee1845cf2e98b38e60a226b300a131805ae1c6237025296c54ddde2a4268bc8",
+          "review_2f291ec2a957c94d4ef80ecc79c5286f668d0d8198b9345c237b8e88fb65f3e9",
+          "review_34470e671e18d230c154a3d8496cedf85278cb917bfed96d30e11fce0a2b8956",
+          "review_56c7ae9467417b3ceefb6ace944604630ac52972e07661d67313575c72623c16",
+          "review_6a93d89ba3db179af325c1c0ffefbc2e88cbbdc5b92eed54a664e5f441dee98f",
+          "review_84925e048b555276ee3b1b96a1a02cf71885e75bc0a979e3bcc370ecb348eb92",
+          "review_95f5d9627309b7a663dd2a1fa9c254dad0b1ce361a386ebcae4bfeb8b3e77e08",
+          "review_b295523ca1ec4389d3b2099ef7dfa2575e5475a2627cc394ef806eb271d2cbcd",
+          "review_cd2250a297e95a0db2e55f26265284f62f8e49f83d2522a679e18c60c0caa2b9",
+          "review_e2fe7937b10bcd489a33bf51d7e9716409ff679a83b0d2ca10cea02bc649b93e",
+          "review_f75d61e93d3a17968a01713b71e51235126fe75496e1903a556b0c7b7854ac73",
+          "review_fc20792ba51bf432287ac191df60925ea23fa066185e798f0477140c4220d47c"
+        ],
+        "evidence_types": [
+          "exact",
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": true,
+        "mixed_missing_label_columns": [
+          "service"
+        ],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            2
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_bcd1b2e52fc5fa3fb076881ea7caf05de5225dcce1d4314da2a3eef977908790",
+        "member_count": 2,
+        "member_ids": [
+          "review_607c4159cc0292fcaae47eeda724454e5f113f502c6f4e809eedb4693223e7ff",
+          "review_cf0e00be60f4b496b1d864ab8b2d3a8f2331d3b014a99774187ead0f4c3a1003"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_bff9fc3370608bbde121b6b79903a2c6fe9032e67abaadce45072be45217f54d",
+        "member_count": 2,
+        "member_ids": [
+          "review_40881a02060235ef67b6acd50a5dd435ada822b488935002c791c070e5dbc4e4",
+          "review_af84d1fd7e8db41c81275bdc3ab8f2268e2e932b2bdf61f980f99751754734d3"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            1
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_c1664fca234ce45ce9d91e718146f2217947c928bf37c3d128073402c91f7a06",
+        "member_count": 2,
+        "member_ids": [
+          "review_2d398247282fed01638a0922cd32921355498fbff8797fd8b530b13d19a4d9dd",
+          "review_9a06303cc99715127024bc245629c2f99b20385faa204464cf921a6ee1163513"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_c5944f60db9f3649313c694ea9089287c0ff5e572c4612d0b63ae2a62534fb56",
+        "member_count": 2,
+        "member_ids": [
+          "review_0f0cf59a120ad622d6fa6c34e96d05cfd35030d87824bb32f117b159d4d5e2c7",
+          "review_38b28516e1155feab5d2146c2df9ca60689174550c18f34e2443ceb1166aec2c"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_c677650ad4c39c1ac5681d3596aa74f95ae3bf3745fd029cfac7bd1981c85714",
+        "member_count": 2,
+        "member_ids": [
+          "review_a73d4b397c1d52bbfb8f727434e949b67be5a3637413101d71aa382975b359aa",
+          "review_e1d2f9575bde2320940ca71cf4e78cccaa8e99880f8697743bdbe73851a88140"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0,
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_c707546d5cf5347543689f4023ab8c6ecc8fe75fcb3f1bde27e292b74df0eaeb",
+        "member_count": 2,
+        "member_ids": [
+          "review_00bbfc5e1ccb949ceb0c8dd0a999974be251c0d461d1fa6d600ad1c56c40f6fe",
+          "review_ee1b30a47907db6018a8c167461554d480332e954c42523fb96a3a194431f6d8"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_c84f190740bf61b68d170c61ab3cc4ff20138189cc6e3fad980904ea8e07eb45",
+        "member_count": 2,
+        "member_ids": [
+          "review_1872cd57db31d29fcc9a9f7103865d3c25a637ca4647dd9c2a06b30f50b9444e",
+          "review_82a578a911066941aaf0b1619f1ce35c78c14df28992fe1b51ce8a0305258705"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0,
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            2,
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_c92424184ccba066b25bcac1953e5dd42ccc5097691b5739863c1832aca12f4a",
+        "member_count": 2,
+        "member_ids": [
+          "review_48760145cd8404667dca4927bf475c0e0019c139ad5cefd6a0fd1b0c1d7ee919",
+          "review_8f9614fca707e23b7f0c3de7c31941e33b2e787f9554fbbe0ce80a52ece1af14"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0,
+            2
+          ],
+          "design": [
+            0,
+            1
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_c9607eaf4ba72201062741d26c291cf0b3fd1dde3543340654d54285c416038a",
+        "member_count": 2,
+        "member_ids": [
+          "review_64a501b75d09cf1e50dc5a266a2d31704a572b56079ad854308aa099a7ed56b2",
+          "review_ba4981debad95827938778ef14115d66b08bd0f99c5385b4529efb2e74de9de0"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_d50836270e543b8bb63a62b4fcad61a1218cf043992d1b9224ad1ff22edbbe54",
+        "member_count": 3,
+        "member_ids": [
+          "review_b19a0883eba1a6e688038ce3cd092560e8233609fbd863740efba53d383c7e57",
+          "review_c3f8628c61b07f827ef855831ef65702777218f61fc50470258c15f0bf93bd39",
+          "review_fd9d300db1d997c737d9b5ae9d8914144385a78c39251ac5a3e62df764a5bf56"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_d78315db184d8987f863e0bbc23f81a0d8ac74a37089a2fee464ef354db7ce97",
+        "member_count": 2,
+        "member_ids": [
+          "review_2262630829880654230c8f0beea92b499d08fd794916fe9969925e67f3ee9aee",
+          "review_6768cdb809bf0b1291a7a84cd8c3ca1e22b457379e4deb9f356c30ea3800a54d"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_dc51cac2b0c34912c660f6459728ba6a141fe0bf6623d3f43ae176e08b1187ed",
+        "member_count": 2,
+        "member_ids": [
+          "review_49cb86bb04e95bd50aa1f6c98d8ace268ad0bf1af72f381d386f18a53175fea8",
+          "review_50868f77684805b447810814736c43d47e559b67200ebd9e2bf3891a4c920db9"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_dd1b2583adfa3c0d0a929fcd655c06c2a8324b5385a42fa68edbb6077f83d5a7",
+        "member_count": 2,
+        "member_ids": [
+          "review_19cf768ffb52a13c86b1d218da57acabd55031095d5a13a979930cdf28778b0d",
+          "review_61087f59b7813069077a7d746d388a7a8fd2f0b4bf3ef54b449b39d7b0076d50"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_dea54bc2317da30038cd1e08406436b2b93f158d7c2e62ad714b1646ed8c6a09",
+        "member_count": 2,
+        "member_ids": [
+          "review_60f038933aa296c04506772af5ee450435fb2c9d32896c4945d13cb315ad2d03",
+          "review_f7843dffe899906fe07471c7ab55741eb6bd83476df85fbf11c6bb5d3be0e941"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_df55a0560857d955817612c65bdcc0695a4d7c4f3fb72dd5686d3cfd0cdd4fae",
+        "member_count": 2,
+        "member_ids": [
+          "review_c15c7f83bbd3c266e65752cbc890ba5ce65298567e3d1ecfc0f9053253f6a591",
+          "review_c79967ad4bc39a7f42ec009bfd14491c206e21c10af9ac8be32572e4ef72f208"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_df8bf6a6ee3a408e997262e2c2f9303d42b97d3c579b8e3996f94907dbd0fe6a",
+        "member_count": 2,
+        "member_ids": [
+          "review_b7bfabf83ea55b3b7cb2e2934a9aa032b518929b8170ea12f8fcf518e6d10b15",
+          "review_feb26d7fae3f7c5ff9b78b08e95ef3c5dcf913c8d31a85d278b079d3ca51afb0"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            1
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_e19ff30f8222c119a14dbefd152cef02f2a2778b51ce13cea41b3a884cc29ca2",
+        "member_count": 2,
+        "member_ids": [
+          "review_429b2a1f91fc2b5dc170a107ac14bef21c1280692bd8c5aac3e6b75248e63c19",
+          "review_8dce460de53a7825064e4b5a7de82861555dabf502e5b334f7ab2b026f7153cf"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_e2b53daa3de81cf232ac761074db5c3f7e7ceda0457fd2dfabac189f448264c4",
+        "member_count": 2,
+        "member_ids": [
+          "review_70be55c5219a5154b658ec17814b4f150a8dac9f9c5b23a5cce01de42ade3682",
+          "review_d2f8df34da3925cded16b5d74f52adbc8d17861b42b0272d86aac9f375c727c1"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            2
+          ],
+          "service": [
+            2
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_e5055b79cdefe0a417cbe8835132cadebee386c8ff41ac2e193a6d6623edf475",
+        "member_count": 2,
+        "member_ids": [
+          "review_1fd2a2f50088ef320bb0f16f87d4cc16f62ccbe9dec2f099086fd4dce730b055",
+          "review_6ce122092add99be8a13c46db97bf33d144b1bfde39090c6e26276d81189b746"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1,
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            1
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_e5a18c414b67332f52d6031152cb8e774c53cfd02e61bb2a199ce720c6a4b9ab",
+        "member_count": 2,
+        "member_ids": [
+          "review_5f6d28bb6342a65cb59da4551a214f54c669c6906d7ee4bd0d2c609a0973b83f",
+          "review_72a0be20c9e48cda36c911f48de59ba69cd38a3bb8d7748ec0d99230aae25f1c"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design",
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            1
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_e6fb71fe3c831399f1af17a5994384805d2ec88dcc99bf26fb1f7a972c1ddfcb",
+        "member_count": 2,
+        "member_ids": [
+          "review_1e8a1d6d63b14f2e63c45cdc3ac7cac1529e35e63b9db701657e63e9d1b452b9",
+          "review_b753163975ea3ab891a5526c7d08db4bda4b3116c43853c4be356979935e7f09"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_e8dd98168650fd1a13220572a898e1f52beee7ce8528053dc945188004996be7",
+        "member_count": 2,
+        "member_ids": [
+          "review_1c3a3d4c164d9b198e05e52f3a5c658af81ef3e36300d39c2b5e251844bcd7dc",
+          "review_860d5c6240d3d88290dfaa952965306a4797c73e9dca60412bc136dba4fd9f83"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0,
+            3
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_ed0e95c1560e85dcd03b195cb0d4575973e226fab808b54dd1c25e3fe26f1cd6",
+        "member_count": 21,
+        "member_ids": [
+          "review_0af3f3b634460045abb567d2d8c5e9a68a5a49410f1221d1c91e6972992af63f",
+          "review_119965f17232bf4e9c5438ef8c455a8b8b888f52fe8e072dbeee096c16b8b868",
+          "review_1b1773afa08c70836b4dc5bd3313152e3b0156f90657fae877801ef8ae04b5ab",
+          "review_1da019c6561f3cbe7ae377d4e673f8ae3ff1192842ef5461c76bab3e6b02f517",
+          "review_26dea4f337fc0f79133aab1ac43426d6c52af592c9e9de4d932938f5126476b3",
+          "review_2aa9c16b112d157bce706dbede23ecf975b79409b0e5f9edfaf3fdb5fe082f03",
+          "review_300513362b28bcd37a75ce75b10427c94c9ae42ce121cb20aa14c84f750c9166",
+          "review_31643a004b5a7b0345061ccbc37f4ee860d313a685762acb48ba44ddce62c7a4",
+          "review_40dcbf630152cdd57da31db481e43dfc34d2de301140ef52a0ea652975a8c7bf",
+          "review_4422f9633101777bca001334b413cdf77d354706485df18299f23e634c623120",
+          "review_54d586c885db19f6c28bc85c185a7749d43767a729cca1367dc9e15e9c86564a",
+          "review_59f7076500b777cee86a7e081f95d649f4d8d1cb9004d51e444ddc005a9691dc",
+          "review_62702e7671863ba7eec7e2dff79abcfbc7f27beb705b4f4578650e92f3dc3106",
+          "review_661fdf5d2dbbebfa86d05daf4154c36249ce276cdeb629951ca59e68a4b581da",
+          "review_662b3598afb9864a432e0815cc6e8e69c4671a65df9bd4f90d817a39aa1b38e5",
+          "review_7860fc6a5198a84b612fc25d3a832a8e5c2af7ac6d6543422c4ae8cc6b3de3e9",
+          "review_7b90d1616f41b7c32c8346b4c974744f1ee1790b0be6ec8b45143d544fddbc18",
+          "review_9512c13e2c6ff071d02d4f6b174716d51091c9a779622a7fe1c2d8c69596b569",
+          "review_bec8ea7f38955597fd91cb718068ed6bcbbbda0d2e6dcc59361e87b7b3a9215c",
+          "review_e3aeb7c43d599bb42ef75e7efa17a3c488c61b94cd8599462e422a0e21c0bb76",
+          "review_e6a9214a97bf0de277f752457c6fc197e98e67ab8932f47fd51430503c537a59"
+        ],
+        "evidence_types": [
+          "exact",
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            3
+          ],
+          "price": [
+            3
+          ],
+          "service": [
+            1
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_ef1ed1b2478234954e203c6f2c45f2fedb8a484753113893a612438c2a94e1b2",
+        "member_count": 2,
+        "member_ids": [
+          "review_9a473e159949be08b2ebe3e7bad19e2186eefd725c7b57d508971db62975aba7",
+          "review_ec23e2f8cf51d01b76850c1443ba3b60325d5cb3b01520f037a391adb006bc55"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_efe2f91410ef2ba23ff53ca61b306d2a619e190b8d8b4f0ae13b61793ed04fec",
+        "member_count": 2,
+        "member_ids": [
+          "review_1a20295ec86ce2f11a0220425b9d551e8ee2ee9044a6b73cd9030e08863eabe3",
+          "review_8fbd1187dc8a229e91470480632f6af4ee4011f18c50673353190e737cd086e4"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            1,
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0,
+            2
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_f3f951b56b39fc0dd002fa713f1679aa2cb42f8c04a5aaec7bf0f1da46bf82ee",
+        "member_count": 2,
+        "member_ids": [
+          "review_992f864b66452290eed63e9ce95db0e9ae628b27f7bf1fc149e85ac3a898c4e5",
+          "review_b1521e24c50118d78bcbeea778a2be6503c9b19ec8f11cc34da328a15563b211"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "material",
+          "design",
+          "price",
+          "service"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0,
+            1
+          ],
+          "design": [
+            0,
+            1
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0,
+            1
+          ],
+          "service": [
+            0,
+            1
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_f72b07bad66a2f12a83822007673b6eea2dbe5b5b82ea1ddcb7a6b1d39ad7cae",
+        "member_count": 4,
+        "member_ids": [
+          "review_0e0b3e31c98d53ae174f54f3939f31a82607720b734a096ab7d95b76d75304a6",
+          "review_c06227c8b82080ec6cea07046fb6b83467ac32315be28ef8da1c05f1397d8aef",
+          "review_c5100438c2b96095c7094a02413ad226abf0d493bf02edb314f5bba3f5633f36",
+          "review_ff4269549f5d2e6ef68d826953b705d47727be1b952ed17be96e81f213bdd488"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "design"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0,
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_f8c07fbdf943b335e9e21438425eced64469cd99d294154fd65c71e40bf85bf7",
+        "member_count": 2,
+        "member_ids": [
+          "review_6dc1e6b08e11216a97a73a3f38594d2cf9f3cf58f15213a38bbc29e83ebde0e6",
+          "review_c3e1269282638e24b340d8237b1e103ba8ad6a68cd43bc757a90f45a7da19815"
+        ],
+        "evidence_types": [
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            3
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_fb6769f07e09bcfe79d2d147f770ef85639d352d5d5472a3aaf1819fda85ac1a",
+        "member_count": 5,
+        "member_ids": [
+          "review_0d7c9b251a1ff12803e686bc9ff7c6a53fb3e01f22e74aca90a5729034bb25db",
+          "review_66cc1b5a372d70fc8abf04c5a0225e1f09bfbd5588e5aaafcb1cea8acd24f684",
+          "review_b3dd4930b41730e671416e8e3457390270af7036e89fffe7e42249e4ce6eddf0",
+          "review_c2d2fe3a67ae043435ceba51c0697816ed12ca6a985bef8203df1f3200c7402e",
+          "review_f5d16afc5bf2b667f8b3e12022c262a42af21ec61afc6652fa8ad63707beb93f"
+        ],
+        "evidence_types": [
+          "exact",
+          "high_confidence_near"
+        ],
+        "has_label_conflict": false,
+        "conflicting_label_columns": [],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            3
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0
+          ],
+          "price": [
+            0
+          ],
+          "service": [
+            3
+          ]
+        },
+        "conflict_policy": "not_applicable",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_fb7078198b1fb5f1a29ba36fefc864ee34e61411dfff6132883dace0665c34a3",
+        "member_count": 2,
+        "member_ids": [
+          "review_05ba0fc3b3719b89464590c9419be359560454dc4d88b73a326e3f322ba3169f",
+          "review_3203781375cf69c656a3d670106e714f4b2f2ac49faf0ae9d4f4caeb4b82a8cb"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "price"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            0
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            2
+          ],
+          "price": [
+            2,
+            3
+          ],
+          "service": [
+            0
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      },
+      {
+        "group_id": "group_fef718a170a5da0747c216d4c68fbf54356ab0dae53887b601c6217371829e24",
+        "member_count": 2,
+        "member_ids": [
+          "review_db88707447cfbdfba03a1de85c9283d4b79e05a354a66e6eb923eb30a80aa088",
+          "review_fadaca292b167bb5a355e0807d97ae8a884e8df372cdcf4cc0dd7e4262edf3e8"
+        ],
+        "evidence_types": [
+          "exact"
+        ],
+        "has_label_conflict": true,
+        "conflicting_label_columns": [
+          "size",
+          "price",
+          "service"
+        ],
+        "has_mixed_missing_labels": false,
+        "mixed_missing_label_columns": [],
+        "label_values": {
+          "material": [
+            2
+          ],
+          "design": [
+            0
+          ],
+          "size": [
+            0,
+            2
+          ],
+          "price": [
+            0,
+            2
+          ],
+          "service": [
+            0,
+            2
+          ]
+        },
+        "conflict_policy": "retain",
+        "retain_for_processing": true,
+        "requires_manual_review": false
+      }
+    ]
+  },
+  "interim_columns": [
+    "review_id",
+    "group_id",
+    "source_split",
+    "source_id",
+    "source_text",
+    "text",
+    "material",
+    "design",
+    "size",
+    "price",
+    "service",
+    "group_has_label_conflict",
+    "group_conflicting_label_columns",
+    "group_has_mixed_missing_labels",
+    "group_mixed_missing_label_columns",
+    "group_conflict_policy",
+    "retain_for_processing",
+    "requires_manual_review"
+  ]
+}
