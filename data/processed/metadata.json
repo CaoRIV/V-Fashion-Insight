@@ -1,0 +1,190 @@
+{
+  "schema_version": "v1",
+  "policy": {
+    "method": "deterministic_group_aware_greedy",
+    "group_column": "group_id",
+    "target_ratios": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "seed": 42,
+    "label_columns": [
+      "material",
+      "design",
+      "size",
+      "price",
+      "service"
+    ],
+    "missing_label_token": "__missing__",
+    "objective": "Minimize row-count drift and five-aspect label-count drift while assigning each group_id to exactly one split."
+  },
+  "inputs": {
+    "interim_path": "data/interim/reviews.csv",
+    "interim_sha256": "59b752612323e0f70f24680e6f89564ca95ed79baab61ddfd76362172ca1a423",
+    "row_count": 89145,
+    "group_count": 88868
+  },
+  "outputs": {
+    "split_ids_path": "data/processed/split_ids.csv",
+    "split_ids_sha256": "e253588991352e815ef104abd3a6f38c5dcb39870e3c29ff0aff7f74f7ffa7a7"
+  },
+  "summary": {
+    "train": {
+      "row_count": 62417,
+      "group_count": 62140,
+      "row_ratio": 0.70017387,
+      "label_distribution": {
+        "material": {
+          "counts": {
+            "0": 23508,
+            "1": 12266,
+            "2": 9898,
+            "3": 16741
+          },
+          "missing": 4
+        },
+        "design": {
+          "counts": {
+            "0": 21037,
+            "1": 12398,
+            "2": 11061,
+            "3": 17909
+          },
+          "missing": 12
+        },
+        "size": {
+          "counts": {
+            "0": 19819,
+            "1": 15414,
+            "2": 8353,
+            "3": 18823
+          },
+          "missing": 8
+        },
+        "price": {
+          "counts": {
+            "0": 28668,
+            "1": 8656,
+            "2": 11276,
+            "3": 13808
+          },
+          "missing": 9
+        },
+        "service": {
+          "counts": {
+            "0": 23239,
+            "1": 12143,
+            "2": 8075,
+            "3": 18945
+          },
+          "missing": 15
+        }
+      }
+    },
+    "validation": {
+      "row_count": 13368,
+      "group_count": 13368,
+      "row_ratio": 0.14995793,
+      "label_distribution": {
+        "material": {
+          "counts": {
+            "0": 5050,
+            "1": 2636,
+            "2": 2120,
+            "3": 3561
+          },
+          "missing": 1
+        },
+        "design": {
+          "counts": {
+            "0": 4501,
+            "1": 2652,
+            "2": 2379,
+            "3": 3833
+          },
+          "missing": 3
+        },
+        "size": {
+          "counts": {
+            "0": 4252,
+            "1": 3321,
+            "2": 1791,
+            "3": 4002
+          },
+          "missing": 2
+        },
+        "price": {
+          "counts": {
+            "0": 6122,
+            "1": 1863,
+            "2": 2425,
+            "3": 2956
+          },
+          "missing": 2
+        },
+        "service": {
+          "counts": {
+            "0": 5022,
+            "1": 2591,
+            "2": 1726,
+            "3": 4026
+          },
+          "missing": 3
+        }
+      }
+    },
+    "test": {
+      "row_count": 13360,
+      "group_count": 13360,
+      "row_ratio": 0.14986819,
+      "label_distribution": {
+        "material": {
+          "counts": {
+            "0": 5040,
+            "1": 2643,
+            "2": 2115,
+            "3": 3561
+          },
+          "missing": 1
+        },
+        "design": {
+          "counts": {
+            "0": 4458,
+            "1": 2661,
+            "2": 2387,
+            "3": 3851
+          },
+          "missing": 3
+        },
+        "size": {
+          "counts": {
+            "0": 4191,
+            "1": 3323,
+            "2": 1787,
+            "3": 4057
+          },
+          "missing": 2
+        },
+        "price": {
+          "counts": {
+            "0": 6114,
+            "1": 1864,
+            "2": 2425,
+            "3": 2955
+          },
+          "missing": 2
+        },
+        "service": {
+          "counts": {
+            "0": 4966,
+            "1": 2598,
+            "2": 1723,
+            "3": 4070
+          },
+          "missing": 3
+        }
+      }
+    }
+  }
+}
