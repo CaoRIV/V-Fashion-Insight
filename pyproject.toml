@@ -29,6 +29,9 @@ vfi-profile-labels = "v_fashion_insight.data.profile_labels:main"
 vfi-profile-text = "v_fashion_insight.data.profile_text:main"
 vfi-split-data = "v_fashion_insight.data.split:main"
 vfi-validate-data = "v_fashion_insight.data.validate:main"
+vfi-train-baseline = "v_fashion_insight.models.train_baseline:main"
+vfi-predict = "v_fashion_insight.models.predict:main"
+vfi-evaluate-baseline = "v_fashion_insight.models.evaluate:main"
 
 [project.optional-dependencies]
 dev = [

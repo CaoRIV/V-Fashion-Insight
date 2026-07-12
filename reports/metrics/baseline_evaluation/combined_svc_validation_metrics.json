@@ -1,0 +1,356 @@
+{
+  "schema_version": "v1",
+  "run_name": "combined_svc",
+  "split": "validation",
+  "test_set_accessed": false,
+  "artifact": {
+    "path": "models/baseline/combined_svc/artifact.joblib",
+    "sha256": "a29c086f4a2a09e80c4ca0e7f58b9807fc8cd2574253d8be428d4ce1e62da13f"
+  },
+  "timing": {
+    "total_inference_seconds": 9.35347509989515,
+    "mean_inference_milliseconds_per_review": 0.6996914347617557
+  },
+  "metrics": {
+    "schema_version": "v1",
+    "aspect_order": [
+      "material",
+      "design",
+      "size",
+      "price",
+      "service"
+    ],
+    "label_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "missing_target_policy": "exclude each missing target cell from that aspect's metrics",
+    "summary": {
+      "row_count": 13368,
+      "evaluated_target_count": 66829,
+      "complete_target_row_count": 13357,
+      "mean_macro_f1": 0.8661866546458856,
+      "mean_weighted_f1": 0.8821673196248467,
+      "exact_match_ratio": 0.5640488133562925
+    },
+    "aspects": {
+      "material": {
+        "evaluated_count": 13367,
+        "missing_target_count": 1,
+        "accuracy": 0.8750654597142216,
+        "macro_f1": 0.8638508920840059,
+        "weighted_f1": 0.8744909742478817,
+        "classes": {
+          "0": {
+            "name": "not_mentioned",
+            "precision": 0.9021739130434783,
+            "recall": 0.9368316831683169,
+            "f1": 0.9191762191567904,
+            "support": 5050
+          },
+          "1": {
+            "name": "negative",
+            "precision": 0.8330786860198625,
+            "recall": 0.8273899848254932,
+            "f1": 0.8302245907879711,
+            "support": 2636
+          },
+          "2": {
+            "name": "neutral",
+            "precision": 0.8888308977035491,
+            "recall": 0.8033018867924528,
+            "f1": 0.8439048562933598,
+            "support": 2120
+          },
+          "3": {
+            "name": "positive",
+            "precision": 0.8587350236834773,
+            "recall": 0.8654872226902556,
+            "f1": 0.862097902097902,
+            "support": 3561
+          }
+        },
+        "confusion_matrix": [
+          [
+            4731,
+            159,
+            18,
+            142
+          ],
+          [
+            218,
+            2181,
+            79,
+            158
+          ],
+          [
+            59,
+            151,
+            1703,
+            207
+          ],
+          [
+            236,
+            127,
+            116,
+            3082
+          ]
+        ]
+      },
+      "design": {
+        "evaluated_count": 13365,
+        "missing_target_count": 3,
+        "accuracy": 0.8780396558174336,
+        "macro_f1": 0.8761415003780186,
+        "weighted_f1": 0.8780367929614716,
+        "classes": {
+          "0": {
+            "name": "not_mentioned",
+            "precision": 0.8947483111789061,
+            "recall": 0.9122417240613198,
+            "f1": 0.9034103410341034,
+            "support": 4501
+          },
+          "1": {
+            "name": "negative",
+            "precision": 0.7990762124711316,
+            "recall": 0.7828054298642534,
+            "f1": 0.7908571428571428,
+            "support": 2652
+          },
+          "2": {
+            "name": "neutral",
+            "precision": 0.961369622475856,
+            "recall": 0.9205548549810845,
+            "f1": 0.9405196478419583,
+            "support": 2379
+          },
+          "3": {
+            "name": "positive",
+            "precision": 0.8623076923076923,
+            "recall": 0.8773806417949387,
+            "f1": 0.8697788697788698,
+            "support": 3833
+          }
+        },
+        "confusion_matrix": [
+          [
+            4106,
+            194,
+            16,
+            185
+          ],
+          [
+            216,
+            2076,
+            57,
+            303
+          ],
+          [
+            61,
+            79,
+            2190,
+            49
+          ],
+          [
+            206,
+            249,
+            15,
+            3363
+          ]
+        ]
+      },
+      "size": {
+        "evaluated_count": 13366,
+        "missing_target_count": 2,
+        "accuracy": 0.8456531497830315,
+        "macro_f1": 0.8105023135687978,
+        "weighted_f1": 0.8412728399863358,
+        "classes": {
+          "0": {
+            "name": "not_mentioned",
+            "precision": 0.8938386524822695,
+            "recall": 0.9484948259642522,
+            "f1": 0.9203560018256504,
+            "support": 4252
+          },
+          "1": {
+            "name": "negative",
+            "precision": 0.8456553755522828,
+            "recall": 0.8644986449864499,
+            "f1": 0.8549731983323406,
+            "support": 3321
+          },
+          "2": {
+            "name": "neutral",
+            "precision": 0.723781388478582,
+            "recall": 0.5471803461753211,
+            "f1": 0.6232114467408585,
+            "support": 1791
+          },
+          "3": {
+            "name": "positive",
+            "precision": 0.8328867235079171,
+            "recall": 0.8543228385807097,
+            "f1": 0.8434686073763414,
+            "support": 4002
+          }
+        },
+        "confusion_matrix": [
+          [
+            4033,
+            108,
+            9,
+            102
+          ],
+          [
+            200,
+            2871,
+            126,
+            124
+          ],
+          [
+            75,
+            276,
+            980,
+            460
+          ],
+          [
+            204,
+            140,
+            239,
+            3419
+          ]
+        ]
+      },
+      "price": {
+        "evaluated_count": 13366,
+        "missing_target_count": 2,
+        "accuracy": 0.9186742480921741,
+        "macro_f1": 0.8986664452727519,
+        "weighted_f1": 0.9179274563944535,
+        "classes": {
+          "0": {
+            "name": "not_mentioned",
+            "precision": 0.9585977157360406,
+            "recall": 0.9870957203528259,
+            "f1": 0.9726380170610012,
+            "support": 6122
+          },
+          "1": {
+            "name": "negative",
+            "precision": 0.920935412026726,
+            "recall": 0.8878153515834675,
+            "f1": 0.904072150860891,
+            "support": 1863
+          },
+          "2": {
+            "name": "neutral",
+            "precision": 0.868237347294939,
+            "recall": 0.8206185567010309,
+            "f1": 0.8437566249735001,
+            "support": 2425
+          },
+          "3": {
+            "name": "positive",
+            "precision": 0.8715534633490248,
+            "recall": 0.8768606224627875,
+            "f1": 0.8741989881956155,
+            "support": 2956
+          }
+        },
+        "confusion_matrix": [
+          [
+            6043,
+            36,
+            7,
+            36
+          ],
+          [
+            121,
+            1654,
+            39,
+            49
+          ],
+          [
+            56,
+            82,
+            1990,
+            297
+          ],
+          [
+            84,
+            24,
+            256,
+            2592
+          ]
+        ]
+      },
+      "service": {
+        "evaluated_count": 13365,
+        "missing_target_count": 3,
+        "accuracy": 0.8998877665544333,
+        "macro_f1": 0.8817721219258543,
+        "weighted_f1": 0.8991085345340908,
+        "classes": {
+          "0": {
+            "name": "not_mentioned",
+            "precision": 0.9039558767592241,
+            "recall": 0.9464356829948227,
+            "f1": 0.9247081712062257,
+            "support": 5022
+          },
+          "1": {
+            "name": "negative",
+            "precision": 0.8614020950846092,
+            "recall": 0.8251640293323041,
+            "f1": 0.8428937512320126,
+            "support": 2591
+          },
+          "2": {
+            "name": "neutral",
+            "precision": 0.8543870566272558,
+            "recall": 0.7954808806488992,
+            "f1": 0.8238823882388239,
+            "support": 1726
+          },
+          "3": {
+            "name": "positive",
+            "precision": 0.9365355898456944,
+            "recall": 0.9346746150024838,
+            "f1": 0.935604177026355,
+            "support": 4026
+          }
+        },
+        "confusion_matrix": [
+          [
+            4753,
+            164,
+            15,
+            90
+          ],
+          [
+            283,
+            2138,
+            123,
+            47
+          ],
+          [
+            83,
+            152,
+            1373,
+            118
+          ],
+          [
+            139,
+            28,
+            96,
+            3763
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -94,14 +94,18 @@ The default random seed is `42`.
 
 ## Current Status
 
-Phase 0 establishes:
+The data foundation and leakage-safe split are complete. The baseline modeling
+phase now provides:
 
-- A `src`-layout Python package.
-- Core data-science dependencies.
-- Shared constants, logging, and reproducibility helpers.
-- A pytest test suite.
+- Five declared TF-IDF/linear-classifier experiments.
+- Independent classifiers for material, design, size, price, and service.
+- Missing-target masking for the 70 known null label cells.
+- Validation-only model selection with the test split locked.
+- Versioned artifacts, checksums, comparison metrics, confusion matrices, and
+  prediction/evaluation commands.
 
-Dataset download and validation begin in Phase 1.
+The frozen benchmark is recorded in `models/baseline/selected.json`. PhoBERT
+and product application work follow only after baseline error analysis.
 
 ## Download the Dataset
 
@@ -291,3 +295,51 @@ Outputs:
 The default conflict policy is `retain`. Use `--conflict-policy exclude` or
 `--conflict-policy manual_review` only when that decision is intentional.
 Existing outputs are not replaced unless `--force` is supplied.
+
+## Train and Select the TF-IDF Baseline
+
+Run every experiment declared in `configs/baseline.yaml` and freeze the best
+model using validation mean Macro F1:
+
+```powershell
+.\.venv\Scripts\python.exe -m v_fashion_insight.models.train_baseline `
+  --config configs\baseline.yaml
+```
+
+Use `--force` to intentionally replace an existing set of baseline artifacts.
+Training fits TF-IDF only on training text, masks missing targets separately
+for each aspect, evaluates on validation, and never includes test rows in the
+modeling frame. Outputs include:
+
+- `models/baseline/<run>/artifact.joblib`
+- `models/baseline/<run>/metadata.json`
+- `models/baseline/<run>/validation_metrics.json`
+- `models/baseline/<run>/validation_predictions.csv`
+- `models/baseline/selected.json`
+- `reports/metrics/baseline_comparison.csv`
+- Validation confusion matrices under `reports/figures/`
+
+## Predict with the Frozen Baseline
+
+```powershell
+.\.venv\Scripts\python.exe -m v_fashion_insight.models.predict `
+  --text "Áo đẹp, vải mềm nhưng giao hàng chậm." --pretty
+```
+
+The command verifies the selected artifact checksum and returns labels in the
+stable aspect order. Logistic regression artifacts expose probabilities;
+Linear SVM artifacts expose decision scores, which are not probabilities.
+
+## Evaluate a Saved Baseline
+
+Re-evaluate the frozen model on validation without retraining:
+
+```powershell
+.\.venv\Scripts\python.exe -m v_fashion_insight.models.evaluate `
+  --split validation
+```
+
+Train and validation evaluation are available explicitly. Test evaluation is
+intentionally locked until final model assessment and requires the literal
+token shown by `--help`; do not unlock it during model selection or error
+analysis.

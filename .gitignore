@@ -64,6 +64,7 @@ models/phobert/*
 !models/phobert/.gitkeep
 !models/**/metadata.json
 !models/**/README.md
+!models/baseline/selected.json
 
 # Local experiment outputs
 runs/

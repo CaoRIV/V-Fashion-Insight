@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "selected_run": "combined_svc",
+  "selection_split": "validation",
+  "primary_metric": "mean_macro_f1",
+  "primary_metric_value": 0.8661866546458856,
+  "test_set_accessed": false,
+  "artifact": {
+    "path": "models/baseline/combined_svc/artifact.joblib",
+    "sha256": "a29c086f4a2a09e80c4ca0e7f58b9807fc8cd2574253d8be428d4ce1e62da13f",
+    "size_bytes": 13703957
+  },
+  "selection_rationale": "Selected the highest validation mean Macro F1 across the five aspects; latency, artifact size, and run name are deterministic tie-breakers.",
+  "immutable": true,
+  "config_path": "configs/baseline.yaml",
+  "config_sha256": "820b0ca3fbbde2a5a6d40500876bf571dd2af3f0c77d7ef74f8aba5664169099",
+  "comparison_path": "reports/metrics/baseline_comparison.csv"
+}

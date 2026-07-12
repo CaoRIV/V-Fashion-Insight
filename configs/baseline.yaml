@@ -1,0 +1,62 @@
+schema_version: v1
+seed: 42
+aspects: [material, design, size, price, service]
+
+data:
+  interim_path: data/interim/reviews.csv
+  split_ids_path: data/processed/split_ids.csv
+
+output:
+  model_dir: models/baseline
+  report_dir: reports/metrics
+  figure_dir: reports/figures
+
+# Training never loads test rows. Selection uses validation mean Macro F1.
+experiments:
+  - name: word_logreg
+    description: Word unigram/bigram TF-IDF with unweighted logistic regression.
+    analyzer: word
+    classifier: logistic_regression
+    class_weight: null
+    C: 2.0
+    max_iter: 500
+    word: {ngram_range: [1, 2], min_df: 2, max_df: 0.995, max_features: 80000, sublinear_tf: true, strip_accents: null}
+
+  - name: char_svc
+    description: Character-boundary TF-IDF with an unweighted linear SVM.
+    analyzer: char_wb
+    classifier: linear_svc
+    class_weight: null
+    C: 1.0
+    max_iter: 3000
+    char: {ngram_range: [3, 5], min_df: 3, max_df: 1.0, max_features: 120000, sublinear_tf: true, strip_accents: null}
+
+  - name: combined_logreg
+    description: Combined word and character TF-IDF with unweighted logistic regression.
+    analyzer: combined
+    classifier: logistic_regression
+    class_weight: null
+    C: 2.0
+    max_iter: 500
+    word: {ngram_range: [1, 2], min_df: 2, max_df: 0.995, max_features: 60000, sublinear_tf: true, strip_accents: null}
+    char: {ngram_range: [3, 5], min_df: 3, max_df: 1.0, max_features: 90000, sublinear_tf: true, strip_accents: null}
+
+  - name: combined_svc
+    description: Combined word and character TF-IDF with an unweighted linear SVM.
+    analyzer: combined
+    classifier: linear_svc
+    class_weight: null
+    C: 1.0
+    max_iter: 3000
+    word: {ngram_range: [1, 2], min_df: 2, max_df: 0.995, max_features: 60000, sublinear_tf: true, strip_accents: null}
+    char: {ngram_range: [3, 5], min_df: 3, max_df: 1.0, max_features: 90000, sublinear_tf: true, strip_accents: null}
+
+  - name: combined_svc_balanced
+    description: Controlled class-balanced variant of the combined linear SVM.
+    analyzer: combined
+    classifier: linear_svc
+    class_weight: balanced
+    C: 1.0
+    max_iter: 3000
+    word: {ngram_range: [1, 2], min_df: 2, max_df: 0.995, max_features: 60000, sublinear_tf: true, strip_accents: null}
+    char: {ngram_range: [3, 5], min_df: 3, max_df: 1.0, max_features: 90000, sublinear_tf: true, strip_accents: null}
