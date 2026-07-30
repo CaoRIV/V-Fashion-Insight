@@ -32,6 +32,7 @@ vfi-validate-data = "v_fashion_insight.data.validate:main"
 vfi-train-baseline = "v_fashion_insight.models.train_baseline:main"
 vfi-predict = "v_fashion_insight.models.predict:main"
 vfi-evaluate-baseline = "v_fashion_insight.models.evaluate:main"
+vfi-analyze-validation-predictions = "v_fashion_insight.analysis.validation_predictions:main"
 
 [project.optional-dependencies]
 dev = [

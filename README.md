@@ -343,3 +343,27 @@ Train and validation evaluation are available explicitly. Test evaluation is
 intentionally locked until final model assessment and requires the literal
 token shown by `--help`; do not unlock it during model selection or error
 analysis.
+
+## Analyze Frozen Validation Predictions
+
+Analyze the saved `combined_svc` validation labels without loading a model or
+running inference:
+
+```powershell
+.\.venv\Scripts\python.exe -m `
+  v_fashion_insight.analysis.validation_predictions
+```
+
+The command verifies exact validation-ID coverage, joins review text by stable
+ID, reproduces the recorded metrics, and separates missed mentions, false
+mentions, and sentiment confusions. It writes:
+
+- `reports/analysis/combined_svc_validation_prediction_analysis.md`
+- `reports/analysis/combined_svc_validation_error_examples.csv`
+- `reports/metrics/combined_svc_validation_prediction_analysis.json`
+- `reports/metrics/combined_svc_validation_aspect_errors.csv`
+- `reports/metrics/combined_svc_validation_confusions.csv`
+
+The saved label export has no Linear SVM decision scores, so confidence-based
+error sampling remains intentionally out of scope until a separate inference
+export is run.
