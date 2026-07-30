@@ -69,3 +69,6 @@ models/phobert/*
 # Local experiment outputs
 runs/
 checkpoints/
+
+# Row-level analysis exports (reproducible, large, and may contain review text)
+reports/analysis/*_aspect_errors_detailed.csv

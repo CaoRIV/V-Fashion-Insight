@@ -33,6 +33,7 @@ vfi-train-baseline = "v_fashion_insight.models.train_baseline:main"
 vfi-predict = "v_fashion_insight.models.predict:main"
 vfi-evaluate-baseline = "v_fashion_insight.models.evaluate:main"
 vfi-analyze-validation-predictions = "v_fashion_insight.analysis.validation_predictions:main"
+vfi-analyze-aspect-errors = "v_fashion_insight.analysis.aspect_errors:main"
 
 [project.optional-dependencies]
 dev = [

@@ -367,3 +367,19 @@ mentions, and sentiment confusions. It writes:
 The saved label export has no Linear SVM decision scores, so confidence-based
 error sampling remains intentionally out of scope until a separate inference
 export is run.
+
+### Inspect Errors by Aspect and Label
+
+Create one report for each aspect and quantify false positives, false
+negatives, dominant confusion directions, and error families for labels `0-3`:
+
+```powershell
+.\.venv\Scripts\python.exe -m `
+  v_fashion_insight.analysis.aspect_errors
+```
+
+Compact reports are written to
+`reports/analysis/combined_svc_aspects/` and `reports/metrics/`. The complete
+row-level error export is generated locally as
+`combined_svc_validation_aspect_errors_detailed.csv`; it is excluded from Git
+because it is reproducible, large, and contains review text.

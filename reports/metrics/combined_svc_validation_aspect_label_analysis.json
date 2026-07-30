@@ -1,0 +1,1122 @@
+{
+  "schema_version": "v1",
+  "run_name": "combined_svc",
+  "split": "validation",
+  "test_set_accessed": false,
+  "model_loaded": false,
+  "inference_run": false,
+  "metrics_match_recorded_report": true,
+  "inputs": {
+    "predictions_path": "models/baseline/combined_svc/validation_predictions.csv",
+    "predictions_sha256": "110cd6df834e6231f9d33198564a70a6aa4bd7be142382ce32d29f9d640f8c10",
+    "recorded_metrics_path": "models/baseline/combined_svc/validation_metrics.json",
+    "recorded_metrics_sha256": "c2de453b27bd5baff48b2c7f38ec231109bbacbda163dfc47b6547f0bc6737ee",
+    "interim_path": "data/interim/reviews.csv",
+    "interim_sha256": "59b752612323e0f70f24680e6f89564ca95ed79baab61ddfd76362172ca1a423",
+    "split_ids_path": "data/processed/split_ids.csv",
+    "split_ids_sha256": "e253588991352e815ef104abd3a6f38c5dcb39870e3c29ff0aff7f74f7ffa7a7"
+  },
+  "summary": {
+    "validation_row_count": 13368,
+    "total_aspect_error_count": 7788,
+    "error_family_counts": {
+      "missed_mention": 2241,
+      "false_mention": 1281,
+      "sentiment_confusion": 4266
+    },
+    "global_weakest_aspect_label": {
+      "aspect": "size",
+      "label": 2,
+      "name": "neutral",
+      "f1": 0.6232114467408585,
+      "error_rate": 0.4528196538246789
+    }
+  },
+  "aspects": {
+    "material": {
+      "evaluated_count": 13367,
+      "correct_count": 11697,
+      "error_count": 1670,
+      "error_rate": 0.12493454028577841,
+      "accuracy": 0.8750654597142216,
+      "macro_f1": 0.8638508920840059,
+      "weighted_f1": 0.8744909742478817,
+      "error_family_counts": {
+        "missed_mention": 513,
+        "false_mention": 319,
+        "sentiment_confusion": 838
+      },
+      "error_family_shares": {
+        "missed_mention": 0.307185628742515,
+        "false_mention": 0.19101796407185628,
+        "sentiment_confusion": 0.5017964071856288
+      },
+      "weakest_label_by_f1": {
+        "label": 1,
+        "name": "negative",
+        "f1": 0.8302245907879711
+      },
+      "highest_error_rate_label": {
+        "label": 2,
+        "name": "neutral",
+        "error_rate": 0.19669811320754718
+      },
+      "top_confusions": [
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 236,
+          "share_of_aspect_errors": 0.14131736526946106
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 218,
+          "share_of_aspect_errors": 0.13053892215568863
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 207,
+          "share_of_aspect_errors": 0.12395209580838323
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 159,
+          "share_of_aspect_errors": 0.09520958083832336
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 158,
+          "share_of_aspect_errors": 0.09461077844311377
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 151,
+          "share_of_aspect_errors": 0.09041916167664671
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 142,
+          "share_of_aspect_errors": 0.08502994011976048
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 127,
+          "share_of_aspect_errors": 0.07604790419161676
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 116,
+          "share_of_aspect_errors": 0.06946107784431138
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 79,
+          "share_of_aspect_errors": 0.04730538922155689
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 59,
+          "share_of_aspect_errors": 0.035329341317365266
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 18,
+          "share_of_aspect_errors": 0.010778443113772455
+        }
+      ],
+      "labels": [
+        {
+          "aspect": "material",
+          "label": 0,
+          "label_name": "not_mentioned",
+          "support": 5050,
+          "predicted_count": 5244,
+          "prediction_minus_support": 194,
+          "correct_count": 4731,
+          "error_count": 319,
+          "error_rate": 0.06316831683168317,
+          "false_negative_count": 319,
+          "false_positive_count": 513,
+          "precision": 0.9021739130434783,
+          "recall": 0.9368316831683169,
+          "f1": 0.9191762191567904,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 159,
+          "dominant_false_positive_source": 3,
+          "dominant_false_positive_source_name": "positive",
+          "dominant_false_positive_source_count": 236
+        },
+        {
+          "aspect": "material",
+          "label": 1,
+          "label_name": "negative",
+          "support": 2636,
+          "predicted_count": 2618,
+          "prediction_minus_support": -18,
+          "correct_count": 2181,
+          "error_count": 455,
+          "error_rate": 0.17261001517450683,
+          "false_negative_count": 455,
+          "false_positive_count": 437,
+          "precision": 0.8330786860198625,
+          "recall": 0.8273899848254932,
+          "f1": 0.8302245907879711,
+          "dominant_wrong_prediction": 0,
+          "dominant_wrong_prediction_name": "not_mentioned",
+          "dominant_wrong_prediction_count": 218,
+          "dominant_false_positive_source": 0,
+          "dominant_false_positive_source_name": "not_mentioned",
+          "dominant_false_positive_source_count": 159
+        },
+        {
+          "aspect": "material",
+          "label": 2,
+          "label_name": "neutral",
+          "support": 2120,
+          "predicted_count": 1916,
+          "prediction_minus_support": -204,
+          "correct_count": 1703,
+          "error_count": 417,
+          "error_rate": 0.19669811320754718,
+          "false_negative_count": 417,
+          "false_positive_count": 213,
+          "precision": 0.8888308977035491,
+          "recall": 0.8033018867924528,
+          "f1": 0.8439048562933598,
+          "dominant_wrong_prediction": 3,
+          "dominant_wrong_prediction_name": "positive",
+          "dominant_wrong_prediction_count": 207,
+          "dominant_false_positive_source": 3,
+          "dominant_false_positive_source_name": "positive",
+          "dominant_false_positive_source_count": 116
+        },
+        {
+          "aspect": "material",
+          "label": 3,
+          "label_name": "positive",
+          "support": 3561,
+          "predicted_count": 3589,
+          "prediction_minus_support": 28,
+          "correct_count": 3082,
+          "error_count": 479,
+          "error_rate": 0.13451277730974445,
+          "false_negative_count": 479,
+          "false_positive_count": 507,
+          "precision": 0.8587350236834773,
+          "recall": 0.8654872226902556,
+          "f1": 0.862097902097902,
+          "dominant_wrong_prediction": 0,
+          "dominant_wrong_prediction_name": "not_mentioned",
+          "dominant_wrong_prediction_count": 236,
+          "dominant_false_positive_source": 2,
+          "dominant_false_positive_source_name": "neutral",
+          "dominant_false_positive_source_count": 207
+        }
+      ]
+    },
+    "design": {
+      "evaluated_count": 13365,
+      "correct_count": 11735,
+      "error_count": 1630,
+      "error_rate": 0.1219603441825664,
+      "accuracy": 0.8780396558174336,
+      "macro_f1": 0.8761415003780186,
+      "weighted_f1": 0.8780367929614716,
+      "error_family_counts": {
+        "missed_mention": 483,
+        "false_mention": 395,
+        "sentiment_confusion": 752
+      },
+      "error_family_shares": {
+        "missed_mention": 0.296319018404908,
+        "false_mention": 0.24233128834355827,
+        "sentiment_confusion": 0.46134969325153374
+      },
+      "weakest_label_by_f1": {
+        "label": 1,
+        "name": "negative",
+        "f1": 0.7908571428571428
+      },
+      "highest_error_rate_label": {
+        "label": 1,
+        "name": "negative",
+        "error_rate": 0.2171945701357466
+      },
+      "top_confusions": [
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 303,
+          "share_of_aspect_errors": 0.18588957055214725
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 249,
+          "share_of_aspect_errors": 0.15276073619631902
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 216,
+          "share_of_aspect_errors": 0.1325153374233129
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 206,
+          "share_of_aspect_errors": 0.1263803680981595
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 194,
+          "share_of_aspect_errors": 0.11901840490797547
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 185,
+          "share_of_aspect_errors": 0.11349693251533742
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 79,
+          "share_of_aspect_errors": 0.048466257668711654
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 61,
+          "share_of_aspect_errors": 0.03742331288343558
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 57,
+          "share_of_aspect_errors": 0.03496932515337423
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 49,
+          "share_of_aspect_errors": 0.030061349693251534
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 16,
+          "share_of_aspect_errors": 0.0098159509202454
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 15,
+          "share_of_aspect_errors": 0.009202453987730062
+        }
+      ],
+      "labels": [
+        {
+          "aspect": "design",
+          "label": 0,
+          "label_name": "not_mentioned",
+          "support": 4501,
+          "predicted_count": 4589,
+          "prediction_minus_support": 88,
+          "correct_count": 4106,
+          "error_count": 395,
+          "error_rate": 0.0877582759386803,
+          "false_negative_count": 395,
+          "false_positive_count": 483,
+          "precision": 0.8947483111789061,
+          "recall": 0.9122417240613198,
+          "f1": 0.9034103410341034,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 194,
+          "dominant_false_positive_source": 1,
+          "dominant_false_positive_source_name": "negative",
+          "dominant_false_positive_source_count": 216
+        },
+        {
+          "aspect": "design",
+          "label": 1,
+          "label_name": "negative",
+          "support": 2652,
+          "predicted_count": 2598,
+          "prediction_minus_support": -54,
+          "correct_count": 2076,
+          "error_count": 576,
+          "error_rate": 0.2171945701357466,
+          "false_negative_count": 576,
+          "false_positive_count": 522,
+          "precision": 0.7990762124711316,
+          "recall": 0.7828054298642534,
+          "f1": 0.7908571428571428,
+          "dominant_wrong_prediction": 3,
+          "dominant_wrong_prediction_name": "positive",
+          "dominant_wrong_prediction_count": 303,
+          "dominant_false_positive_source": 3,
+          "dominant_false_positive_source_name": "positive",
+          "dominant_false_positive_source_count": 249
+        },
+        {
+          "aspect": "design",
+          "label": 2,
+          "label_name": "neutral",
+          "support": 2379,
+          "predicted_count": 2278,
+          "prediction_minus_support": -101,
+          "correct_count": 2190,
+          "error_count": 189,
+          "error_rate": 0.07944514501891552,
+          "false_negative_count": 189,
+          "false_positive_count": 88,
+          "precision": 0.961369622475856,
+          "recall": 0.9205548549810845,
+          "f1": 0.9405196478419583,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 79,
+          "dominant_false_positive_source": 1,
+          "dominant_false_positive_source_name": "negative",
+          "dominant_false_positive_source_count": 57
+        },
+        {
+          "aspect": "design",
+          "label": 3,
+          "label_name": "positive",
+          "support": 3833,
+          "predicted_count": 3900,
+          "prediction_minus_support": 67,
+          "correct_count": 3363,
+          "error_count": 470,
+          "error_rate": 0.12261935820506131,
+          "false_negative_count": 470,
+          "false_positive_count": 537,
+          "precision": 0.8623076923076923,
+          "recall": 0.8773806417949387,
+          "f1": 0.8697788697788698,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 249,
+          "dominant_false_positive_source": 1,
+          "dominant_false_positive_source_name": "negative",
+          "dominant_false_positive_source_count": 303
+        }
+      ]
+    },
+    "size": {
+      "evaluated_count": 13366,
+      "correct_count": 11303,
+      "error_count": 2063,
+      "error_rate": 0.15434685021696842,
+      "accuracy": 0.8456531497830315,
+      "macro_f1": 0.8105023135687978,
+      "weighted_f1": 0.8412728399863358,
+      "error_family_counts": {
+        "missed_mention": 479,
+        "false_mention": 219,
+        "sentiment_confusion": 1365
+      },
+      "error_family_shares": {
+        "missed_mention": 0.23218613669413476,
+        "false_mention": 0.10615608337372757,
+        "sentiment_confusion": 0.6616577799321377
+      },
+      "weakest_label_by_f1": {
+        "label": 2,
+        "name": "neutral",
+        "f1": 0.6232114467408585
+      },
+      "highest_error_rate_label": {
+        "label": 2,
+        "name": "neutral",
+        "error_rate": 0.4528196538246789
+      },
+      "top_confusions": [
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 460,
+          "share_of_aspect_errors": 0.22297624818225883
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 276,
+          "share_of_aspect_errors": 0.1337857489093553
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 239,
+          "share_of_aspect_errors": 0.11585070285991275
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 204,
+          "share_of_aspect_errors": 0.0988851187590887
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 200,
+          "share_of_aspect_errors": 0.09694619486185167
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 140,
+          "share_of_aspect_errors": 0.06786233640329617
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 126,
+          "share_of_aspect_errors": 0.06107610276296655
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 124,
+          "share_of_aspect_errors": 0.060106640814348036
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 108,
+          "share_of_aspect_errors": 0.0523509452253999
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 102,
+          "share_of_aspect_errors": 0.04944255937954435
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 75,
+          "share_of_aspect_errors": 0.036354823073194376
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 9,
+          "share_of_aspect_errors": 0.004362578768783325
+        }
+      ],
+      "labels": [
+        {
+          "aspect": "size",
+          "label": 0,
+          "label_name": "not_mentioned",
+          "support": 4252,
+          "predicted_count": 4512,
+          "prediction_minus_support": 260,
+          "correct_count": 4033,
+          "error_count": 219,
+          "error_rate": 0.051505174035747885,
+          "false_negative_count": 219,
+          "false_positive_count": 479,
+          "precision": 0.8938386524822695,
+          "recall": 0.9484948259642522,
+          "f1": 0.9203560018256504,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 108,
+          "dominant_false_positive_source": 3,
+          "dominant_false_positive_source_name": "positive",
+          "dominant_false_positive_source_count": 204
+        },
+        {
+          "aspect": "size",
+          "label": 1,
+          "label_name": "negative",
+          "support": 3321,
+          "predicted_count": 3395,
+          "prediction_minus_support": 74,
+          "correct_count": 2871,
+          "error_count": 450,
+          "error_rate": 0.13550135501355012,
+          "false_negative_count": 450,
+          "false_positive_count": 524,
+          "precision": 0.8456553755522828,
+          "recall": 0.8644986449864499,
+          "f1": 0.8549731983323406,
+          "dominant_wrong_prediction": 0,
+          "dominant_wrong_prediction_name": "not_mentioned",
+          "dominant_wrong_prediction_count": 200,
+          "dominant_false_positive_source": 2,
+          "dominant_false_positive_source_name": "neutral",
+          "dominant_false_positive_source_count": 276
+        },
+        {
+          "aspect": "size",
+          "label": 2,
+          "label_name": "neutral",
+          "support": 1791,
+          "predicted_count": 1354,
+          "prediction_minus_support": -437,
+          "correct_count": 980,
+          "error_count": 811,
+          "error_rate": 0.4528196538246789,
+          "false_negative_count": 811,
+          "false_positive_count": 374,
+          "precision": 0.723781388478582,
+          "recall": 0.5471803461753211,
+          "f1": 0.6232114467408585,
+          "dominant_wrong_prediction": 3,
+          "dominant_wrong_prediction_name": "positive",
+          "dominant_wrong_prediction_count": 460,
+          "dominant_false_positive_source": 3,
+          "dominant_false_positive_source_name": "positive",
+          "dominant_false_positive_source_count": 239
+        },
+        {
+          "aspect": "size",
+          "label": 3,
+          "label_name": "positive",
+          "support": 4002,
+          "predicted_count": 4105,
+          "prediction_minus_support": 103,
+          "correct_count": 3419,
+          "error_count": 583,
+          "error_rate": 0.14567716141929035,
+          "false_negative_count": 583,
+          "false_positive_count": 686,
+          "precision": 0.8328867235079171,
+          "recall": 0.8543228385807097,
+          "f1": 0.8434686073763414,
+          "dominant_wrong_prediction": 2,
+          "dominant_wrong_prediction_name": "neutral",
+          "dominant_wrong_prediction_count": 239,
+          "dominant_false_positive_source": 2,
+          "dominant_false_positive_source_name": "neutral",
+          "dominant_false_positive_source_count": 460
+        }
+      ]
+    },
+    "price": {
+      "evaluated_count": 13366,
+      "correct_count": 12279,
+      "error_count": 1087,
+      "error_rate": 0.08132575190782583,
+      "accuracy": 0.9186742480921741,
+      "macro_f1": 0.8986664452727519,
+      "weighted_f1": 0.9179274563944535,
+      "error_family_counts": {
+        "missed_mention": 261,
+        "false_mention": 79,
+        "sentiment_confusion": 747
+      },
+      "error_family_shares": {
+        "missed_mention": 0.24011039558417663,
+        "false_mention": 0.07267709291628335,
+        "sentiment_confusion": 0.68721251149954
+      },
+      "weakest_label_by_f1": {
+        "label": 2,
+        "name": "neutral",
+        "f1": 0.8437566249735001
+      },
+      "highest_error_rate_label": {
+        "label": 2,
+        "name": "neutral",
+        "error_rate": 0.17938144329896907
+      },
+      "top_confusions": [
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 297,
+          "share_of_aspect_errors": 0.2732290708371665
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 256,
+          "share_of_aspect_errors": 0.23551057957681693
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 121,
+          "share_of_aspect_errors": 0.11131554737810488
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 84,
+          "share_of_aspect_errors": 0.07727690892364306
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 82,
+          "share_of_aspect_errors": 0.07543698252069918
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 56,
+          "share_of_aspect_errors": 0.051517939282428704
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 49,
+          "share_of_aspect_errors": 0.045078196872125116
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 39,
+          "share_of_aspect_errors": 0.035878564857405704
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 36,
+          "share_of_aspect_errors": 0.03311867525298988
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 36,
+          "share_of_aspect_errors": 0.03311867525298988
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 24,
+          "share_of_aspect_errors": 0.02207911683532659
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 7,
+          "share_of_aspect_errors": 0.006439742410303588
+        }
+      ],
+      "labels": [
+        {
+          "aspect": "price",
+          "label": 0,
+          "label_name": "not_mentioned",
+          "support": 6122,
+          "predicted_count": 6304,
+          "prediction_minus_support": 182,
+          "correct_count": 6043,
+          "error_count": 79,
+          "error_rate": 0.012904279647174126,
+          "false_negative_count": 79,
+          "false_positive_count": 261,
+          "precision": 0.9585977157360406,
+          "recall": 0.9870957203528259,
+          "f1": 0.9726380170610012,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 36,
+          "dominant_false_positive_source": 1,
+          "dominant_false_positive_source_name": "negative",
+          "dominant_false_positive_source_count": 121
+        },
+        {
+          "aspect": "price",
+          "label": 1,
+          "label_name": "negative",
+          "support": 1863,
+          "predicted_count": 1796,
+          "prediction_minus_support": -67,
+          "correct_count": 1654,
+          "error_count": 209,
+          "error_rate": 0.11218464841653247,
+          "false_negative_count": 209,
+          "false_positive_count": 142,
+          "precision": 0.920935412026726,
+          "recall": 0.8878153515834675,
+          "f1": 0.904072150860891,
+          "dominant_wrong_prediction": 0,
+          "dominant_wrong_prediction_name": "not_mentioned",
+          "dominant_wrong_prediction_count": 121,
+          "dominant_false_positive_source": 2,
+          "dominant_false_positive_source_name": "neutral",
+          "dominant_false_positive_source_count": 82
+        },
+        {
+          "aspect": "price",
+          "label": 2,
+          "label_name": "neutral",
+          "support": 2425,
+          "predicted_count": 2292,
+          "prediction_minus_support": -133,
+          "correct_count": 1990,
+          "error_count": 435,
+          "error_rate": 0.17938144329896907,
+          "false_negative_count": 435,
+          "false_positive_count": 302,
+          "precision": 0.868237347294939,
+          "recall": 0.8206185567010309,
+          "f1": 0.8437566249735001,
+          "dominant_wrong_prediction": 3,
+          "dominant_wrong_prediction_name": "positive",
+          "dominant_wrong_prediction_count": 297,
+          "dominant_false_positive_source": 3,
+          "dominant_false_positive_source_name": "positive",
+          "dominant_false_positive_source_count": 256
+        },
+        {
+          "aspect": "price",
+          "label": 3,
+          "label_name": "positive",
+          "support": 2956,
+          "predicted_count": 2974,
+          "prediction_minus_support": 18,
+          "correct_count": 2592,
+          "error_count": 364,
+          "error_rate": 0.12313937753721245,
+          "false_negative_count": 364,
+          "false_positive_count": 382,
+          "precision": 0.8715534633490248,
+          "recall": 0.8768606224627875,
+          "f1": 0.8741989881956155,
+          "dominant_wrong_prediction": 2,
+          "dominant_wrong_prediction_name": "neutral",
+          "dominant_wrong_prediction_count": 256,
+          "dominant_false_positive_source": 2,
+          "dominant_false_positive_source_name": "neutral",
+          "dominant_false_positive_source_count": 297
+        }
+      ]
+    },
+    "service": {
+      "evaluated_count": 13365,
+      "correct_count": 12027,
+      "error_count": 1338,
+      "error_rate": 0.10011223344556677,
+      "accuracy": 0.8998877665544333,
+      "macro_f1": 0.8817721219258543,
+      "weighted_f1": 0.8991085345340908,
+      "error_family_counts": {
+        "missed_mention": 505,
+        "false_mention": 269,
+        "sentiment_confusion": 564
+      },
+      "error_family_shares": {
+        "missed_mention": 0.3774289985052317,
+        "false_mention": 0.20104633781763825,
+        "sentiment_confusion": 0.42152466367713004
+      },
+      "weakest_label_by_f1": {
+        "label": 2,
+        "name": "neutral",
+        "f1": 0.8238823882388239
+      },
+      "highest_error_rate_label": {
+        "label": 2,
+        "name": "neutral",
+        "error_rate": 0.20451911935110081
+      },
+      "top_confusions": [
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 283,
+          "share_of_aspect_errors": 0.21150971599402094
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 164,
+          "share_of_aspect_errors": 0.12257100149476831
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 152,
+          "share_of_aspect_errors": 0.11360239162929746
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 139,
+          "share_of_aspect_errors": 0.1038863976083707
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 123,
+          "share_of_aspect_errors": 0.09192825112107623
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 118,
+          "share_of_aspect_errors": 0.08819133034379671
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 96,
+          "share_of_aspect_errors": 0.07174887892376682
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 90,
+          "share_of_aspect_errors": 0.06726457399103139
+        },
+        {
+          "true_label": 2,
+          "true_label_name": "neutral",
+          "predicted_label": 0,
+          "predicted_label_name": "not_mentioned",
+          "count": 83,
+          "share_of_aspect_errors": 0.06203288490284006
+        },
+        {
+          "true_label": 1,
+          "true_label_name": "negative",
+          "predicted_label": 3,
+          "predicted_label_name": "positive",
+          "count": 47,
+          "share_of_aspect_errors": 0.035127055306427506
+        },
+        {
+          "true_label": 3,
+          "true_label_name": "positive",
+          "predicted_label": 1,
+          "predicted_label_name": "negative",
+          "count": 28,
+          "share_of_aspect_errors": 0.02092675635276532
+        },
+        {
+          "true_label": 0,
+          "true_label_name": "not_mentioned",
+          "predicted_label": 2,
+          "predicted_label_name": "neutral",
+          "count": 15,
+          "share_of_aspect_errors": 0.011210762331838564
+        }
+      ],
+      "labels": [
+        {
+          "aspect": "service",
+          "label": 0,
+          "label_name": "not_mentioned",
+          "support": 5022,
+          "predicted_count": 5258,
+          "prediction_minus_support": 236,
+          "correct_count": 4753,
+          "error_count": 269,
+          "error_rate": 0.05356431700517722,
+          "false_negative_count": 269,
+          "false_positive_count": 505,
+          "precision": 0.9039558767592241,
+          "recall": 0.9464356829948227,
+          "f1": 0.9247081712062257,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 164,
+          "dominant_false_positive_source": 1,
+          "dominant_false_positive_source_name": "negative",
+          "dominant_false_positive_source_count": 283
+        },
+        {
+          "aspect": "service",
+          "label": 1,
+          "label_name": "negative",
+          "support": 2591,
+          "predicted_count": 2482,
+          "prediction_minus_support": -109,
+          "correct_count": 2138,
+          "error_count": 453,
+          "error_rate": 0.17483597066769588,
+          "false_negative_count": 453,
+          "false_positive_count": 344,
+          "precision": 0.8614020950846092,
+          "recall": 0.8251640293323041,
+          "f1": 0.8428937512320126,
+          "dominant_wrong_prediction": 0,
+          "dominant_wrong_prediction_name": "not_mentioned",
+          "dominant_wrong_prediction_count": 283,
+          "dominant_false_positive_source": 0,
+          "dominant_false_positive_source_name": "not_mentioned",
+          "dominant_false_positive_source_count": 164
+        },
+        {
+          "aspect": "service",
+          "label": 2,
+          "label_name": "neutral",
+          "support": 1726,
+          "predicted_count": 1607,
+          "prediction_minus_support": -119,
+          "correct_count": 1373,
+          "error_count": 353,
+          "error_rate": 0.20451911935110081,
+          "false_negative_count": 353,
+          "false_positive_count": 234,
+          "precision": 0.8543870566272558,
+          "recall": 0.7954808806488992,
+          "f1": 0.8238823882388239,
+          "dominant_wrong_prediction": 1,
+          "dominant_wrong_prediction_name": "negative",
+          "dominant_wrong_prediction_count": 152,
+          "dominant_false_positive_source": 1,
+          "dominant_false_positive_source_name": "negative",
+          "dominant_false_positive_source_count": 123
+        },
+        {
+          "aspect": "service",
+          "label": 3,
+          "label_name": "positive",
+          "support": 4026,
+          "predicted_count": 4018,
+          "prediction_minus_support": -8,
+          "correct_count": 3763,
+          "error_count": 263,
+          "error_rate": 0.06532538499751614,
+          "false_negative_count": 263,
+          "false_positive_count": 255,
+          "precision": 0.9365355898456944,
+          "recall": 0.9346746150024838,
+          "f1": 0.935604177026355,
+          "dominant_wrong_prediction": 0,
+          "dominant_wrong_prediction_name": "not_mentioned",
+          "dominant_wrong_prediction_count": 139,
+          "dominant_false_positive_source": 2,
+          "dominant_false_positive_source_name": "neutral",
+          "dominant_false_positive_source_count": 118
+        }
+      ]
+    }
+  }
+}

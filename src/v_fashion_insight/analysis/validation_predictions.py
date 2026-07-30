@@ -397,7 +397,7 @@ def _error_examples(
     return pd.DataFrame(rows)
 
 
-def _assert_metrics_match_recorded(
+def assert_metrics_match_recorded(
     metrics: dict[str, Any],
     recorded_report: dict[str, Any],
 ) -> None:
@@ -457,7 +457,7 @@ def build_prediction_analysis(
         raise ValueError("examples_per_confusion must be positive.")
     true, predicted = _metric_frames(enriched)
     metrics = compute_multioutput_metrics(true, predicted)
-    _assert_metrics_match_recorded(metrics, recorded_report)
+    assert_metrics_match_recorded(metrics, recorded_report)
     aspect_errors = pd.DataFrame(
         _aspect_error_rows(enriched, metrics)
     )
