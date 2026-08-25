@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Logo -->
-<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' width='80' height='80'%3E%3Crect width='120' height='120' fill='%23f0f0f0' rx='16'/%3E%3Cpath d='M30 50 Q60 20 90 50' stroke='%23d4436e' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='60' r='6' fill='%2307c' opacity='0.8'/%3E%3Ccircle cx='60' cy='75' r='6' fill='%2307c' opacity='0.6'/%3E%3Ccircle cx='70' cy='65' r='6' fill='%2307c' opacity='0.7'/%3E%3Cpath d='M30 85 L90 85 L85 100 L35 100 Z' fill='%2307c' opacity='0.15'/%3E%3C/svg%3E" alt="V-Fashion Insight Logo">
+<!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' width='80' height='80'%3E%3Crect width='120' height='120' fill='%23f0f0f0' rx='16'/%3E%3Cpath d='M30 50 Q60 20 90 50' stroke='%23d4436e' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='60' r='6' fill='%2307c' opacity='0.8'/%3E%3Ccircle cx='60' cy='75' r='6' fill='%2307c' opacity='0.6'/%3E%3Ccircle cx='70' cy='65' r='6' fill='%2307c' opacity='0.7'/%3E%3Cpath d='M30 85 L90 85 L85 100 L35 100 Z' fill='%2307c' opacity='0.15'/%3E%3C/svg%3E" alt="V-Fashion Insight Logo"> -->
 
 # V-Fashion Insight
 
